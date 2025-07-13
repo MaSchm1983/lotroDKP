@@ -1,0 +1,352 @@
+{
+  "players": {
+    "Anax": {
+      "class": "Loremaster",
+      "dkp": 290,
+      "loot": [
+        {
+          "class": "Loremaster",
+          "set": "Beast-master Armour",
+          "level": 50,
+          "slot": "Shoulders",
+          "name": "Beast-master Shoulders",
+          "icon": "https://lotro-wiki.com/images/7/7e/1090523360-1090519044-1091947416.png",
+          "cost": 210,
+          "date": "2025-07-10T20:09:21.856Z"
+        }
+      ],
+      "Twinks": [
+        {
+          "name": "Adi",
+          "class": "Guardian"
+        },
+        {
+          "name": "Indigo",
+          "class": "Hunter"
+        }
+      ]
+    },
+    "Amphy": {
+      "class": "Burglar",
+      "dkp": 300,
+      "loot": [
+        {
+          "class": "Burglar",
+          "set": "Shadow-stalker Armour",
+          "level": 50,
+          "slot": "Helm",
+          "name": "Shadow-stalker Helm",
+          "icon": "https://lotro-wiki.com/images/0/08/1090526120-1090519044-1091947416.png",
+          "cost": 210,
+          "date": "2025-07-10T20:12:03.942Z"
+        }
+      ],
+      "Twinks": [
+        {
+          "name": "Idaara",
+          "class": "Captain"
+        },
+        {
+          "name": "Gormundur",
+          "class": "Champion"
+        }
+      ]
+    },
+    "Bettee": {
+      "class": "Minstrel",
+      "dkp": 0,
+      "loot": []
+    },
+    "Corcaroli": {
+      "class": "Minstrel",
+      "dkp": 100,
+      "loot": [],
+      "Twinks": [
+        {
+          "name": "Hartmuth",
+          "class": "Captain"
+        },
+        {
+          "name": "Amlemir",
+          "class": "Hunter"
+        }
+      ]
+    },
+    "Deladora": {
+      "class": "Hunter",
+      "dkp": 400,
+      "loot": [
+        {
+          "class": "Hunter",
+          "icon": "https://lotro-wiki.com/images/3/30/1090523513-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Shoulders of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2025-07-12T19:40:33.404562"
+        }
+      ],
+      "Twinks": [
+        {
+          "name": "Namaleth",
+          "class": "Burglar"
+        }
+      ]
+    },
+    "Elwyn": {
+      "class": "Captain",
+      "dkp": 100,
+      "loot": []
+    },
+    "Feren": {
+      "class": "Guardian",
+      "dkp": 0,
+      "loot": [
+        {
+          "class": "Guardian",
+          "set": "High-protector's Armour",
+          "level": 50,
+          "slot": "Helm",
+          "name": "High-protector's Helm",
+          "icon": "https://lotro-wiki.com/images/0/08/1090526120-1090519044-1091947416.png",
+          "cost": 100,
+          "date": "2025-07-10T16:54:52.078Z"
+        },
+        {
+          "class": "Guardian",
+          "set": "High-protector's Armour",
+          "level": 50,
+          "slot": "Gloves",
+          "name": "High-protector's Gloves",
+          "icon": "https://lotro-wiki.com/images/6/65/1090526117-1090519044-1091947416.png",
+          "cost": 100,
+          "date": "2025-07-10T16:55:11.805Z"
+        }
+      ]
+    },
+    "Galah": {
+      "class": "Loremaster",
+      "dkp": 300,
+      "loot": []
+    },
+    "Garofin": {
+      "class": "Burglar",
+      "dkp": 300,
+      "loot": [],
+      "beryl_shards": 1
+    },
+    "Greenlander": {
+      "class": "Minstrel",
+      "dkp": 0,
+      "loot": [
+        {
+          "class": "Minstrel",
+          "set": "Silver-voice Armour",
+          "level": 50,
+          "slot": "Helm",
+          "name": "Silver-voice Helm",
+          "icon": "https://lotro-wiki.com/images/0/08/1090526120-1090519044-1091947416.png",
+          "cost": 100,
+          "date": "2025-07-10T16:56:39.687Z"
+        }
+      ],
+      "beryl_shards": 1
+    },
+    "Gxhunter": {
+      "class": "Hunter",
+      "dkp": 200,
+      "loot": [],
+      "Twinks": [
+        {
+          "name": "Gxchampion",
+          "class": "Champion"
+        },
+        {
+          "name": "Gxminstrel",
+          "class": "Minstrel"
+        }
+      ]
+    },
+    "Harra": {
+      "class": "Captain",
+      "dkp": 300,
+      "loot": [],
+      "beryl_shards": 1
+    },
+    "Ingreghil": {
+      "class": "Champion",
+      "dkp": 200,
+      "loot": [
+        {
+          "class": "Champion",
+          "set": "Dragon-scale Armour",
+          "level": 50,
+          "slot": "Helm",
+          "name": "Dragon-scale Helm",
+          "icon": "https://lotro-wiki.com/images/1/15/1090525163-1090519044-1091947416.png",
+          "cost": 100,
+          "date": "2025-07-10T16:55:58.347Z"
+        }
+      ]
+    },
+    "Mendlm": {
+      "class": "Loremaster",
+      "dkp": 0,
+      "loot": [],
+      "beryl_shards": 1,
+      "Twinks": [
+        {
+          "name": "Mendir",
+          "class": "Champion"
+        }
+      ]
+    },
+    "Mineika": {
+      "class": "Captain",
+      "dkp": 300,
+      "loot": []
+    },
+    "Fake": {
+      "class": "Minstrel",
+      "dkp": 300,
+      "loot": [
+        {
+          "class": "Minstrel",
+          "set": "Silver-voice Armour",
+          "level": 50,
+          "slot": "Helm",
+          "name": "Silver-voice Helm",
+          "icon": "https://lotro-wiki.com/images/0/08/1090526120-1090519044-1091947416.png",
+          "cost": 100,
+          "date": "2025-07-10T20:10:37.906Z"
+        }
+      ],
+      "beryl_shards": 1,
+      "Twinks": [
+        {
+          "name": "Oida",
+          "class": "Guardian"
+        },
+        {
+          "name": "Eondir",
+          "class": "Captain"
+        }
+      ]
+    },
+    "Pola": {
+      "class": "Burglar",
+      "dkp": 100,
+      "loot": []
+    },
+    "Satra": {
+      "class": "Champion",
+      "dkp": 200,
+      "loot": [],
+      "beryl_shards": 1
+    },
+    "Teromur": {
+      "class": "Champion",
+      "dkp": 100,
+      "loot": [
+        {
+          "class": "Champion",
+          "set": "Dragon-scale Armour",
+          "level": 50,
+          "slot": "Helm",
+          "name": "Dragon-scale Helm",
+          "icon": "https://lotro-wiki.com/images/1/15/1090525163-1090519044-1091947416.png",
+          "cost": 100,
+          "date": "2025-07-10T16:56:13.650Z"
+        }
+      ]
+    },
+    "Terz": {
+      "class": "Minstrel",
+      "dkp": 200,
+      "loot": [
+        {
+          "class": "Minstrel",
+          "set": "Silver-voice Armour",
+          "level": 50,
+          "slot": "Helm",
+          "name": "Silver-voice Helm",
+          "icon": "https://lotro-wiki.com/images/0/08/1090526120-1090519044-1091947416.png",
+          "cost": 100,
+          "date": "2025-07-10T20:14:12.217Z"
+        }
+      ]
+    },
+    "Torray": {
+      "class": "Guardian",
+      "dkp": 200,
+      "loot": [
+        {
+          "class": "Guardian",
+          "set": "High-protector's Armour",
+          "level": 50,
+          "slot": "Helm",
+          "name": "High-protector's Helm",
+          "icon": "https://lotro-wiki.com/images/0/08/1090526120-1090519044-1091947416.png",
+          "cost": 100,
+          "date": "2025-07-10T20:11:18.492Z"
+        }
+      ]
+    },
+    "Zaphira": {
+      "class": "Captain",
+      "dkp": 200,
+      "loot": []
+    },
+    "Zoominator": {
+      "class": "Hunter",
+      "dkp": 200,
+      "loot": []
+    },
+    "Ionraen": {
+      "class": "Captain",
+      "dkp": 100,
+      "loot": [],
+      "beryl_shards": 1
+    },
+    "Lindn": {
+      "class": "Hunter",
+      "dkp": 100,
+      "loot": [],
+      "beryl_shards": 1
+    },
+    "Leosa": {
+      "class": "Captain",
+      "dkp": 100,
+      "loot": []
+    },
+    "Baert": {
+      "class": "Burglar",
+      "dkp": 100,
+      "loot": []
+    },
+    "Jorlin": {
+      "class": "Captain",
+      "dkp": 100,
+      "loot": []
+    },
+    "Rocco": {
+      "name": "Rocco",
+      "class": "Minstrel",
+      "dkp": 100,
+      "loot": [
+        {
+          "class": "Minstrel",
+          "icon": "https://lotro-wiki.com/images/0/08/1090526120-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Silver-voice Helm",
+          "set": "Silver-voice Armour",
+          "slot": "Helm",
+          "cost": 100,
+          "date": "2025-07-12T20:09:15.710300"
+        }
+      ]
+    }
+  },
+  "DKP_HISTORY": []
+}
