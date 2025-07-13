@@ -13,6 +13,15 @@ COL_WIDTH_DKP = [110, 120, 120]     # Player | Awarded | Spent (adjust as you li
 COL_WIDTH_LOOT = [90, 110, 210]     # Date | Player | Item (Price)
 WIN_PAD = 28 # 14px left + 14px right, for example
 #SCROLLBAR_WIDTH = 20 
+
+
+def resource_path(relative_path):
+    # For PyInstaller compatibility (works in dev and packaged)
+    if hasattr(sys, '_MEIPASS'):
+        return os.path.join(sys._MEIPASS, relative_path)
+    return os.path.join(os.path.abspath("."), relative_path)
+
+
 def get_icon(path_or_url):
     if not path_or_url:
         return QIcon()
@@ -52,22 +61,22 @@ class DKPManager(QWidget):
             "Burglar", "Captain", "Champion", "Guardian", "Hunter", "Loremaster", "Minstrel"
         ]
         self.class_icons = {
-            "Burglar": "images/Framed_Burglar-icon.png",
-            "Captain": "images/Framed_Captain-icon.png",
-            "Champion": "images/Framed_Champion-icon.png",
-            "Guardian": "images/Framed_Guardian-icon.png",
-            "Hunter": "images/Framed_Hunter-icon.png",
-            "Loremaster": "images/Framed_Lore-master-icon.png",
-            "Minstrel": "images/Framed_Minstrel-icon.png"
+            "Burglar": resource_path("images/Framed_Burglar-icon.png"),
+            "Captain": resource_path("images/Framed_Captain-icon.png"),
+            "Champion": resource_path("images/Framed_Champion-icon.png"),
+            "Guardian": resource_path("images/Framed_Guardian-icon.png"),
+            "Hunter": resource_path("images/Framed_Hunter-icon.png"),
+            "Loremaster": resource_path("images/Framed_Lore-master-icon.png"),
+            "Minstrel": resource_path("images/Framed_Minstrel-icon.png")
         }
         self.items_db = []
         self.players = {}
         self.dkp_history = []
         self.dkp_file_path = None
-        self.items_file_path = "content/items.json"
+        self.items_file_path = resource_path("content/items.json")
         self.init_ui()
         self.load_items()
-        self.load_dkp("lotro_dkp_backup.json")
+        self.load_dkp(resource_path("lotro_dkp_backup.json"))
 
     def init_ui(self):
         vbox = QVBoxLayout(self)
@@ -159,7 +168,7 @@ class DKPManager(QWidget):
             self.items_db = []
 
     def load_dkp(self, path=None):
-        fn = path or self.dkp_file_path or "lotro_dkp_backup.json"
+        fn = path or self.dkp_file_path or resource_path("lotro_dkp_backup.json")
         if not os.path.exists(fn):
             self.players = {}
             self.dkp_history = []
@@ -178,7 +187,7 @@ class DKPManager(QWidget):
         self.refresh_table()
 
     def save_dkp_file(self):
-        path = self.dkp_file_path or "lotro_dkp_backup.json"
+        path = self.dkp_file_path or resource_path("lotro_dkp_backup.json")
         try:
             data = {
                 "players": self.players,
@@ -225,7 +234,7 @@ class DKPManager(QWidget):
                         ticon.save(buffer, "PNG")
                         b64 = ba.toBase64().data().decode()
                         # icon after name, a little lower
-                        icon_html = f' <img src="data:image/png;base64,{b64}" width="15" height="15" style="vertical-align:middle; margin-bottom:+1px;">'
+                        icon_html = f' <img src="data:image/png;base64,{b64}" width="15" height="15" style="vertical-align:middle; margin-bottom:+5px;">'
                     else:
                         icon_html = f" [{tclass}]"
                     tt_lines.append(f"{idx}. {tname}{icon_html}")
