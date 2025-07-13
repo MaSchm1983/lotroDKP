@@ -2,7 +2,7 @@
   "players": {
     "Anax": {
       "class": "Loremaster",
-      "dkp": 290,
+      "dkp": 390,
       "loot": [
         {
           "class": "Loremaster",
@@ -28,7 +28,7 @@
     },
     "Amphy": {
       "class": "Burglar",
-      "dkp": 300,
+      "dkp": 400,
       "loot": [
         {
           "class": "Burglar",
@@ -50,7 +50,8 @@
           "name": "Gormundur",
           "class": "Champion"
         }
-      ]
+      ],
+      "beryl_shards": 1
     },
     "Bettee": {
       "class": "Minstrel",
@@ -74,7 +75,7 @@
     },
     "Deladora": {
       "class": "Hunter",
-      "dkp": 400,
+      "dkp": 500,
       "loot": [
         {
           "class": "Hunter",
@@ -92,11 +93,12 @@
           "name": "Namaleth",
           "class": "Burglar"
         }
-      ]
+      ],
+      "beryl_shards": 1
     },
     "Elwyn": {
       "class": "Captain",
-      "dkp": 100,
+      "dkp": 200,
       "loot": []
     },
     "Feren": {
@@ -122,6 +124,16 @@
           "icon": "https://lotro-wiki.com/images/6/65/1090526117-1090519044-1091947416.png",
           "cost": 100,
           "date": "2025-07-10T16:55:11.805Z"
+        },
+        {
+          "class": "Guardian",
+          "icon": "https://lotro-wiki.com/images/9/9e/1090526108-1090519044-1091947416.png",
+          "level": 50,
+          "name": "High-protector's Boots",
+          "set": "High-protector's Armour",
+          "slot": "Boots",
+          "cost": 100,
+          "date": "2025-07-13T22:20:20.159728"
         }
       ]
     },
@@ -156,7 +168,18 @@
     "Gxhunter": {
       "class": "Hunter",
       "dkp": 200,
-      "loot": [],
+      "loot": [
+        {
+          "class": "Hunter",
+          "icon": "https://lotro-wiki.com/images/3/30/1090523513-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Shoulders of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2025-07-13T22:21:21.617003"
+        }
+      ],
       "Twinks": [
         {
           "name": "Gxchampion",
@@ -192,7 +215,7 @@
     },
     "Mendlm": {
       "class": "Loremaster",
-      "dkp": 0,
+      "dkp": 200,
       "loot": [],
       "beryl_shards": 1,
       "Twinks": [
@@ -204,8 +227,9 @@
     },
     "Mineika": {
       "class": "Captain",
-      "dkp": 300,
-      "loot": []
+      "dkp": 400,
+      "loot": [],
+      "beryl_shards": 1
     },
     "Fake": {
       "class": "Minstrel",
@@ -220,6 +244,16 @@
           "icon": "https://lotro-wiki.com/images/0/08/1090526120-1090519044-1091947416.png",
           "cost": 100,
           "date": "2025-07-10T20:10:37.906Z"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "https://lotro-wiki.com/images/5/53/1090527325-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Silver-voice Shoulders",
+          "set": "Silver-voice Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2025-07-13T22:17:52.944059"
         }
       ],
       "beryl_shards": 1,
@@ -295,7 +329,7 @@
     },
     "Zaphira": {
       "class": "Captain",
-      "dkp": 200,
+      "dkp": 300,
       "loot": []
     },
     "Zoominator": {
@@ -344,6 +378,23 @@
           "slot": "Helm",
           "cost": 100,
           "date": "2025-07-12T20:09:15.710300"
+        }
+      ]
+    },
+    "Klade": {
+      "name": "Klade",
+      "class": "Hunter",
+      "dkp": 100,
+      "loot": [
+        {
+          "class": "Hunter",
+          "icon": "https://lotro-wiki.com/images/6/69/1090524578-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Helm of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Helm",
+          "cost": 100,
+          "date": "2025-07-13T20:13:16.169990"
         }
       ]
     }
