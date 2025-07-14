@@ -205,7 +205,11 @@ class DKPManager(QWidget):
             self.load_dkp(path)
 
     def refresh_table(self):
+        # --- FILTER logic at the start ---
+        selected_class = self.filter_combo.currentText() if hasattr(self, 'filter_combo') else "--all--"
         players = sorted(self.players.items(), key=lambda t: (-t[1].get("dkp", 0), t[0]))
+        if selected_class != "--all--":
+            players = [(name, p) for name, p in players if p.get("class") == selected_class]
         self.table.setRowCount(len(players))
         for row, (name, p) in enumerate(players):
             self.table.setItem(row, 0, QTableWidgetItem(str(row + 1)))
