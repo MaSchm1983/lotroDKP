@@ -17,7 +17,7 @@
 - bery shard: since we don't sell beryl shard via dkp, but we keep track on shards, so any player will get one, before next player can get a second etc. Just for a fair distribution
 - remove player might be the most obvious thing :P 
 
-## Loot rules for thursday and sunday lead by "Die Ritters von Rohan"
+## Loot rules for the "thursday and sunday wing clear raids", lead by "Die Ritters von Rohan"
 For all people participating on our raids, here are the loot rules hopefully "in short". We decide to make a DKP system for the set pieces, since we will avoid that new players or players just joining one time get 1-2 set pieces and then don't show up anymore. We feel like its some kind of fair that active people get rewarded. However, we are aware that the discussions about fair loot rules are older than the history of MMORPGs itself and like differential equations first and second order, not fully solvable (nerd joke :-|). So this are our rules (we are open to critics here, but we discussed literally any case):
 
 - Every player defines a "loot main". A loot main is the character he wanna equip. This character has nothing in common with the actual main character. We wanna address the problem, that certain classes are needed for fast and successful raids. And since helegrod set pieces are "bound on equip" and thus tradable, no one should suffer from being forced to play another class. So everyone can play what is needed while equip his favored character. 
