@@ -12,7 +12,7 @@
   - note: Twinks have no function in this system, it will just help to manage people since you can see if some mains play with twinks while hovering over the player names. twinks will shown as tooltip, thus if some players are in raid with other class it helps to assign the DKP and keep the overview
 - award DKP. Just select all players in raid and enter the dkp, will be assigned to all selected players
 - dkp history will show a net "+" and "-" DKP for each player
-- spend DKP. For now its just for the helegrod setpieces and storvagun quest items. Choose the player, the item, and the DKP spend
+- spend DKP. For now its just for the helegrod setpieces (with DPS costs) and to track for storvagun and zaudru quest items. Choose the player, the item, and the DKP spend (if DKP are spend). Technically possible to add the lotro item data base here if any further usage of the app is planned
 - spend histroy will show all items bought by players and the day of the raid, just for some tracking option if some things were messed up etc.
 - bery shard: since we don't sell beryl shard via dkp, but we keep track on shards, so any player will get one, before next player can get a second etc. Just for a fair distribution
 - remove player might be the most obvious thing :P 
