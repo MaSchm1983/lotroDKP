@@ -140,7 +140,18 @@
     "Galah": {
       "class": "Loremaster",
       "dkp": 300,
-      "loot": []
+      "loot": [
+        {
+          "class": "Loremaster",
+          "icon": "https://lotro-wiki.com/images/8/88/1090523823-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Beast-master Leggings",
+          "set": "Beast-master Armour",
+          "slot": "Leggins",
+          "cost": 0,
+          "date": "2025-07-17T17:02:18.013506"
+        }
+      ]
     },
     "Garofin": {
       "class": "Burglar",
@@ -335,7 +346,18 @@
     "Zoominator": {
       "class": "Hunter",
       "dkp": 200,
-      "loot": []
+      "loot": [
+        {
+          "class": "Hunter",
+          "icon": "https://lotro-wiki.com/images/1/19/1090526315-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Leggins of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Leggins",
+          "cost": 0,
+          "date": "2025-07-17T17:01:58.237848"
+        }
+      ]
     },
     "Ionraen": {
       "class": "Captain",

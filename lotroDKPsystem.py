@@ -460,7 +460,7 @@ class DKPManager(QWidget):
         dkp_label = QLabel("DKP:")
         v.addWidget(dkp_label)
         dkp_input = QSpinBox()
-        dkp_input.setMinimum(1)
+        dkp_input.setMinimum(0)
         dkp_input.setMaximum(9999)
         dkp_input.setValue(100)
         v.addWidget(dkp_input)
