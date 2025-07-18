@@ -113,12 +113,20 @@ class DKPManager(QWidget):
         filter_row.addStretch()  # Pushes the dropdown to the left
 
         vbox.addLayout(filter_row)
-
         self.filter_combo.currentIndexChanged.connect(self.refresh_table)
+        
+        # add refresh button to reaload data from .json, otherwise the code use only internal memory until changes are made
+        refresh_btn = QPushButton("Refresh")
+        refresh_btn.setToolTip("Reload DKP data from file")
+        refresh_btn.setFixedWidth(100)
+        filter_row.addWidget(refresh_btn)
+        self.refresh_btn = refresh_btn  # in case you want to use it elsewhere
+        refresh_btn.clicked.connect(lambda: self.load_dkp(self.dkp_file_path))
+        
         
         # Table
         app = QApplication.instance() or QApplication([])
-        SCROLLBAR_WIDTH = app.style().pixelMetric(QApplication.style().PM_ScrollBarExtent)
+        SCROLLBAR_WIDTH = app.style().pixelMetric(QApplication.style().PM_ScrollBarExtent)        
         self.table = QTableWidget(0, len(COL_WIDTH))        
         for col, width in enumerate(COL_WIDTH):
             self.table.setColumnWidth(col, width)
