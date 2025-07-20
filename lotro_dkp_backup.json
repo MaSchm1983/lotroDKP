@@ -28,7 +28,7 @@
     },
     "Amphy": {
       "class": "Burglar",
-      "dkp": 280,
+      "dkp": 290,
       "loot": [
         {
           "class": "Burglar",
