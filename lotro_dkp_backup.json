@@ -2,7 +2,7 @@
   "players": {
     "Anax": {
       "class": "Loremaster",
-      "dkp": 390,
+      "dkp": 490,
       "loot": [
         {
           "class": "Loremaster",
@@ -28,7 +28,7 @@
     },
     "Amphy": {
       "class": "Burglar",
-      "dkp": 400,
+      "dkp": 290,
       "loot": [
         {
           "class": "Burglar",
@@ -39,6 +39,16 @@
           "icon": "https://lotro-wiki.com/images/0/08/1090526120-1090519044-1091947416.png",
           "cost": 210,
           "date": "2025-07-10T20:12:03.942Z"
+        },
+        {
+          "class": "Burglar",
+          "icon": "https://lotro-wiki.com/images/2/27/1090526543-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Shadow-stalker Boots",
+          "set": "Shadow-stalker Armour",
+          "slot": "Boots",
+          "cost": 210,
+          "date": "2025-07-20T20:58:43.769183"
         }
       ],
       "Twinks": [
@@ -55,8 +65,15 @@
     },
     "Bettee": {
       "class": "Minstrel",
-      "dkp": 0,
-      "loot": []
+      "dkp": 100,
+      "loot": [],
+      "Twinks": [
+        {
+          "name": "Bruce",
+          "class": "Loremaster"
+        }
+      ],
+      "beryl_shards": 1
     },
     "Corcaroli": {
       "class": "Minstrel",
@@ -75,7 +92,7 @@
     },
     "Deladora": {
       "class": "Hunter",
-      "dkp": 500,
+      "dkp": 600,
       "loot": [
         {
           "class": "Hunter",
@@ -103,7 +120,7 @@
     },
     "Feren": {
       "class": "Guardian",
-      "dkp": 0,
+      "dkp": 100,
       "loot": [
         {
           "class": "Guardian",
@@ -135,7 +152,8 @@
           "cost": 100,
           "date": "2025-07-13T22:20:20.159728"
         }
-      ]
+      ],
+      "beryl_shards": 1
     },
     "Galah": {
       "class": "Loremaster",
@@ -150,6 +168,16 @@
           "slot": "Leggins",
           "cost": 0,
           "date": "2025-07-17T17:02:18.013506"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "https://lotro-wiki.com/images/7/7e/1090523360-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Beast-master Shoulders",
+          "set": "Beast-master Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2025-07-20T21:53:08.508041"
         }
       ]
     },
@@ -204,7 +232,7 @@
     },
     "Harra": {
       "class": "Captain",
-      "dkp": 300,
+      "dkp": 400,
       "loot": [],
       "beryl_shards": 1
     },
@@ -224,27 +252,27 @@
         }
       ]
     },
-    "Mendlm": {
-      "class": "Loremaster",
-      "dkp": 200,
+    "Mendir": {
+      "class": "Champion",
+      "dkp": 300,
       "loot": [],
       "beryl_shards": 1,
       "Twinks": [
         {
-          "name": "Mendir",
-          "class": "Champion"
+          "name": "Mendlm",
+          "class": "Loremaster"
         }
       ]
     },
     "Mineika": {
       "class": "Captain",
-      "dkp": 400,
+      "dkp": 500,
       "loot": [],
       "beryl_shards": 1
     },
     "Fake": {
       "class": "Minstrel",
-      "dkp": 300,
+      "dkp": 400,
       "loot": [
         {
           "class": "Minstrel",
@@ -281,7 +309,7 @@
     },
     "Pola": {
       "class": "Burglar",
-      "dkp": 100,
+      "dkp": 200,
       "loot": []
     },
     "Satra": {
@@ -292,7 +320,7 @@
     },
     "Teromur": {
       "class": "Champion",
-      "dkp": 100,
+      "dkp": 200,
       "loot": [
         {
           "class": "Champion",
@@ -324,7 +352,7 @@
     },
     "Torray": {
       "class": "Guardian",
-      "dkp": 200,
+      "dkp": 100,
       "loot": [
         {
           "class": "Guardian",
@@ -335,6 +363,26 @@
           "icon": "https://lotro-wiki.com/images/0/08/1090526120-1090519044-1091947416.png",
           "cost": 100,
           "date": "2025-07-10T20:11:18.492Z"
+        },
+        {
+          "class": "Guardian",
+          "icon": "https://lotro-wiki.com/images/9/9e/1090526108-1090519044-1091947416.png",
+          "level": 50,
+          "name": "High-protector's Boots",
+          "set": "High-protector's Armour",
+          "slot": "Boots",
+          "cost": 100,
+          "date": "2025-07-20T20:59:15.750803"
+        },
+        {
+          "class": "Guardian",
+          "icon": "https://lotro-wiki.com/images/6/65/1090526117-1090519044-1091947416.png",
+          "level": 50,
+          "name": "High-protector's Gloves",
+          "set": "High-protector's Armour",
+          "slot": "Gloves",
+          "cost": 100,
+          "date": "2025-07-20T21:27:40.825281"
         }
       ]
     },
@@ -345,7 +393,7 @@
     },
     "Zoominator": {
       "class": "Hunter",
-      "dkp": 200,
+      "dkp": 300,
       "loot": [
         {
           "class": "Hunter",
@@ -367,7 +415,7 @@
     },
     "Lindn": {
       "class": "Hunter",
-      "dkp": 100,
+      "dkp": 200,
       "loot": [],
       "beryl_shards": 1
     },
@@ -378,7 +426,7 @@
     },
     "Baert": {
       "class": "Burglar",
-      "dkp": 100,
+      "dkp": 200,
       "loot": []
     },
     "Jorlin": {
@@ -406,7 +454,7 @@
     "Klade": {
       "name": "Klade",
       "class": "Hunter",
-      "dkp": 100,
+      "dkp": 200,
       "loot": [
         {
           "class": "Hunter",
@@ -418,7 +466,26 @@
           "cost": 100,
           "date": "2025-07-13T20:13:16.169990"
         }
+      ],
+      "beryl_shards": 1
+    },
+    "Alantariel": {
+      "name": "Alantariel",
+      "class": "Minstrel",
+      "dkp": 100,
+      "loot": [],
+      "Twinks": [
+        {
+          "name": "Damaros",
+          "class": "Hunter"
+        }
       ]
+    },
+    "Gabelstapler": {
+      "name": "Gabelstapler",
+      "class": "Burglar",
+      "dkp": 100,
+      "loot": []
     }
   },
   "DKP_HISTORY": []
