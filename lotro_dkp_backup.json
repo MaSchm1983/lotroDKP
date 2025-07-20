@@ -486,6 +486,12 @@
       "class": "Burglar",
       "dkp": 100,
       "loot": []
+    },
+    "Rosita": {
+      "name": "Rosita",
+      "class": "Captain",
+      "dkp": 100,
+      "loot": []
     }
   },
   "DKP_HISTORY": []
