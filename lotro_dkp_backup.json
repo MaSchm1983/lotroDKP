@@ -103,6 +103,16 @@
           "slot": "Shoulders",
           "cost": 100,
           "date": "2025-07-12T19:40:33.404562"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-07-21T16:17:59.955978"
         }
       ],
       "Twinks": [
@@ -178,6 +188,16 @@
           "slot": "Shoulders",
           "cost": 100,
           "date": "2025-07-20T21:53:08.508041"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-07-21T16:17:36.316945"
         }
       ]
     },
@@ -233,7 +253,18 @@
     "Harra": {
       "class": "Captain",
       "dkp": 400,
-      "loot": [],
+      "loot": [
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-07-22T01:11:21.255152"
+        }
+      ],
       "beryl_shards": 1
     },
     "Ingreghil": {
@@ -416,7 +447,18 @@
     "Lindn": {
       "class": "Hunter",
       "dkp": 200,
-      "loot": [],
+      "loot": [
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-07-21T16:17:11.130319"
+        }
+      ],
       "beryl_shards": 1
     },
     "Leosa": {
@@ -476,7 +518,7 @@
       "loot": [],
       "Twinks": [
         {
-          "name": "Damaros",
+          "name": "Domaros",
           "class": "Hunter"
         }
       ]
