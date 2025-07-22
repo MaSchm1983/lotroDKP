@@ -340,16 +340,16 @@
         "set": " ",
         "level": 50,
         "slot": " ",
-        "name": "Zaudrus crimson mandible",
-        "icon": "https://lotro-wiki.com/images/d/db/1090527292-1090519044-1091947416.png"
+        "name": "Storvâgûn's Emblem of Loyalty",
+        "icon": "images/storvagun_qitem.png"
     },
     {
         "class": "Misc",
         "set": " ",
         "level": 50,
         "slot": " ",
-        "name": "Storvâgûn's Emblem of Loyalty",
-        "icon": "images/storvagun_qitem.png"
+        "name": "Zaudrus Crimson Mandible",
+        "icon": "images/zaudru_qitem.png"
     }
 
 ]
