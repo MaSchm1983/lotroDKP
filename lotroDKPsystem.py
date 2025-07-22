@@ -144,6 +144,7 @@ class DKPManager(QWidget):
         self.table.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
         self.table.setFixedWidth(sum(COL_WIDTH) + SCROLLBAR_WIDTH)
         self.table.setIconSize(QSize(24, 24))
+        self.table.cellClicked.connect(self.on_table_cell_clicked)
         vbox.addWidget(self.table)
         
         # History buttons row
@@ -491,6 +492,125 @@ class DKPManager(QWidget):
             loot.append(entry)
             self.refresh_table()
             self.save_dkp_file()
+
+    def on_table_cell_clicked(self, row, col):
+        # Only respond to name column (col 2)
+        if col != 2:
+            return
+        item = self.table.item(row, col)
+        if not item:
+            return
+        pname = item.text()
+        if pname not in self.players:
+            return
+        self.show_player_loot_popup(pname)
+        
+    def show_player_loot_popup(self, pname):
+        dlg = QDialog(self)
+        dlg.setWindowTitle(f"Details: {pname}")
+        layout = QVBoxLayout(dlg)
+
+        # Table for Loot History
+        loot_table = QTableWidget(0, 5, dlg)
+        loot_table.setHorizontalHeaderLabels(["Date", "Name", "Class", "Item", "DKP Spent"])
+        loot_table.verticalHeader().setVisible(False)
+        loot_table.setEditTriggers(loot_table.NoEditTriggers)
+        loot_table.setSelectionMode(loot_table.NoSelection)
+        loot_table.setFixedWidth(520)   # Wider for more info
+        loot_table.setMinimumHeight(300)
+        loot_table.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        loot_table.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+
+        # Helper: add loot rows (main or twink)
+        def add_loot_rows(owner_name, owner_class, loot_list):
+            for l in loot_list:
+                date = l.get("date", "")[:10]
+                item_name = l.get("name", "") or l.get("item", "")
+                cost = l.get("cost", 0)
+                icon_url = l.get("icon", "")
+                row = loot_table.rowCount()
+                loot_table.insertRow(row)
+                loot_table.setItem(row, 0, QTableWidgetItem(date))
+                loot_table.setItem(row, 1, QTableWidgetItem(owner_name))
+                loot_table.setItem(row, 2, QTableWidgetItem(owner_class))
+                
+                # --- Icon only, with tooltip ---
+                icon_label = QLabel()
+                icon_label.setAlignment(Qt.AlignCenter)
+                if icon_url:
+                    icon = get_icon(icon_url)
+                    icon_label.setPixmap(icon.pixmap(25, 25))
+                else:
+                    icon_label.setText("?")
+                icon_label.setToolTip(f"{item_name}")
+                loot_table.setCellWidget(row, 3, icon_label)
+
+                loot_table.setItem(row, 4, QTableWidgetItem(str(cost)))
+
+                # Center align for all but icon
+                for col in [0, 1, 2, 4]:
+                    loot_table.item(row, col).setTextAlignment(Qt.AlignCenter)
+
+        # ---- Collate all loot (main + twinks) ----
+        pdata = self.players[pname]
+        total_loot_rows = 0
+        add_loot_rows(pname, pdata.get("class", ""), pdata.get("loot", []))
+        total_loot_rows += len(pdata.get("loot", []))
+        for twink in pdata.get("Twinks", []):
+            tname = twink.get("name")
+            tclass = twink.get("class", "")
+            tloot = []
+            if tname in self.players:
+                tloot = self.players[tname].get("loot", [])
+            add_loot_rows(tname, tclass, tloot)
+            total_loot_rows += len(tloot)
+
+        layout.addWidget(QLabel(f"<b>Loot History (last {total_loot_rows} items):</b>"))
+        layout.addWidget(loot_table)
+
+        # --- Beryl Shards section (main + twinks) ---
+        beryl_main = pdata.get("beryl_shards", 0)
+        beryl_twinks = []
+        for twink in pdata.get("Twinks", []):
+            tname = twink.get("name")
+            tberyl = 0
+            if tname in self.players:
+                tberyl = self.players[tname].get("beryl_shards", 0)
+            beryl_twinks.append((tname, tberyl))
+        beryl_info = f"<b>Beryl Shards:</b> {pname}: {beryl_main}"
+        if beryl_twinks:
+            beryl_info += " | " + " | ".join(f"{n}: {amt}" for n, amt in beryl_twinks)
+        layout.addWidget(QLabel(beryl_info))
+
+        # --- DKP Awards section (main + twinks) ---
+        # DKP awards are not per-date in your structure, just totals unless you store history.
+        # Let's show current DKP, spent DKP, and total awarded (main + twinks)
+        def get_award_spent_loot(p):
+            current = p.get("dkp", 0)
+            spent = sum(l.get("cost", 0) for l in p.get("loot", []))
+            awarded = current + spent
+            return awarded, spent
+
+        awarded_main, spent_main = get_award_spent_loot(pdata)
+        dkp_award_info = f"<b>DKP (main):</b> Awarded: {awarded_main} | Spent: {spent_main} | Current: {pdata.get('dkp', 0)}"
+        # Twinks:
+        twink_awards = []
+        for twink in pdata.get("Twinks", []):
+            tname = twink.get("name")
+            if tname in self.players:
+                tp = self.players[tname]
+                award, spent = get_award_spent_loot(tp)
+                twink_awards.append(f"{tname}: Awarded: {award} | Spent: {spent} | Current: {tp.get('dkp', 0)}")
+        if twink_awards:
+            dkp_award_info += "<br><b>Twinks:</b><br> " + "<br> ".join(twink_awards)
+        layout.addWidget(QLabel(dkp_award_info))
+
+        close_btn = QPushButton("Close")
+        close_btn.clicked.connect(dlg.accept)
+        layout.addWidget(close_btn)
+        dlg.setFixedWidth(520)  # Even wider window
+        dlg.exec_()
+
 
     def show_dkp_history(self):
         dlg = QDialog(self)
