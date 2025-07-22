@@ -1,7 +1,7 @@
 # Ritters von Rohan DKP for Helegrod in Echoes of Angmar
 
 ## Usage:
-- download the [standalone release](https://github.com/MaSchm1983/lotroDKP/releases/download/v0.9.1-beta/lotroDKPsystem.exe)
+- download the [standalone release](https://github.com/MaSchm1983/lotroDKP/releases/download/v0.9.2-beta/lotroDKPsystem.exe)
 - also download the actual [DKP file](https://github.com/MaSchm1983/lotroDKP/blob/main/lotro_dkp_backup.json)
 - run the .exe on your local machine (.json file need to be in the same folder)
 - anything else is more or less self explained ;-) 
@@ -12,10 +12,12 @@
   - note: Twinks have no function in this system, it will just help to manage people since you can see if some mains play with twinks while hovering over the player names. twinks will shown as tooltip, thus if some players are in raid with other class it helps to assign the DKP and keep the overview
 - award DKP. Just select all players in raid and enter the dkp, will be assigned to all selected players
 - dkp history will show a net "+" and "-" DKP for each player
-- spend DKP. For now its just for the helegrod setpieces (with DPS costs) and to track for storvagun and zaudru quest items. Choose the player, the item, and the DKP spend (if DKP are spend). Technically possible to add the lotro item data base here if any further usage of the app is planned
-- spend histroy will show all items bought by players and the day of the raid, just for some tracking option if some things were messed up etc.
+- spend DKP. For now its just for the helegrod setpieces (with DPS costs) and to track for storvagun and zaudru quest items. Choose the player, the item, and the DKP spend (if DKP are spend). Technically possible to add the lotro item database here if any further usage of the app is planned
+- spend history will show all items bought by players and the day of the raid, just for some tracking option if some things were messed up etc.
 - bery shard: since we don't sell beryl shard via dkp, but we keep track on shards, so any player will get one, before next player can get a second etc. Just for a fair distribution
 - remove player might be the most obvious thing :P 
+- refresh button reloads the actual "lotro_dkp_backup.json" file rather than use internal memory. Use this, if you share the .json files
+- Players loot history: Player names in the column "players" are now clickable. As a result, you'll get a new loot history window for this player which might help, especially because the loot column in the main window only shows the last 5 loot items.
 
 ## Loot rules for the "thursday and sunday wing clear raids", lead by "Die Ritters von Rohan"
 For all people participating on our raids, here are the loot rules hopefully "in short". We decide to make a DKP system for the set pieces, since we will avoid that new players or players just joining one time get 1-2 set pieces and then don't show up anymore. We feel like its some kind of fair that active people get rewarded. However, we are aware that the discussions about fair loot rules are older than the history of MMORPGs itself and like differential equations first and second order, not fully solvable (nerd joke :-|). So this are our rules (we are open to critics here, but we discussed literally any case):
