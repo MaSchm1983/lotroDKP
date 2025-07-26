@@ -2,7 +2,7 @@
   "players": {
     "Anax": {
       "class": "Loremaster",
-      "dkp": 490,
+      "dkp": 590,
       "loot": [
         {
           "class": "Loremaster",
@@ -28,7 +28,7 @@
     },
     "Amphy": {
       "class": "Burglar",
-      "dkp": 290,
+      "dkp": 390,
       "loot": [
         {
           "class": "Burglar",
@@ -77,8 +77,19 @@
     },
     "Corcaroli": {
       "class": "Minstrel",
-      "dkp": 100,
-      "loot": [],
+      "dkp": 200,
+      "loot": [
+        {
+          "class": "Minstrel",
+          "icon": "https://lotro-wiki.com/images/0/08/1090526120-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Silver-voice Helm",
+          "set": "Silver-voice Armour",
+          "slot": "Helm",
+          "cost": 0,
+          "date": "2025-07-26T13:55:02.839265"
+        }
+      ],
       "Twinks": [
         {
           "name": "Hartmuth",
@@ -88,11 +99,12 @@
           "name": "Amlemir",
           "class": "Hunter"
         }
-      ]
+      ],
+      "beryl_shards": 1
     },
     "Deladora": {
       "class": "Hunter",
-      "dkp": 600,
+      "dkp": 490,
       "loot": [
         {
           "class": "Hunter",
@@ -113,6 +125,16 @@
           "slot": " ",
           "cost": 0,
           "date": "2025-07-21T16:17:59.955978"
+        },
+        {
+          "class": "Hunter",
+          "icon": "https://lotro-wiki.com/images/f/f2/1090520000-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Boots of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Boots",
+          "cost": 210,
+          "date": "2025-07-24T21:53:56.459177"
         }
       ],
       "Twinks": [
@@ -130,7 +152,7 @@
     },
     "Feren": {
       "class": "Guardian",
-      "dkp": 100,
+      "dkp": 200,
       "loot": [
         {
           "class": "Guardian",
@@ -167,7 +189,7 @@
     },
     "Galah": {
       "class": "Loremaster",
-      "dkp": 300,
+      "dkp": 400,
       "loot": [
         {
           "class": "Loremaster",
@@ -204,7 +226,28 @@
     "Garofin": {
       "class": "Burglar",
       "dkp": 300,
-      "loot": [],
+      "loot": [
+        {
+          "class": "Loremaster",
+          "icon": "https://lotro-wiki.com/images/7/7e/1090523360-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Beast-master Shoulders",
+          "set": "Beast-master Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2025-07-24T21:30:20.100353"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-07-24T21:55:19.541987"
+        }
+      ],
       "beryl_shards": 1
     },
     "Greenlander": {
@@ -252,7 +295,7 @@
     },
     "Harra": {
       "class": "Captain",
-      "dkp": 400,
+      "dkp": 500,
       "loot": [
         {
           "class": "Misc",
@@ -303,7 +346,7 @@
     },
     "Fake": {
       "class": "Minstrel",
-      "dkp": 400,
+      "dkp": 500,
       "loot": [
         {
           "class": "Minstrel",
@@ -324,6 +367,16 @@
           "slot": "Shoulders",
           "cost": 100,
           "date": "2025-07-13T22:17:52.944059"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "https://lotro-wiki.com/images/d/db/1090527292-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Silver-voice Shoes",
+          "set": "Silver-voice Armour",
+          "slot": "Boots",
+          "cost": 0,
+          "date": "2025-07-24T22:07:21.990604"
         }
       ],
       "beryl_shards": 1,
@@ -340,8 +393,19 @@
     },
     "Pola": {
       "class": "Burglar",
-      "dkp": 200,
-      "loot": []
+      "dkp": 300,
+      "loot": [
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-07-24T21:54:36.966837"
+        }
+      ]
     },
     "Satra": {
       "class": "Champion",
@@ -383,7 +447,7 @@
     },
     "Torray": {
       "class": "Guardian",
-      "dkp": 100,
+      "dkp": 200,
       "loot": [
         {
           "class": "Guardian",
@@ -424,7 +488,7 @@
     },
     "Zoominator": {
       "class": "Hunter",
-      "dkp": 300,
+      "dkp": 170,
       "loot": [
         {
           "class": "Hunter",
@@ -435,8 +499,19 @@
           "slot": "Leggins",
           "cost": 0,
           "date": "2025-07-17T17:01:58.237848"
+        },
+        {
+          "class": "Hunter",
+          "icon": "https://lotro-wiki.com/images/c/c0/1090526244-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Gloves of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Gloves",
+          "cost": 230,
+          "date": "2025-07-24T21:30:34.517284"
         }
-      ]
+      ],
+      "beryl_shards": 1
     },
     "Ionraen": {
       "class": "Captain",
@@ -446,7 +521,7 @@
     },
     "Lindn": {
       "class": "Hunter",
-      "dkp": 200,
+      "dkp": 300,
       "loot": [
         {
           "class": "Misc",
@@ -468,7 +543,7 @@
     },
     "Baert": {
       "class": "Burglar",
-      "dkp": 200,
+      "dkp": 300,
       "loot": []
     },
     "Jorlin": {
@@ -479,7 +554,7 @@
     "Rocco": {
       "name": "Rocco",
       "class": "Minstrel",
-      "dkp": 100,
+      "dkp": 200,
       "loot": [
         {
           "class": "Minstrel",
@@ -523,17 +598,18 @@
         }
       ]
     },
-    "Gabelstapler": {
-      "name": "Gabelstapler",
-      "class": "Burglar",
-      "dkp": 100,
+    "Fachkraft": {
+      "name": "Fachkraft",
+      "class": "Hunter",
+      "dkp": 200,
       "loot": []
     },
     "Rosita": {
       "name": "Rosita",
       "class": "Captain",
-      "dkp": 100,
-      "loot": []
+      "dkp": 200,
+      "loot": [],
+      "beryl_shards": 1
     }
   },
   "DKP_HISTORY": []
