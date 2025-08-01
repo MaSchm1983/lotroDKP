@@ -121,7 +121,9 @@ class DKPManager(QWidget):
         refresh_btn.setFixedWidth(100)
         filter_row.addWidget(refresh_btn)
         self.refresh_btn = refresh_btn  # in case you want to use it elsewhere
-        refresh_btn.clicked.connect(lambda: self.load_dkp(self.dkp_file_path))
+        refresh_btn.clicked.connect(self.do_refresh)
+        #refresh_btn.clicked.connect(lambda: self.load_dkp(self.dkp_file_path or resource_path("lotro_dkp_backup.json")))
+        # refresh_btn.clicked.connect(lambda: self.load_dkp(self.dkp_file_path))
         
         
         # Table
@@ -194,6 +196,12 @@ class DKPManager(QWidget):
             self.players = {}
             self.dkp_history = []
         self.refresh_table()
+    
+    def do_refresh(self):
+        self.players = {}
+        self.dkp_history = []
+        self.dkp_file_path = resource_path("lotro_dkp_backup.json")
+        self.load_dkp(self.dkp_file_path)
 
     def save_dkp_file(self):
         path = self.dkp_file_path or resource_path("lotro_dkp_backup.json")
