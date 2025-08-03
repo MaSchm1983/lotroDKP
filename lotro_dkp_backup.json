@@ -2,7 +2,7 @@
   "players": {
     "Anax": {
       "class": "Loremaster",
-      "dkp": 580,
+      "dkp": 680,
       "loot": [
         {
           "class": "Loremaster",
@@ -70,6 +70,16 @@
           "slot": "Boots",
           "cost": 210,
           "date": "2025-07-20T20:58:43.769183"
+        },
+        {
+          "class": "Champion",
+          "icon": "https://lotro-wiki.com/images/1/15/1090525163-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Dragon-scale Helm",
+          "set": "Dragon-scale Armour",
+          "slot": "Helm",
+          "cost": 100,
+          "date": "2025-08-03T21:20:42.877552"
         }
       ],
       "Twinks": [
@@ -86,7 +96,7 @@
     },
     "Bettee": {
       "class": "Minstrel",
-      "dkp": 100,
+      "dkp": 200,
       "loot": [],
       "Twinks": [
         {
@@ -135,7 +145,7 @@
     },
     "Deladora": {
       "class": "Hunter",
-      "dkp": 570,
+      "dkp": 670,
       "loot": [
         {
           "class": "Hunter",
@@ -244,7 +254,7 @@
     },
     "Galah": {
       "class": "Loremaster",
-      "dkp": 500,
+      "dkp": 600,
       "loot": [
         {
           "class": "Loremaster",
@@ -318,7 +328,7 @@
     },
     "Greenlander": {
       "class": "Minstrel",
-      "dkp": 100,
+      "dkp": 200,
       "loot": [
         {
           "class": "Minstrel",
@@ -361,7 +371,7 @@
     },
     "Harra": {
       "class": "Captain",
-      "dkp": 600,
+      "dkp": 100,
       "loot": [
         {
           "class": "Misc",
@@ -372,13 +382,23 @@
           "slot": " ",
           "cost": 0,
           "date": "2025-07-22T01:11:21.255152"
+        },
+        {
+          "class": "Captain",
+          "icon": "https://lotro-wiki.com/images/b/bd/1090525063-1090519044-1091947416.png",
+          "level": 50,
+          "name": "War-captain's Gloves",
+          "set": "War-captain's Armour",
+          "slot": "Gloves",
+          "cost": 600,
+          "date": "2025-08-03T20:45:07.058490"
         }
       ],
       "beryl_shards": 1
     },
     "Ingreghil": {
       "class": "Champion",
-      "dkp": 300,
+      "dkp": 400,
       "loot": [
         {
           "class": "Champion",
@@ -404,7 +424,7 @@
     },
     "Mendir": {
       "class": "Champion",
-      "dkp": 400,
+      "dkp": 500,
       "loot": [],
       "beryl_shards": 1,
       "Twinks": [
@@ -416,7 +436,7 @@
     },
     "Mineika": {
       "class": "Captain",
-      "dkp": 700,
+      "dkp": 800,
       "loot": [],
       "beryl_shards": 1,
       "Twinks": [
@@ -432,7 +452,7 @@
     },
     "Fake": {
       "class": "Minstrel",
-      "dkp": 500,
+      "dkp": 600,
       "loot": [
         {
           "class": "Minstrel",
@@ -499,7 +519,7 @@
     },
     "Pola": {
       "class": "Burglar",
-      "dkp": 300,
+      "dkp": 400,
       "loot": [
         {
           "class": "Misc",
@@ -510,8 +530,19 @@
           "slot": " ",
           "cost": 0,
           "date": "2025-07-24T21:54:36.966837"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-08-03T21:03:52.441568"
         }
-      ]
+      ],
+      "beryl_shards": 1
     },
     "Satra": {
       "class": "Champion",
@@ -537,7 +568,7 @@
     },
     "Terz": {
       "class": "Minstrel",
-      "dkp": 300,
+      "dkp": 400,
       "loot": [
         {
           "class": "Minstrel",
@@ -554,7 +585,7 @@
     },
     "Torray": {
       "class": "Guardian",
-      "dkp": 200,
+      "dkp": 300,
       "loot": [
         {
           "class": "Guardian",
@@ -586,11 +617,12 @@
           "cost": 100,
           "date": "2025-07-20T21:27:40.825281"
         }
-      ]
+      ],
+      "beryl_shards": 1
     },
     "Zaphira": {
       "class": "Captain",
-      "dkp": 500,
+      "dkp": 600,
       "loot": [
         {
           "class": "Misc",
@@ -601,6 +633,16 @@
           "slot": " ",
           "cost": 0,
           "date": "2025-07-27T22:44:56.281083"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-08-03T21:55:25.230930"
         }
       ],
       "beryl_shards": 1,
@@ -650,7 +692,7 @@
     },
     "Lindn": {
       "class": "Hunter",
-      "dkp": 400,
+      "dkp": 500,
       "loot": [
         {
           "class": "Misc",
@@ -671,6 +713,16 @@
           "slot": "Helm",
           "cost": 100,
           "date": "2025-07-27T21:34:17.435123"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-08-03T22:49:44.709667"
         }
       ],
       "beryl_shards": 1,
@@ -735,7 +787,7 @@
     "Alantariel": {
       "name": "Alantariel",
       "class": "Minstrel",
-      "dkp": 200,
+      "dkp": 300,
       "loot": [],
       "Twinks": [
         {
@@ -771,7 +823,7 @@
     "Rosita": {
       "name": "Rosita",
       "class": "Captain",
-      "dkp": 400,
+      "dkp": 500,
       "loot": [
         {
           "class": "Misc",
@@ -808,6 +860,19 @@
           "date": "2025-07-31T20:56:55.232625"
         }
       ]
+    },
+    "Melborn": {
+      "name": "Melborn",
+      "class": "Captain",
+      "dkp": 100,
+      "loot": [],
+      "beryl_shards": 1
+    },
+    "Maxipad": {
+      "name": "Maxipad",
+      "class": "Captain",
+      "dkp": 100,
+      "loot": []
     }
   },
   "DKP_HISTORY": []
