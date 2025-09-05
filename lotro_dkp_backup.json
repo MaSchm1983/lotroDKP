@@ -150,6 +150,10 @@
         {
           "name": "Gormundur",
           "class": "Champion"
+        },
+        {
+          "name": "Lyra",
+          "class": "Minstrel"
         }
       ],
       "beryl_shards": 2
@@ -451,7 +455,13 @@
           "date": "2025-08-31T21:59:43.175344"
         }
       ],
-      "beryl_shards": 2
+      "beryl_shards": 2,
+      "Twinks": [
+        {
+          "name": "Leviane",
+          "class": "Hunter"
+        }
+      ]
     },
     "Garofin": {
       "class": "Burglar",
@@ -602,7 +612,13 @@
           "date": "2025-08-31T20:58:17.301773"
         }
       ],
-      "beryl_shards": 2
+      "beryl_shards": 2,
+      "Twinks": [
+        {
+          "name": "Thirgon",
+          "class": "Champion"
+        }
+      ]
     },
     "Ingreghil": {
       "class": "Champion",
