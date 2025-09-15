@@ -350,6 +350,22 @@
         "slot": " ",
         "name": "Zaudrus Crimson Mandible",
         "icon": "images/zaudru_qitem.png"
+    },
+    {
+        "class": "Misc",
+        "set": " ",
+        "level": 50,
+        "slot": " ",
+        "name": "Beryl Shard",
+        "icon": "images/berylshard.png"
+    },
+    {
+        "class": "Misc",
+        "set": " ",
+        "level": 50,
+        "slot": " ",
+        "name": "Luchareg",
+        "icon": "images/luchareg.png"
     }
 
 ]
