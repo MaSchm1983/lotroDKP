@@ -8,7 +8,7 @@ from PyQt5.QtCore import Qt, QSize, QByteArray, QBuffer
 
 # --- Utility: download and cache icons ---
 ICON_CACHE = {}
-COL_WIDTH = [40, 50, 100, 60, 160, 80]
+COL_WIDTH = [40, 50, 100, 60, 300, 80]
 COL_WIDTH_DKP = [110, 120, 120]     # Player | Awarded | Spent (adjust as you like)
 COL_WIDTH_LOOT = [90, 110, 210]     # Date | Player | Item (Price)
 WIN_PAD = 28 # 14px left + 14px right, for example
@@ -27,19 +27,21 @@ def get_icon(path_or_url):
         return QIcon()
     if path_or_url in ICON_CACHE:
         return ICON_CACHE[path_or_url]
+    
     if path_or_url.startswith("http"):
-        # Download from URL
         try:
-            img_data = requests.get(path_or_url, timeout=8).content
+            resp = requests.get(path_or_url, timeout=8)
+            if not resp.ok or not resp.content:
+                return QIcon()
             pix = QPixmap()
-            pix.loadFromData(img_data)
+            if not pix.loadFromData(resp.content):
+                return QIcon()
             icon = QIcon(pix)
             ICON_CACHE[path_or_url] = icon
             return icon
         except Exception:
             return QIcon()
     else:
-        # Local file
         if os.path.exists(path_or_url):
             icon = QIcon(path_or_url)
             ICON_CACHE[path_or_url] = icon
@@ -51,7 +53,7 @@ class DKPManager(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Die Ritters von Rohan DKP Helegrod")
-        app = QApplication.instance() or QApplication([])
+        # app = QApplication.instance() or QApplication([])
         SCROLLBAR_WIDTH = app.style().pixelMetric(QApplication.style().PM_ScrollBarExtent)
         total_width = sum(COL_WIDTH) + WIN_PAD + SCROLLBAR_WIDTH
         self.setFixedWidth(total_width)
@@ -265,7 +267,7 @@ class DKPManager(QWidget):
             self.table.setItem(row, 3, QTableWidgetItem(str(p.get("dkp", 0))))
             self.table.setItem(row, 5, QTableWidgetItem(str(p.get("beryl_shards", 0))))
             # --- Loot icons (URLs!)
-            loot = p.get("loot", [])[-5:]
+            loot = p.get("loot", [])[-10:]
             loot_widget = QWidget()
             loot_hbox = QHBoxLayout(loot_widget)
             loot_hbox.setContentsMargins(8, 0, 0, 0)
@@ -424,9 +426,12 @@ class DKPManager(QWidget):
         if not self.players:
             QMessageBox.information(self, "Info", "No players.")
             return
+        
         dlg = QDialog(self)
         dlg.setWindowTitle("Award DKP")
         v = QVBoxLayout(dlg)
+        
+        # Players list
         label = QLabel("Players:")
         v.addWidget(label)
         playerlist = QListWidget()
@@ -435,6 +440,19 @@ class DKPManager(QWidget):
             item = QListWidgetItem(pname)
             playerlist.addItem(item)
         v.addWidget(playerlist)
+        
+        total_players = playerlist.count()
+        sel_counter = QLabel(f"Selected: 0 / {total_players}")
+        v.addWidget(sel_counter)
+        
+        def update_sel_counter():
+            sel_count = len(playerlist.selectedItems())
+            sel_counter.setText(f"Selected: {sel_count} / {total_players}")
+            
+        playerlist.itemSelectionChanged.connect(update_sel_counter)
+        update_sel_counter
+        
+        # DKP amount
         dkp_label = QLabel("Add DKP:")
         v.addWidget(dkp_label)
         dkp_input = QSpinBox()
@@ -442,9 +460,12 @@ class DKPManager(QWidget):
         dkp_input.setMaximum(9999)
         dkp_input.setValue(100)
         v.addWidget(dkp_input)
+        
+        # action
         btn = QPushButton("Award")
         v.addWidget(btn)
         btn.clicked.connect(dlg.accept)
+        
         if dlg.exec_():
             pts = dkp_input.value()
             sel = playerlist.selectedItems()
