@@ -366,6 +366,14 @@
         "slot": " ",
         "name": "Luchareg",
         "icon": "images/luchareg.png"
+    },
+    {
+        "class": "Misc",
+        "set": " ",
+        "level": 50,
+        "slot": " ",
+        "name": "Single Use Recipe",
+        "icon": "images/single_use_recipe.png"
     }
 
 ]
