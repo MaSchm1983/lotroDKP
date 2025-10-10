@@ -2,7 +2,7 @@
   "players": {
     "Anax": {
       "class": "Loremaster",
-      "dkp": 1420,
+      "dkp": 1520,
       "loot": [
         {
           "class": "Loremaster",
@@ -292,7 +292,7 @@
     },
     "Corcaroli": {
       "class": "Minstrel",
-      "dkp": 490,
+      "dkp": 390,
       "loot": [
         {
           "class": "Minstrel",
@@ -373,6 +373,16 @@
           "slot": " ",
           "cost": 100,
           "date": "2025-09-25T20:41:16.796643"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 200,
+          "date": "2025-10-09T22:08:03.008221"
         }
       ],
       "Twinks": [
@@ -889,6 +899,16 @@
           "slot": " ",
           "cost": 150,
           "date": "2025-09-18T22:05:31.449981"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 100,
+          "date": "2025-10-09T22:08:13.930644"
         }
       ],
       "beryl_shards": 4,
@@ -991,7 +1011,7 @@
     },
     "Mineika": {
       "class": "Captain",
-      "dkp": 370,
+      "dkp": 100,
       "loot": [
         {
           "class": "Captain",
@@ -1052,6 +1072,16 @@
           "slot": "Gloves",
           "cost": 500,
           "date": "2025-10-05T20:32:44.572506"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "https://lotro-wiki.com/images/6/69/1090524578-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Beast-master Hat",
+          "set": "Beast-master Armour",
+          "slot": "Helm",
+          "cost": 370,
+          "date": "2025-10-09T22:07:27.273208"
         }
       ],
       "beryl_shards": 2,
@@ -1068,7 +1098,7 @@
     },
     "Fake": {
       "class": "Minstrel",
-      "dkp": 730,
+      "dkp": 740,
       "loot": [
         {
           "class": "Minstrel",
@@ -1199,6 +1229,16 @@
           "slot": " ",
           "cost": 210,
           "date": "2025-10-05T20:56:24.437749"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 90,
+          "date": "2025-10-09T22:06:46.483168"
         }
       ],
       "beryl_shards": 3,
@@ -1215,7 +1255,7 @@
     },
     "Pola": {
       "class": "Burglar",
-      "dkp": 700,
+      "dkp": 800,
       "loot": [
         {
           "class": "Misc",
@@ -1242,7 +1282,7 @@
     },
     "Teromur*": {
       "class": "Champion",
-      "dkp": 200,
+      "dkp": 300,
       "loot": [
         {
           "class": "Champion",
@@ -1258,7 +1298,7 @@
     },
     "Terz": {
       "class": "Minstrel",
-      "dkp": 1070,
+      "dkp": 1170,
       "loot": [
         {
           "class": "Minstrel",
@@ -1372,7 +1412,7 @@
     },
     "Zaphira": {
       "class": "Captain",
-      "dkp": 1315,
+      "dkp": 1080,
       "loot": [
         {
           "class": "Misc",
@@ -1421,8 +1461,18 @@
           "name": "High-protector's Boots",
           "set": "High-protector's Armour",
           "slot": "Boots",
-          "cost": 125,
+          "cost": 130,
           "date": "2025-10-05T20:53:48.323327"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "https://lotro-wiki.com/images/d/db/1090527292-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Silver-voice Shoes",
+          "set": "Silver-voice Armour",
+          "slot": "Boots",
+          "cost": 330,
+          "date": "2025-10-09T22:07:48.467429"
         }
       ],
       "beryl_shards": 2,
@@ -1462,7 +1512,7 @@
     },
     "Lindn": {
       "class": "Hunter",
-      "dkp": 1380,
+      "dkp": 1480,
       "loot": [
         {
           "class": "Misc",
@@ -1575,7 +1625,7 @@
     },
     "Jorlin": {
       "class": "Captain",
-      "dkp": 620,
+      "dkp": 720,
       "loot": [
         {
           "class": "Captain",
@@ -1586,6 +1636,26 @@
           "slot": "Gloves",
           "cost": 480,
           "date": "2025-09-14T20:40:51.583129"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-10-09T22:04:46.941556"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-10-09T22:07:07.260225"
         }
       ],
       "beryl_shards": 2
@@ -1644,6 +1714,16 @@
           "slot": "Gloves",
           "cost": 510,
           "date": "2025-10-02T21:30:04.961619"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "https://lotro-wiki.com/images/5/53/1090527325-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Silver-voice Shoulders",
+          "set": "Silver-voice Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2025-10-09T22:06:20.115884"
         }
       ],
       "beryl_shards": 3,
@@ -1705,7 +1785,7 @@
     "Domaros": {
       "name": "Domaros",
       "class": "Hunter",
-      "dkp": 500,
+      "dkp": 600,
       "loot": [
         {
           "class": "Hunter",
@@ -1773,7 +1853,7 @@
     "Rosita": {
       "name": "Rosita",
       "class": "Captain",
-      "dkp": 930,
+      "dkp": 1030,
       "loot": [
         {
           "class": "Misc",
@@ -1943,7 +2023,7 @@
     "Boscgard": {
       "name": "Boscgard",
       "class": "Guardian",
-      "dkp": 1220,
+      "dkp": 1320,
       "loot": [
         {
           "class": "Misc",
@@ -2022,7 +2102,7 @@
     "Maf": {
       "name": "Maf",
       "class": "Captain",
-      "dkp": 1000,
+      "dkp": 1100,
       "loot": [
         {
           "class": "Misc",
@@ -2033,6 +2113,16 @@
           "slot": " ",
           "cost": 0,
           "date": "2025-09-21T20:10:21.490669"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-10-09T22:04:28.668050"
         }
       ],
       "beryl_shards": 2,
@@ -2119,9 +2209,15 @@
       ],
       "beryl_shards": 1
     },
-    "Cordloin": {
+    "Cordloin*": {
       "name": "Cordloin",
       "class": "Burglar",
+      "dkp": 100,
+      "loot": []
+    },
+    "Tordesilas*": {
+      "name": "Tordesilas*",
+      "class": "Captain",
       "dkp": 100,
       "loot": []
     }
