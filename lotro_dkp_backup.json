@@ -2,7 +2,7 @@
   "players": {
     "Anax": {
       "class": "Loremaster",
-      "dkp": 1520,
+      "dkp": 1150,
       "loot": [
         {
           "class": "Loremaster",
@@ -103,6 +103,26 @@
           "slot": "Boots",
           "cost": 100,
           "date": "2025-09-28T23:02:15.117637"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 220,
+          "date": "2025-10-12T22:01:53.128072"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 250,
+          "date": "2025-10-12T22:02:05.457098"
         }
       ],
       "Twinks": [
@@ -119,7 +139,7 @@
     },
     "Amphy": {
       "class": "Burglar",
-      "dkp": 690,
+      "dkp": 260,
       "loot": [
         {
           "class": "Burglar",
@@ -260,6 +280,36 @@
           "slot": " ",
           "cost": 120,
           "date": "2025-10-05T20:33:36.730388"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 70,
+          "date": "2025-10-12T22:03:40.299129"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 60,
+          "date": "2025-10-12T22:03:50.305093"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "https://lotro-wiki.com/images/3/33/1090524300-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Beast-master Shoes",
+          "set": "Beast-master Armour",
+          "slot": "Boots",
+          "cost": 400,
+          "date": "2025-10-12T22:04:52.810835"
         }
       ],
       "Twinks": [
@@ -292,7 +342,7 @@
     },
     "Corcaroli": {
       "class": "Minstrel",
-      "dkp": 390,
+      "dkp": 490,
       "loot": [
         {
           "class": "Minstrel",
@@ -631,7 +681,7 @@
     },
     "Galah": {
       "class": "Loremaster",
-      "dkp": 400,
+      "dkp": 500,
       "loot": [
         {
           "class": "Loremaster",
@@ -702,7 +752,7 @@
         }
       ]
     },
-    "Garofin": {
+    "Garofin*": {
       "class": "Burglar",
       "dkp": 400,
       "loot": [
@@ -921,7 +971,7 @@
     },
     "Ingreghil": {
       "class": "Champion",
-      "dkp": 660,
+      "dkp": 760,
       "loot": [
         {
           "class": "Champion",
@@ -999,6 +1049,16 @@
           "slot": " ",
           "cost": 0,
           "date": "2025-10-02T21:28:51.205097"
+        },
+        {
+          "class": "Champion",
+          "icon": "https://lotro-wiki.com/images/b/be/1090527666-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Dragon-scale Gloves",
+          "set": "Dragon-scale Armour",
+          "slot": "Gloves",
+          "cost": 100,
+          "date": "2025-10-12T22:04:26.785207"
         }
       ],
       "beryl_shards": 1,
@@ -1011,7 +1071,7 @@
     },
     "Mineika": {
       "class": "Captain",
-      "dkp": 100,
+      "dkp": 200,
       "loot": [
         {
           "class": "Captain",
@@ -1098,7 +1158,7 @@
     },
     "Fake": {
       "class": "Minstrel",
-      "dkp": 740,
+      "dkp": 840,
       "loot": [
         {
           "class": "Minstrel",
@@ -1282,7 +1342,7 @@
     },
     "Teromur*": {
       "class": "Champion",
-      "dkp": 300,
+      "dkp": 400,
       "loot": [
         {
           "class": "Champion",
@@ -1298,7 +1358,7 @@
     },
     "Terz": {
       "class": "Minstrel",
-      "dkp": 1170,
+      "dkp": 660,
       "loot": [
         {
           "class": "Minstrel",
@@ -1349,13 +1409,33 @@
           "slot": " ",
           "cost": 0,
           "date": "2025-07-03T18:17:33.466052"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "https://lotro-wiki.com/images/7/7e/1090523360-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Beast-master Shoulders",
+          "set": "Beast-master Armour",
+          "slot": "Shoulders",
+          "cost": 400,
+          "date": "2025-10-12T22:02:29.418357"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "https://lotro-wiki.com/images/d/db/1090527292-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Silver-voice Shoes",
+          "set": "Silver-voice Armour",
+          "slot": "Boots",
+          "cost": 210,
+          "date": "2025-10-12T22:05:58.842899"
         }
       ],
       "beryl_shards": 2
     },
     "Torray": {
       "class": "Guardian",
-      "dkp": 600,
+      "dkp": 700,
       "loot": [
         {
           "class": "Guardian",
@@ -1412,7 +1492,7 @@
     },
     "Zaphira": {
       "class": "Captain",
-      "dkp": 1080,
+      "dkp": 1180,
       "loot": [
         {
           "class": "Misc",
@@ -1512,7 +1592,7 @@
     },
     "Lindn": {
       "class": "Hunter",
-      "dkp": 1480,
+      "dkp": 1580,
       "loot": [
         {
           "class": "Misc",
@@ -1663,7 +1743,7 @@
     "Rocco": {
       "name": "Rocco",
       "class": "Minstrel",
-      "dkp": 200,
+      "dkp": 300,
       "loot": [
         {
           "class": "Minstrel",
@@ -1826,7 +1906,7 @@
       ],
       "beryl_shards": 1
     },
-    "Fachkraft": {
+    "Fachkraft*": {
       "name": "Fachkraft",
       "class": "Hunter",
       "dkp": 380,
@@ -1853,7 +1933,7 @@
     "Rosita": {
       "name": "Rosita",
       "class": "Captain",
-      "dkp": 1030,
+      "dkp": 1130,
       "loot": [
         {
           "class": "Misc",
@@ -1992,7 +2072,7 @@
       ],
       "beryl_shards": 2
     },
-    "Melborn": {
+    "Melborn*": {
       "name": "Melborn",
       "class": "Captain",
       "dkp": 0,
@@ -2023,7 +2103,7 @@
     "Boscgard": {
       "name": "Boscgard",
       "class": "Guardian",
-      "dkp": 1320,
+      "dkp": 1420,
       "loot": [
         {
           "class": "Misc",
@@ -2092,7 +2172,7 @@
         }
       ]
     },
-    "Fellarin": {
+    "Fellarin*": {
       "name": "Fellarin",
       "class": "Minstrel",
       "dkp": 200,
@@ -2102,7 +2182,7 @@
     "Maf": {
       "name": "Maf",
       "class": "Captain",
-      "dkp": 1100,
+      "dkp": 1200,
       "loot": [
         {
           "class": "Misc",
@@ -2174,7 +2254,7 @@
     "Pedesco": {
       "name": "Pedesco",
       "class": "Minstrel",
-      "dkp": 350,
+      "dkp": 450,
       "loot": [
         {
           "class": "Misc",
@@ -2212,7 +2292,7 @@
     "Cordloin*": {
       "name": "Cordloin",
       "class": "Burglar",
-      "dkp": 100,
+      "dkp": 200,
       "loot": []
     },
     "Tordesilas*": {
