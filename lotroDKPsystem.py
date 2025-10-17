@@ -3,17 +3,25 @@ from PyQt5.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QHBoxLayout, QTableWidget, QTableWidgetItem,
     QPushButton, QDialog, QLineEdit, QLabel, QComboBox, QMessageBox, QSpinBox, QFileDialog, QListWidget, QListWidgetItem, QCheckBox
 )
-from PyQt5.QtGui import QIcon, QPixmap
+from PyQt5.QtGui import QIcon, QPixmap, QColor, QBrush
 from PyQt5.QtCore import Qt, QSize, QByteArray, QBuffer
 
 # --- Utility: download and cache icons ---
 ICON_CACHE = {}
-COL_WIDTH = [40, 50, 100, 60, 300, 80]
+COL_WIDTH = [40, 50, 100, 60, 300]
 COL_WIDTH_DKP = [110, 120, 120]     # Player | Awarded | Spent (adjust as you like)
 COL_WIDTH_LOOT = [90, 110, 210]     # Date | Player | Item (Price)
 WIN_PAD = 28 # 14px left + 14px right, for example
 #SCROLLBAR_WIDTH = 20 
 
+
+def get_scrollbar_width():
+    app = QApplication.instance()
+    if app is None:
+        # In practice your app exists by the time UI is shown, but be defensive.
+        # Fallback to a sane default width if needed.
+        return 16
+    return app.style().pixelMetric(QApplication.style().PM_ScrollBarExtent)
 
 def resource_path(relative_path):
     # For PyInstaller compatibility (works in dev and packaged)
@@ -48,13 +56,27 @@ def get_icon(path_or_url):
             return icon
         return QIcon()
 
+def color_for_status(status: str):
+    s = (status or "").strip().lower()
+    if s == "done":
+        # soft grey-blue with transparency
+        return QColor(100, 130, 195, 60)   # RGBA (alpha 0-255)
+    if s == "open":
+        # lime-green-ish with transparency
+        return QColor(50, 205, 50, 60)
+    if s == "twink":
+        # Windows-ish blue with transparency
+        return QColor(0, 100, 225, 60)
+    return None
+
+
 # --- Main App ---
 class DKPManager(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Die Ritters von Rohan DKP Helegrod")
         # app = QApplication.instance() or QApplication([])
-        SCROLLBAR_WIDTH = app.style().pixelMetric(QApplication.style().PM_ScrollBarExtent)
+        SCROLLBAR_WIDTH = get_scrollbar_width()
         total_width = sum(COL_WIDTH) + WIN_PAD + SCROLLBAR_WIDTH
         self.setFixedWidth(total_width)
         
@@ -88,14 +110,12 @@ class DKPManager(QWidget):
         self.add_btn = QPushButton("Add Player")
         self.award_btn = QPushButton("Award DKP")
         self.spend_btn = QPushButton("Spend DKP")
-        self.beryl_btn = QPushButton("Add Beryl Shard")
         self.remove_btn = QPushButton("Remove Player")
         #self.open_btn = QPushButton("Open DKP File")
         #self.save_btn = QPushButton("Save DKP File")
         btnrow.addWidget(self.add_btn)
         btnrow.addWidget(self.award_btn)
         btnrow.addWidget(self.spend_btn)
-        btnrow.addWidget(self.beryl_btn)
         btnrow.addWidget(self.remove_btn)
         #btnrow.addWidget(self.open_btn)
         #btnrow.addWidget(self.save_btn)
@@ -129,12 +149,12 @@ class DKPManager(QWidget):
         
         
         # Table
-        app = QApplication.instance() or QApplication([])
-        SCROLLBAR_WIDTH = app.style().pixelMetric(QApplication.style().PM_ScrollBarExtent)        
+        
+        SCROLLBAR_WIDTH = get_scrollbar_width()
         self.table = QTableWidget(0, len(COL_WIDTH))        
         for col, width in enumerate(COL_WIDTH):
             self.table.setColumnWidth(col, width)
-        self.table.setHorizontalHeaderLabels(["#", "Class", "Name", "DKP", "Loot", "Beryl shard"])
+        self.table.setHorizontalHeaderLabels(["#", "Class", "Name", "DKP", "Loot"])
  
         for i in range(self.table.columnCount()):
             item = self.table.horizontalHeaderItem(i)
@@ -163,7 +183,6 @@ class DKPManager(QWidget):
         self.add_btn.clicked.connect(self.show_add_player)
         self.award_btn.clicked.connect(self.show_award_dkp)
         self.spend_btn.clicked.connect(self.show_spend_dkp)
-        self.beryl_btn.clicked.connect(self.show_add_beryl)
         self.remove_btn.clicked.connect(self.show_remove_player)
         self.dkp_hist_btn.clicked.connect(self.show_dkp_history)
         self.loot_hist_btn.clicked.connect(self.show_loot_history)
@@ -229,18 +248,25 @@ class DKPManager(QWidget):
         players = sorted(self.players.items(), key=lambda t: (-t[1].get("dkp", 0), t[0]))
         if selected_class != "--all--":
             players = [(name, p) for name, p in players if p.get("class") == selected_class]
+
         self.table.setRowCount(len(players))
+
         for row, (name, p) in enumerate(players):
-            self.table.setItem(row, 0, QTableWidgetItem(str(row + 1)))
-            # --- Class icon (local path)
+            # --- Column 0: rank number ---
+            num_item = QTableWidgetItem(str(row + 1))
+            num_item.setTextAlignment(Qt.AlignCenter)
+            self.table.setItem(row, 0, num_item)
+
+            # --- Column 1: class icon (local path) ---
             icon_path = self.class_icons.get(p.get("class", ""), "")
-            icon = get_icon(icon_path)
             citem = QTableWidgetItem()
-            citem.setIcon(icon)
+            citem.setIcon(get_icon(icon_path))
             citem.setText("")
+            citem.setTextAlignment(Qt.AlignCenter)
             self.table.setItem(row, 1, citem)
+
+            # --- Column 2: name + tooltip for twinks ---
             pname_item = QTableWidgetItem(name)
-            # --- Tooltip for twinks (with local class icons)
             twinks = p.get("Twinks", [])
             if twinks:
                 tt_lines = []
@@ -248,7 +274,6 @@ class DKPManager(QWidget):
                     tclass = t.get("class", "")
                     tname = t.get("name", "")
                     ticon_path = self.class_icons.get(tclass, "")
-                    icon_html = ""
                     if ticon_path and os.path.exists(ticon_path):
                         ticon = QPixmap(ticon_path).scaled(15, 15, Qt.KeepAspectRatio, Qt.SmoothTransformation)
                         ba = QByteArray()
@@ -256,7 +281,6 @@ class DKPManager(QWidget):
                         buffer.open(QBuffer.WriteOnly)
                         ticon.save(buffer, "PNG")
                         b64 = ba.toBase64().data().decode()
-                        # icon after name, a little lower
                         icon_html = f' <img src="data:image/png;base64,{b64}" width="15" height="15" style="vertical-align:middle; margin-bottom:+5px;">'
                     else:
                         icon_html = f" [{tclass}]"
@@ -264,32 +288,61 @@ class DKPManager(QWidget):
                 tooltip_html = "<b>Twinks:</b><br>" + "<br>".join(tt_lines)
                 pname_item.setToolTip(tooltip_html)
             self.table.setItem(row, 2, pname_item)
-            self.table.setItem(row, 3, QTableWidgetItem(str(p.get("dkp", 0))))
-            self.table.setItem(row, 5, QTableWidgetItem(str(p.get("beryl_shards", 0))))
-            # --- Loot icons (URLs!)
+
+            # --- Column 3: DKP ---
+            dkp_item = QTableWidgetItem(str(p.get("dkp", 0)))
+            dkp_item.setTextAlignment(Qt.AlignCenter)
+            self.table.setItem(row, 3, dkp_item)
+
+            # --- Column 4: Loot icons (URLs!) ---
             loot = p.get("loot", [])[-10:]
             loot_widget = QWidget()
+            loot_widget.setAttribute(Qt.WA_StyledBackground, True)  # allow bg color via stylesheet
             loot_hbox = QHBoxLayout(loot_widget)
             loot_hbox.setContentsMargins(8, 0, 0, 0)
             loot_hbox.setSpacing(2)
+
             for l in loot:
                 li = QLabel()
+                li.setAttribute(Qt.WA_TranslucentBackground)    # be explicit: no own background
+                li.setStyleSheet("background: transparent;")     # (some styles still need this)
                 icon_url = l.get("icon", "")
                 if icon_url:
                     li.setPixmap(get_icon(icon_url).pixmap(24, 24))
                 else:
                     li.setText("?")
-                # Date formatting
                 date_str = l.get("date", "")[:10]
                 tip = f"{l.get('name','') or l.get('item','')}\n{l.get('cost','')} DKP\n{date_str}"
                 li.setToolTip(tip)
                 loot_hbox.addWidget(li)
+
             loot_widget.setLayout(loot_hbox)
             self.table.setCellWidget(row, 4, loot_widget)
-            for col in [0, 1, 3, 5]:
-                item = self.table.item(row, col)
-                if item:
-                    item.setTextAlignment(Qt.AlignCenter)
+
+            # --- Clear any previous background styling for the whole row ---
+            for c in range(self.table.columnCount()):
+                it = self.table.item(row, c)
+                if it:
+                    it.setBackground(QBrush())
+            loot_w = self.table.cellWidget(row, 4)
+            if loot_w:
+                loot_w.setStyleSheet("")
+
+            # --- Apply row background color once, based on status ---
+            status = p.get("status", "")
+            qcol = color_for_status(status)
+            if qcol:
+                brush = QBrush(qcol)
+                for c in range(self.table.columnCount()):
+                    it = self.table.item(row, c)
+                    if it:
+                        it.setBackground(brush)
+                if loot_w:
+                    loot_w.setStyleSheet(
+                        f"background-color: rgba({qcol.red()},{qcol.green()},{qcol.blue()},{qcol.alpha()});"
+                        "border-radius: 4px; padding-left: 4px;"
+                    )
+        self.table.setAlternatingRowColors(False)  # avoid fighting the tint
         self.table.resizeRowsToContents()
 
     def show_add_player(self):
@@ -351,7 +404,7 @@ class DKPManager(QWidget):
                 # Normal main char add
                 if pname in self.players:
                     return
-                pdata = {"name": pname, "class": pcl, "dkp": 0, "loot": []}
+                pdata = {"name": pname, "class": pcl, "dkp": 0,"status": "open", "loot": []}
                 self.players[pname] = pdata
             elif twink_cb.isChecked():
                 main_name = main_dropdown.currentText()
@@ -386,41 +439,7 @@ class DKPManager(QWidget):
                 self.refresh_table()
                 self.save_dkp_file()
 
-    def show_add_beryl(self):
-        if not self.players:
-            QMessageBox.information(self, "Info", "No players.")
-            return
-        dlg = QDialog(self)
-        dlg.setWindowTitle("Add Beryl Shard")
-        v = QVBoxLayout(dlg)
-        label = QLabel("Players:")
-        v.addWidget(label)
-        playerlist = QListWidget()
-        playerlist.setSelectionMode(QListWidget.MultiSelection)
-        for pname in sorted(self.players):
-            item = QListWidgetItem(pname)
-            playerlist.addItem(item)
-        v.addWidget(playerlist)
-        count_label = QLabel("How many Beryl Shards?")
-        v.addWidget(count_label)
-        count_input = QSpinBox()
-        count_input.setMinimum(1)
-        count_input.setMaximum(99)
-        count_input.setValue(1)
-        v.addWidget(count_input)
-        btn = QPushButton("Add Beryl Shard(s)")
-        v.addWidget(btn)
-        btn.clicked.connect(dlg.accept)
-        if dlg.exec_():
-            count = count_input.value()
-            sel = playerlist.selectedItems()
-            for item in sel:
-                pname = item.text()
-                self.players[pname].setdefault("beryl_shards", 0)
-                self.players[pname]["beryl_shards"] += count
-            self.refresh_table()
-            self.save_dkp_file()
-
+    
 
     def show_award_dkp(self):
         if not self.players:
@@ -451,7 +470,7 @@ class DKPManager(QWidget):
             
         playerlist.itemSelectionChanged.connect(update_sel_counter)
         update_sel_counter
-        
+                
         # DKP amount
         dkp_label = QLabel("Add DKP:")
         v.addWidget(dkp_label)
@@ -597,20 +616,6 @@ class DKPManager(QWidget):
         layout.addWidget(QLabel(f"<b>Loot History (last {total_loot_rows} items):</b>"))
         layout.addWidget(loot_table)
 
-        # --- Beryl Shards section (main + twinks) ---
-        beryl_main = pdata.get("beryl_shards", 0)
-        beryl_twinks = []
-        for twink in pdata.get("Twinks", []):
-            tname = twink.get("name")
-            tberyl = 0
-            if tname in self.players:
-                tberyl = self.players[tname].get("beryl_shards", 0)
-            beryl_twinks.append((tname, tberyl))
-        beryl_info = f"<b>Beryl Shards:</b> {pname}: {beryl_main}"
-        if beryl_twinks:
-            beryl_info += " | " + " | ".join(f"{n}: {amt}" for n, amt in beryl_twinks)
-        layout.addWidget(QLabel(beryl_info))
-
         # --- DKP Awards section (main + twinks) ---
         # DKP awards are not per-date in your structure, just totals unless you store history.
         # Let's show current DKP, spent DKP, and total awarded (main + twinks)
@@ -654,7 +659,7 @@ class DKPManager(QWidget):
         # Set column widths
         for i, w in enumerate(COL_WIDTH_DKP):
             table.setColumnWidth(i, w)
-        SCROLLBAR_WIDTH = app.style().pixelMetric(QApplication.style().PM_ScrollBarExtent)
+        SCROLLBAR_WIDTH = get_scrollbar_width()
         table.setFixedWidth(sum(COL_WIDTH_DKP) + SCROLLBAR_WIDTH)
         table.setMinimumHeight(300)
         table.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
@@ -693,7 +698,7 @@ class DKPManager(QWidget):
         # Set column widths
         for i, w in enumerate(COL_WIDTH_LOOT):
             table.setColumnWidth(i, w)
-        SCROLLBAR_WIDTH = app.style().pixelMetric(QApplication.style().PM_ScrollBarExtent)
+        SCROLLBAR_WIDTH = get_scrollbar_width()
         table.setFixedWidth(sum(COL_WIDTH_LOOT) + SCROLLBAR_WIDTH)
         table.setMinimumHeight(300)
         table.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
