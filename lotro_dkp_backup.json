@@ -3440,7 +3440,7 @@
     "Pedesco(B,G,H)": {
       "name": "Pedesco",
       "class": "Minstrel",
-      "dkp": 670,
+      "dkp": 700,
       "status": "open",
       "loot": [
         {
@@ -3480,7 +3480,7 @@
           "name": "Storvâgûn's Emblem of Loyalty",
           "set": " ",
           "slot": " ",
-          "cost": 280,
+          "cost": 250,
           "date": "2025-11-09T22:11:51.948586"
         }
       ],
