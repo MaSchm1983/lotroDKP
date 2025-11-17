@@ -8,7 +8,7 @@ from PyQt5.QtCore import Qt, QSize, QByteArray, QBuffer
 
 # --- Utility: download and cache icons ---
 ICON_CACHE = {}
-COL_WIDTH = [40, 50, 100, 60, 300]
+COL_WIDTH = [40, 50, 100, 60, 300, 60]
 COL_WIDTH_DKP = [110, 120, 120]     # Player | Awarded | Spent (adjust as you like)
 COL_WIDTH_LOOT = [90, 110, 210]     # Date | Player | Item (Price)
 WIN_PAD = 28 # 14px left + 14px right, for example
@@ -60,7 +60,7 @@ def color_for_status(status: str):
     s = (status or "").strip().lower()
     if s == "done":
         # soft grey-blue with transparency
-        return QColor(100, 130, 195, 60)   # RGBA (alpha 0-255)
+        return QColor(0, 100, 225, 60)   # RGBA (alpha 0-255)www
     if s == "open":
         # lime-green-ish with transparency
         return QColor(50, 205, 50, 60)
@@ -69,6 +69,16 @@ def color_for_status(status: str):
         return QColor(0, 100, 225, 60)
     return None
 
+def activity_color_for_ratio(r: float) -> QColor:
+    """
+    r in [0,1]. Gibt eine kräftige RGBA-Farbe für die Ampel zurück.
+    Grün: >= 0.67, Gelb: >= 0.34, sonst Rot.
+    """
+    if r >= 2/4:
+        return QColor(50, 205, 50, 70)     # grün transparent
+    if r >= 1/4:
+        return QColor(255, 191, 0, 70)     # gelb/orange transparent
+    return QColor(220, 20, 60, 70)         # rot transparent
 
 # --- Main App ---
 class DKPManager(QWidget):
@@ -154,7 +164,7 @@ class DKPManager(QWidget):
         self.table = QTableWidget(0, len(COL_WIDTH))        
         for col, width in enumerate(COL_WIDTH):
             self.table.setColumnWidth(col, width)
-        self.table.setHorizontalHeaderLabels(["#", "Class", "Name", "DKP", "Loot"])
+        self.table.setHorizontalHeaderLabels(["#", "Class", "Name", "DKP", "Loot", "Active"])
  
         for i in range(self.table.columnCount()):
             item = self.table.horizontalHeaderItem(i)
@@ -210,6 +220,10 @@ class DKPManager(QWidget):
             with open(fn, "r", encoding="utf-8") as f:
                 data = json.load(f)
                 self.players = data["players"] if "players" in data else data
+                # MIGRATION: awards-Feld sicherstellen
+                for _pname, _pdata in self.players.items():
+                    if "awards" not in _pdata:
+                        _pdata["awards"] = []
                 self.dkp_history = data.get("DKP_HISTORY", [])
                 self.dkp_file_path = fn
         except Exception as e:
@@ -246,6 +260,26 @@ class DKPManager(QWidget):
         # --- FILTER logic at the start ---
         selected_class = self.filter_combo.currentText() if hasattr(self, 'filter_combo') else "--all--"
         players = sorted(self.players.items(), key=lambda t: (-t[1].get("dkp", 0), t[0]))
+        # --- Aktivitätsbasis: max. vergebene DKP über ALLE Spieler (nicht nur Filteransicht) ---
+        def total_awarded(pdata: dict) -> int:
+            return pdata.get("dkp", 0) + sum(l.get("cost", 0) for l in pdata.get("loot", []))
+
+        ref_name = "ActionMan"
+        ref_player = self.players.get(ref_name)
+
+        if ref_player is not None:
+            ref_value = total_awarded(ref_player)
+            # Fallback, falls ActionMan vorhanden ist, aber (noch) 0 hat
+            if ref_value <= 0:
+                all_awarded_values = [total_awarded(p) for p in self.players.values()] or [0]
+                max_awarded_overall = max(all_awarded_values) if all_awarded_values else 0
+            else:
+                max_awarded_overall = ref_value
+        else:
+            # Fallback, falls ActionMan nicht existiert
+            all_awarded_values = [total_awarded(p) for p in self.players.values()] or [0]
+            max_awarded_overall = max(all_awarded_values) if all_awarded_values else 0
+        
         if selected_class != "--all--":
             players = [(name, p) for name, p in players if p.get("class") == selected_class]
 
@@ -318,22 +352,16 @@ class DKPManager(QWidget):
 
             loot_widget.setLayout(loot_hbox)
             self.table.setCellWidget(row, 4, loot_widget)
-
-            # --- Clear any previous background styling for the whole row ---
-            for c in range(self.table.columnCount()):
-                it = self.table.item(row, c)
-                if it:
-                    it.setBackground(QBrush())
-            loot_w = self.table.cellWidget(row, 4)
-            if loot_w:
-                loot_w.setStyleSheet("")
-
+            
             # --- Apply row background color once, based on status ---
             status = p.get("status", "")
             qcol = color_for_status(status)
+            loot_w = self.table.cellWidget(row, 4)  # evtl. schon oben angelegt
             if qcol:
                 brush = QBrush(qcol)
                 for c in range(self.table.columnCount()):
+                    if c == 5:
+                        continue  # Active-Spalte NICHT mit Status übermalen
                     it = self.table.item(row, c)
                     if it:
                         it.setBackground(brush)
@@ -342,6 +370,59 @@ class DKPManager(QWidget):
                         f"background-color: rgba({qcol.red()},{qcol.green()},{qcol.blue()},{qcol.alpha()});"
                         "border-radius: 4px; padding-left: 4px;"
                     )
+                    
+            
+            
+            # Spalte 5 ("Active"): leeres Item anlegen, damit Hintergrundfarbe greift
+            active_item = self.table.item(row, 5)
+            if active_item is None:
+                active_item = QTableWidgetItem("")
+                active_item.setTextAlignment(Qt.AlignCenter)
+                active_item.setFlags(active_item.flags() & ~Qt.ItemIsEditable)
+                self.table.setItem(row, 5, active_item)
+            
+            # --- Aktivität nur in Spalte 5 ("Active") färben ---
+            awarded_this = p.get("dkp", 0) + sum(l.get("cost", 0) for l in p.get("loot", []))
+
+            # Wenn der Spieler KEINE Twinks hat, halbiere den Normalisierungs-Maximalwert
+            has_twinks = bool(p.get("Twinks"))
+            denom = float(max_awarded_overall) if has_twinks else float(max_awarded_overall) / 2.0
+
+            if denom <= 0:
+                ratio = 0.0
+            else:
+                ratio = awarded_this / denom
+                if ratio > 1.0:
+                    ratio = 1.0  # kappen
+
+            acol = activity_color_for_ratio(ratio)
+            pct = int(round(ratio * 100))
+            active_item = self.table.item(row, 5)  # existiert durch Schritt 1
+            if active_item:
+                # Hintergrundfarbe (Ampel)
+                active_item.setBackground(QBrush(acol))
+
+                # Text anzeigen, z. B. "75%"
+                #active_item.setText(f"{pct}%")
+                active_item.setText(f"{ratio*100:.1f}%")
+                active_item.setTextAlignment(Qt.AlignCenter)
+
+                # (optional) Lesbarkeit verbessern – etwas dunklere Schrift:
+                active_item.setForeground(QBrush(QColor(20, 20, 20)))
+
+                # Tooltip wie gehabt
+                if has_twinks:
+                    active_item.setToolTip(
+                        f"Aktivität: {pct}%\nAwarded: {awarded_this} / Max: {max_awarded_overall}"
+                    )
+                else:
+                    hint = " (Solo-Main: halbierte Basis)"
+                    active_item.setToolTip(
+                        f"Aktivität: {pct}%{hint}\nAwarded: {awarded_this} / Max: {max_awarded_overall/2}"
+                    )
+              
+                #active_item.setToolTip(f"Aktivität: {pct}%\nAwarded: {awarded_this} / Max: {max_awarded_overall}")
+            
         self.table.setAlternatingRowColors(False)  # avoid fighting the tint
         self.table.resizeRowsToContents()
 
@@ -404,7 +485,15 @@ class DKPManager(QWidget):
                 # Normal main char add
                 if pname in self.players:
                     return
-                pdata = {"name": pname, "class": pcl, "dkp": 0,"status": "open", "loot": []}
+                pdata = {
+                    "name": pname,
+                    "class": pcl,
+                    "dkp": 0,
+                    "status": "open",
+                    "awards": [],     # <-- NEU
+                    "loot": []
+                }               
+                #pdata = {"name": pname, "class": pcl, "dkp": 0,"status": "open", "loot": []}
                 self.players[pname] = pdata
             elif twink_cb.isChecked():
                 main_name = main_dropdown.currentText()
@@ -488,9 +577,19 @@ class DKPManager(QWidget):
         if dlg.exec_():
             pts = dkp_input.value()
             sel = playerlist.selectedItems()
+            # heutiges Datum im Format yyyy-mm-dd
+            from datetime import date
+            today_str = date.today().isoformat()  # -> 'YYYY-MM-DD'
             for item in sel:
                 pname = item.text()
                 self.players[pname]["dkp"] = self.players[pname].get("dkp",0) + pts
+                # awards-Liste sicherstellen (falls Altbestand)
+                awards = self.players[pname].setdefault("awards", [])
+                # Eintrag hinzufügen
+                awards.append({
+                    "date": today_str,
+                    "amount": int(pts)
+                })
             self.refresh_table()
             self.save_dkp_file()
 
