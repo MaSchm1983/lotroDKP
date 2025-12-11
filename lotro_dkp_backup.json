@@ -592,7 +592,7 @@
     },
     "Corcaroli(G)": {
       "class": "Minstrel",
-      "dkp": 350,
+      "dkp": 500,
       "status": "open",
       "loot": [
         {
@@ -804,26 +804,6 @@
           "slot": " ",
           "cost": 10,
           "date": "2025-12-07T19:59:10.853603"
-        },
-        {
-          "class": "Burglar",
-          "icon": "https://lotro-wiki.com/images/4/43/1090526841-1090519044-1091947416.png",
-          "level": 50,
-          "name": "Shadow-stalker Shoulders",
-          "set": "Shadow-stalker Armour",
-          "slot": "Shoulders",
-          "cost": 100,
-          "date": "2025-12-11T22:47:47.315222"
-        },
-        {
-          "class": "Misc",
-          "icon": "images/storvagun_qitem.png",
-          "level": 50,
-          "name": "Storvâgûn's Emblem of Loyalty",
-          "set": " ",
-          "slot": " ",
-          "cost": 50,
-          "date": "2025-12-11T22:48:00.985524"
         },
         {
           "class": "Misc",
@@ -4791,7 +4771,7 @@
     "Cordloin": {
       "name": "Cordloin",
       "class": "Burglar",
-      "dkp": 450,
+      "dkp": 300,
       "status": "open",
       "loot": [
         {
@@ -4883,6 +4863,26 @@
           "slot": " ",
           "cost": 20,
           "date": "2025-12-04T21:16:33.300093"
+        },        
+        {
+          "class": "Burglar",
+          "icon": "https://lotro-wiki.com/images/4/43/1090526841-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Shadow-stalker Shoulders",
+          "set": "Shadow-stalker Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2025-12-11T22:47:47.315222"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 50,
+          "date": "2025-12-11T22:48:00.985524"
         }
       ],
       "awards": [
