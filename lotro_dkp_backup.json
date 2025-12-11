@@ -2,7 +2,7 @@
   "players": {
     "Anax": {
       "class": "Loremaster",
-      "dkp": 670,
+      "dkp": 770,
       "status": "done",
       "loot": [
         {
@@ -262,6 +262,10 @@
         },
         {
           "date": "2025-12-07",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-11",
           "amount": 100
         }
       ]
@@ -588,7 +592,7 @@
     },
     "Corcaroli(G)": {
       "class": "Minstrel",
-      "dkp": 450,
+      "dkp": 350,
       "status": "open",
       "loot": [
         {
@@ -800,6 +804,36 @@
           "slot": " ",
           "cost": 10,
           "date": "2025-12-07T19:59:10.853603"
+        },
+        {
+          "class": "Burglar",
+          "icon": "https://lotro-wiki.com/images/4/43/1090526841-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Shadow-stalker Shoulders",
+          "set": "Shadow-stalker Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2025-12-11T22:47:47.315222"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 50,
+          "date": "2025-12-11T22:48:00.985524"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 50,
+          "date": "2025-12-11T22:49:36.358066"
         }
       ],
       "Twinks": [
@@ -856,6 +890,10 @@
         },
         {
           "date": "2025-12-07",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-11",
           "amount": 100
         }
       ]
@@ -1280,7 +1318,7 @@
     },
     "Galah": {
       "class": "Loremaster",
-      "dkp": 720,
+      "dkp": 820,
       "status": "done",
       "loot": [
         {
@@ -1414,6 +1452,10 @@
         },
         {
           "date": "2025-12-04",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-11",
           "amount": 100
         }
       ]
@@ -2084,7 +2126,7 @@
     },
     "Fake": {
       "class": "Minstrel",
-      "dkp": 100,
+      "dkp": 200,
       "status": "done",
       "loot": [
         {
@@ -2373,6 +2415,10 @@
         {
           "date": "2025-12-07",
           "amount": 100
+        },
+        {
+          "date": "2025-12-11",
+          "amount": 100
         }
       ]
     },
@@ -2432,7 +2478,7 @@
     },
     "Tero(B,G)": {
       "class": "Minstrel",
-      "dkp": 970,
+      "dkp": 560,
       "status": "open",
       "loot": [
         {
@@ -2504,6 +2550,36 @@
           "slot": " ",
           "cost": 90,
           "date": "2025-11-27T21:29:41.217467"
+        },
+        {
+          "class": "Guardian",
+          "icon": "https://lotro-wiki.com/images/6/65/1090526117-1090519044-1091947416.png",
+          "level": 50,
+          "name": "High-protector's Gloves",
+          "set": "High-protector's Armour",
+          "slot": "Gloves",
+          "cost": 170,
+          "date": "2025-12-11T22:48:29.073788"
+        },
+        {
+          "class": "Guardian",
+          "icon": "https://lotro-wiki.com/images/0/08/1090526120-1090519044-1091947416.png",
+          "level": 50,
+          "name": "High-protector's Helm",
+          "set": "High-protector's Armour",
+          "slot": "Helm",
+          "cost": 270,
+          "date": "2025-12-11T22:48:51.657265"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 70,
+          "date": "2025-12-11T22:49:08.034241"
         }
       ],
       "Twinks": [
@@ -2555,6 +2631,10 @@
         },
         {
           "date": "2025-12-04",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-11",
           "amount": 100
         }
       ]
@@ -3082,7 +3162,7 @@
     },
     "Lindn": {
       "class": "Hunter",
-      "dkp": 1150,
+      "dkp": 1250,
       "status": "done",
       "loot": [
         {
@@ -3297,6 +3377,10 @@
         {
           "date": "2025-12-07",
           "amount": 100
+        },
+        {
+          "date": "2025-12-11",
+          "amount": 100
         }
       ]
     },
@@ -3467,7 +3551,7 @@
     "Rocco": {
       "name": "Rocco",
       "class": "Minstrel",
-      "dkp": 740,
+      "dkp": 830,
       "status": "done",
       "loot": [
         {
@@ -3549,6 +3633,16 @@
           "slot": " ",
           "cost": 0,
           "date": "2025-11-20T00:11:42.812446"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 10,
+          "date": "2025-12-11T22:49:23.430744"
         }
       ],
       "beryl_shards": 3,
@@ -3585,6 +3679,10 @@
         },
         {
           "date": "2025-12-07",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-11",
           "amount": 100
         }
       ]
@@ -3810,7 +3908,7 @@
     "Rosita": {
       "name": "Rosita",
       "class": "Captain",
-      "dkp": 960,
+      "dkp": 990,
       "status": "done",
       "loot": [
         {
@@ -4002,6 +4100,16 @@
           "slot": "Gloves",
           "cost": 210,
           "date": "2025-12-07T20:23:39.912954"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 70,
+          "date": "2025-12-11T22:49:47.099957"
         }
       ],
       "beryl_shards": 2,
@@ -4067,13 +4175,17 @@
         {
           "date": "2025-12-07",
           "amount": 100
+        },
+        {
+          "date": "2025-12-11",
+          "amount": 100
         }
       ]
     },
     "Slania(S)": {
       "name": "Slania",
       "class": "Champion",
-      "dkp": 1100,
+      "dkp": 1200,
       "status": "open",
       "loot": [
         {
@@ -4144,6 +4256,10 @@
         {
           "date": "2025-12-07",
           "amount": 100
+        },
+        {
+          "date": "2025-12-11",
+          "amount": 100
         }
       ]
     },
@@ -4180,7 +4296,7 @@
     "Boscgard": {
       "name": "Boscgard",
       "class": "Guardian",
-      "dkp": 330,
+      "dkp": 430,
       "status": "done",
       "loot": [
         {
@@ -4377,6 +4493,10 @@
         {
           "date": "2025-12-07",
           "amount": 100
+        },
+        {
+          "date": "2025-12-11",
+          "amount": 100
         }
       ]
     },
@@ -4392,7 +4512,7 @@
     "Maf(G)": {
       "name": "Maf",
       "class": "Captain",
-      "dkp": 1330,
+      "dkp": 1430,
       "status": "open",
       "loot": [
         {
@@ -4497,6 +4617,10 @@
         {
           "date": "2025-12-07",
           "amount": 100
+        },
+        {
+          "date": "2025-12-11",
+          "amount": 100
         }
       ]
     },
@@ -4548,7 +4672,7 @@
     "Pedesco(B,G)": {
       "name": "Pedesco",
       "class": "Minstrel",
-      "dkp": 1400,
+      "dkp": 1500,
       "status": "open",
       "loot": [
         {
@@ -4651,6 +4775,10 @@
         {
           "date": "2025-12-07",
           "amount": 100
+        },
+        {
+          "date": "2025-12-11",
+          "amount": 100
         }
       ],
       "Twinks": [
@@ -4663,7 +4791,7 @@
     "Cordloin": {
       "name": "Cordloin",
       "class": "Burglar",
-      "dkp": 350,
+      "dkp": 450,
       "status": "open",
       "loot": [
         {
@@ -4797,6 +4925,10 @@
         {
           "date": "2025-12-07",
           "amount": 100
+        },
+        {
+          "date": "2025-12-11",
+          "amount": 100
         }
       ]
     },
@@ -4811,7 +4943,7 @@
     "Taradan": {
       "name": "Taradan",
       "class": "Captain",
-      "dkp": 300,
+      "dkp": 400,
       "status": "open",
       "awards": [
         {
@@ -4832,6 +4964,10 @@
         },
         {
           "date": "2025-12-04",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-11",
           "amount": 100
         }
       ],
