@@ -1,4 +1,5 @@
 import sys, json, os, requests
+from datetime import date, timedelta
 from PyQt5.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QHBoxLayout, QTableWidget, QTableWidgetItem,
     QPushButton, QDialog, QLineEdit, QLabel, QComboBox, QMessageBox, QSpinBox, QFileDialog, QListWidget, QListWidgetItem, QCheckBox
@@ -8,7 +9,7 @@ from PyQt5.QtCore import Qt, QSize, QByteArray, QBuffer
 
 # --- Utility: download and cache icons ---
 ICON_CACHE = {}
-COL_WIDTH = [40, 50, 100, 60, 300, 60]
+COL_WIDTH = [40, 50, 120, 60, 300, 80]
 COL_WIDTH_DKP = [110, 120, 120]     # Player | Awarded | Spent (adjust as you like)
 COL_WIDTH_LOOT = [90, 110, 210]     # Date | Player | Item (Price)
 WIN_PAD = 28 # 14px left + 14px right, for example
@@ -74,9 +75,9 @@ def activity_color_for_ratio(r: float) -> QColor:
     r in [0,1]. Gibt eine kräftige RGBA-Farbe für die Ampel zurück.
     Grün: >= 0.67, Gelb: >= 0.34, sonst Rot.
     """
-    if r >= 2/4:
+    if r >= 2/3:
         return QColor(50, 205, 50, 70)     # grün transparent
-    if r >= 1/4:
+    if r >= 1/3:
         return QColor(255, 191, 0, 70)     # gelb/orange transparent
     return QColor(220, 20, 60, 70)         # rot transparent
 
@@ -181,6 +182,11 @@ class DKPManager(QWidget):
         self.table.cellClicked.connect(self.on_table_cell_clicked)
         vbox.addWidget(self.table)
         
+        self.activity_note_label = QLabel("")
+        self.activity_note_label.setStyleSheet("font-size: 9px; color: gray;")
+        self.activity_note_label.setVisible(False)
+        vbox.addWidget(self.activity_note_label)
+        
         # History buttons row
         hist_btn_row = QHBoxLayout()
         self.dkp_hist_btn = QPushButton("Show DKP History")
@@ -260,31 +266,55 @@ class DKPManager(QWidget):
         # --- FILTER logic at the start ---
         selected_class = self.filter_combo.currentText() if hasattr(self, 'filter_combo') else "--all--"
         players = sorted(self.players.items(), key=lambda t: (-t[1].get("dkp", 0), t[0]))
-        # --- Aktivitätsbasis: max. vergebene DKP über ALLE Spieler (nicht nur Filteransicht) ---
-        def total_awarded(pdata: dict) -> int:
-            return pdata.get("dkp", 0) + sum(l.get("cost", 0) for l in pdata.get("loot", []))
 
-        ref_name = "ActionMan"
-        ref_player = self.players.get(ref_name)
+        # --------- NEW: dynamic window + calendar Thu/Sun raids ---------
+        today = date.today()
 
-        if ref_player is not None:
-            ref_value = total_awarded(ref_player)
-            # Fallback, falls ActionMan vorhanden ist, aber (noch) 0 hat
-            if ref_value <= 0:
-                all_awarded_values = [total_awarded(p) for p in self.players.values()] or [0]
-                max_awarded_overall = max(all_awarded_values) if all_awarded_values else 0
-            else:
-                max_awarded_overall = ref_value
+        # --- determine last raid day (last Thu or Sun up to today) ---
+        last_raid_day = today
+        while last_raid_day.weekday() not in (3, 6):  # Thu=3, Sun=6
+            last_raid_day -= timedelta(days=1)
+
+        # find earliest award date (if any)
+        earliest = None
+        for pdata in self.players.values():
+            for aw in pdata.get("awards", []):
+                dstr = aw.get("date", "")
+                if not dstr:
+                    continue
+                try:
+                    d = date.fromisoformat(dstr[:10])
+                except ValueError:
+                    continue
+                if earliest is None or d < earliest:
+                    earliest = d
+
+        if earliest is None:
+            raid_dates = []
         else:
-            # Fallback, falls ActionMan nicht existiert
-            all_awarded_values = [total_awarded(p) for p in self.players.values()] or [0]
-            max_awarded_overall = max(all_awarded_values) if all_awarded_values else 0
-        
+            # dynamic start: at most 8 weeks back, but not before earliest award
+            eight_weeks_ago = last_raid_day - timedelta(weeks=8)
+            window_start = max(eight_weeks_ago, earliest)
+
+            # build all calendar Thursdays/Sundays between window_start and last_raid_day
+            raid_dates = []
+            cur = window_start
+            while cur <= last_raid_day:
+                if cur.weekday() in (3, 6):  # Thu=3, Sun=6
+                    raid_dates.append(cur)
+                cur += timedelta(days=1)
+
+        raid_dates_set = set(raid_dates)
+        total_raids = len(raid_dates)
+
+        # --------------------------------------------------------------    
+
         if selected_class != "--all--":
             players = [(name, p) for name, p in players if p.get("class") == selected_class]
 
         self.table.setRowCount(len(players))
 
+        solo_mains_present = False
         for row, (name, p) in enumerate(players):
             # --- Column 0: rank number ---
             num_item = QTableWidgetItem(str(row + 1))
@@ -300,7 +330,13 @@ class DKPManager(QWidget):
             self.table.setItem(row, 1, citem)
 
             # --- Column 2: name + tooltip for twinks ---
-            pname_item = QTableWidgetItem(name)
+            has_twinks = bool(p.get("Twinks"))
+            display_name = name + ("*" if not has_twinks else "")
+            pname_item = QTableWidgetItem(display_name)
+
+            # store the real name in UserRole so logic can still find the player
+            pname_item.setData(Qt.UserRole, name)
+
             twinks = p.get("Twinks", [])
             if twinks:
                 tt_lines = []
@@ -321,6 +357,10 @@ class DKPManager(QWidget):
                     tt_lines.append(f"{idx}. {tname}{icon_html}")
                 tooltip_html = "<b>Twinks:</b><br>" + "<br>".join(tt_lines)
                 pname_item.setToolTip(tooltip_html)
+
+            if not has_twinks:
+                solo_mains_present = True
+
             self.table.setItem(row, 2, pname_item)
 
             # --- Column 3: DKP ---
@@ -356,7 +396,7 @@ class DKPManager(QWidget):
             # --- Apply row background color once, based on status ---
             status = p.get("status", "")
             qcol = color_for_status(status)
-            loot_w = self.table.cellWidget(row, 4)  # evtl. schon oben angelegt
+            loot_w = self.table.cellWidget(row, 4)
             if qcol:
                 brush = QBrush(qcol)
                 for c in range(self.table.columnCount()):
@@ -370,8 +410,6 @@ class DKPManager(QWidget):
                         f"background-color: rgba({qcol.red()},{qcol.green()},{qcol.blue()},{qcol.alpha()});"
                         "border-radius: 4px; padding-left: 4px;"
                     )
-                    
-            
             
             # Spalte 5 ("Active"): leeres Item anlegen, damit Hintergrundfarbe greift
             active_item = self.table.item(row, 5)
@@ -380,49 +418,74 @@ class DKPManager(QWidget):
                 active_item.setTextAlignment(Qt.AlignCenter)
                 active_item.setFlags(active_item.flags() & ~Qt.ItemIsEditable)
                 self.table.setItem(row, 5, active_item)
-            
-            # --- Aktivität nur in Spalte 5 ("Active") färben ---
-            awarded_this = p.get("dkp", 0) + sum(l.get("cost", 0) for l in p.get("loot", []))
 
-            # Wenn der Spieler KEINE Twinks hat, halbiere den Normalisierungs-Maximalwert
-            has_twinks = bool(p.get("Twinks"))
-            denom = float(max_awarded_overall) if has_twinks else float(max_awarded_overall) / 2.0
-
-            if denom <= 0:
+            # --- Activity in Spalte 5 ("Active") based on raid attendance ---
+            if total_raids == 0:
                 ratio = 0.0
+                joined_count = 0
             else:
-                ratio = awarded_this / denom
+                joined_dates = set()
+
+                # for faster search, raid_dates is sorted ascending already
+                for aw in p.get("awards", []):
+                    dstr = aw.get("date", "")
+                    if not dstr:
+                        continue
+                    try:
+                        d_aw = date.fromisoformat(dstr[:10])
+                    except ValueError:
+                        continue
+
+                    # find the latest raid_date <= award date, with max 2 days distance
+                    # this covers "award on Monday for Sunday raid", or "Friday for Thursday raid"
+                    for rd in reversed(raid_dates):
+                        if rd <= d_aw and (d_aw - rd).days <= 2:
+                            joined_dates.add(rd)
+                            break  # stop after mapping this award to one raid
+
+                joined_count = len(joined_dates)
+                # --- NEW: solo mains use half the raid base ---
+                has_twinks = bool(p.get("Twinks"))
+                if has_twinks:
+                    denom_raids = float(total_raids)
+                else:
+                    # half the raids; avoid division by 0
+                    denom_raids = max(float(total_raids) / 2.0, 1.0)
+
+                ratio = joined_count / denom_raids
                 if ratio > 1.0:
-                    ratio = 1.0  # kappen
+                    ratio = 1.0  # cap at 100%
 
             acol = activity_color_for_ratio(ratio)
             pct = int(round(ratio * 100))
-            active_item = self.table.item(row, 5)  # existiert durch Schritt 1
+            active_item = self.table.item(row, 5)
             if active_item:
-                # Hintergrundfarbe (Ampel)
                 active_item.setBackground(QBrush(acol))
-
-                # Text anzeigen, z. B. "75%"
-                #active_item.setText(f"{pct}%")
-                active_item.setText(f"{ratio*100:.1f}%")
-                active_item.setTextAlignment(Qt.AlignCenter)
-
-                # (optional) Lesbarkeit verbessern – etwas dunklere Schrift:
-                active_item.setForeground(QBrush(QColor(20, 20, 20)))
-
-                # Tooltip wie gehabt
-                if has_twinks:
-                    active_item.setToolTip(
-                        f"Aktivität: {pct}%\nAwarded: {awarded_this} / Max: {max_awarded_overall}"
-                    )
+                # show BOTH count and percent so you *see* the difference
+                if total_raids == 0:
+                    active_item.setText("0%")
+                    active_item.setToolTip("No raids (Do/So) in the tracked period yet.")
                 else:
-                    hint = " (Solo-Main: halbierte Basis)"
+                    #active_item.setText(f"{joined_count}/{total_raids} ({pct}%)")
+                    active_item.setText(f"{pct}%")
                     active_item.setToolTip(
-                        f"Aktivität: {pct}%{hint}\nAwarded: {awarded_this} / Max: {max_awarded_overall/2}"
+                        f"Aktivität:{joined_count} / {total_raids} {pct}%\n"
+                        f"Raids besucht: {joined_count} / {total_raids}\n"
+                        f"(Do+So, dynamisches Fenster bis max. 8 Wochen)"
                     )
-              
-                #active_item.setToolTip(f"Aktivität: {pct}%\nAwarded: {awarded_this} / Max: {max_awarded_overall}")
-            
+                active_item.setTextAlignment(Qt.AlignCenter)
+                active_item.setForeground(QBrush(QColor(20, 20, 20)))
+                
+        # Update footnote visibility/text
+        if hasattr(self, "activity_note_label"):
+            if solo_mains_present:
+                self.activity_note_label.setText(
+                    "* activity calculated with only one possible raid attendance per week and thus referencing to half of the max raids"
+                )
+                self.activity_note_label.setVisible(True)
+            else:
+                self.activity_note_label.setVisible(False)          
+
         self.table.setAlternatingRowColors(False)  # avoid fighting the tint
         self.table.resizeRowsToContents()
 
@@ -647,9 +710,15 @@ class DKPManager(QWidget):
         item = self.table.item(row, col)
         if not item:
             return
-        pname = item.text()
+
+        # Prefer the stored real name; fallback strips asterisk if needed
+        pname = item.data(Qt.UserRole)
+        if not pname:
+            pname = item.text().rstrip("*").strip()
+
         if pname not in self.players:
             return
+
         self.show_player_loot_popup(pname)
         
     def show_player_loot_popup(self, pname):
