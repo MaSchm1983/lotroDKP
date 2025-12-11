@@ -374,6 +374,14 @@
         "slot": " ",
         "name": "Single Use Recipe",
         "icon": "images/single_use_recipe.png"
+    },
+    {
+        "class": "Misc",
+        "set": " ",
+        "level": 50,
+        "slot": " ",
+        "name": "Gilnor",
+        "icon": "images/Gilnor.png"
     }
 
 ]
