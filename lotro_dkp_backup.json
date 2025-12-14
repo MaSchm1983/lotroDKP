@@ -2,7 +2,7 @@
   "players": {
     "Anax": {
       "class": "Loremaster",
-      "dkp": 770,
+      "dkp": 870,
       "status": "done",
       "loot": [
         {
@@ -267,12 +267,16 @@
         {
           "date": "2025-12-11",
           "amount": 100
+        },
+        {
+          "date": "2025-12-14",
+          "amount": 100
         }
       ]
     },
     "Amphy(B,S)": {
       "class": "Burglar",
-      "dkp": 640,
+      "dkp": 740,
       "status": "open",
       "loot": [
         {
@@ -501,6 +505,10 @@
         {
           "date": "2025-11-30",
           "amount": 100
+        },
+        {
+          "date": "2025-12-14",
+          "amount": 100
         }
       ]
     },
@@ -592,7 +600,7 @@
     },
     "Corcaroli(G)": {
       "class": "Minstrel",
-      "dkp": 500,
+      "dkp": 600,
       "status": "open",
       "loot": [
         {
@@ -874,6 +882,10 @@
         },
         {
           "date": "2025-12-11",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-14",
           "amount": 100
         }
       ]
@@ -2106,7 +2118,7 @@
     },
     "Fake": {
       "class": "Minstrel",
-      "dkp": 200,
+      "dkp": 290,
       "status": "done",
       "loot": [
         {
@@ -2338,6 +2350,16 @@
           "slot": "Boots",
           "cost": 390,
           "date": "2025-12-07T20:43:03.362886"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 10,
+          "date": "2025-12-14T22:30:57.849734"
         }
       ],
       "beryl_shards": 3,
@@ -2399,6 +2421,10 @@
         {
           "date": "2025-12-11",
           "amount": 100
+        },
+        {
+          "date": "2025-12-14",
+          "amount": 100
         }
       ]
     },
@@ -2458,7 +2484,7 @@
     },
     "Tero(B,G)": {
       "class": "Minstrel",
-      "dkp": 560,
+      "dkp": 460,
       "status": "open",
       "loot": [
         {
@@ -2560,6 +2586,16 @@
           "slot": " ",
           "cost": 70,
           "date": "2025-12-11T22:49:08.034241"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "https://lotro-wiki.com/images/5/53/1090527325-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Silver-voice Shoulders",
+          "set": "Silver-voice Armour",
+          "slot": "Shoulders",
+          "cost": 200,
+          "date": "2025-12-14T22:30:42.607587"
         }
       ],
       "Twinks": [
@@ -2615,6 +2651,10 @@
         },
         {
           "date": "2025-12-11",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-14",
           "amount": 100
         }
       ]
@@ -2757,7 +2797,7 @@
     },
     "Torray(S)": {
       "class": "Guardian",
-      "dkp": 820,
+      "dkp": 920,
       "status": "open",
       "loot": [
         {
@@ -2899,6 +2939,10 @@
         },
         {
           "date": "2025-12-07",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-14",
           "amount": 100
         }
       ]
@@ -3076,7 +3120,7 @@
     },
     "Ionraen": {
       "class": "Captain",
-      "dkp": 680,
+      "dkp": 780,
       "status": "open",
       "loot": [
         {
@@ -3137,12 +3181,16 @@
         {
           "date": "2025-11-27",
           "amount": 100
+        },
+        {
+          "date": "2025-12-14",
+          "amount": 100
         }
       ]
     },
     "Lindn": {
       "class": "Hunter",
-      "dkp": 1250,
+      "dkp": 1350,
       "status": "done",
       "loot": [
         {
@@ -3360,6 +3408,10 @@
         },
         {
           "date": "2025-12-11",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-14",
           "amount": 100
         }
       ]
@@ -3888,7 +3940,7 @@
     "Rosita": {
       "name": "Rosita",
       "class": "Captain",
-      "dkp": 990,
+      "dkp": 1090,
       "status": "done",
       "loot": [
         {
@@ -4158,6 +4210,10 @@
         },
         {
           "date": "2025-12-11",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-14",
           "amount": 100
         }
       ]
@@ -4492,7 +4548,7 @@
     "Maf(G)": {
       "name": "Maf",
       "class": "Captain",
-      "dkp": 1430,
+      "dkp": 1220,
       "status": "open",
       "loot": [
         {
@@ -4544,6 +4600,16 @@
           "slot": "Boots",
           "cost": 1270,
           "date": "2025-10-31T13:24:54.143304"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "https://lotro-wiki.com/images/8/8f/1090520031-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Beast-master Gloves",
+          "set": "Beast-master Armour",
+          "slot": "Gloves",
+          "cost": 310,
+          "date": "2025-12-14T22:31:26.801633"
         }
       ],
       "beryl_shards": 2,
@@ -4601,6 +4667,10 @@
         {
           "date": "2025-12-11",
           "amount": 100
+        },
+        {
+          "date": "2025-12-14",
+          "amount": 100
         }
       ]
     },
@@ -4652,7 +4722,7 @@
     "Pedesco(B,G)": {
       "name": "Pedesco",
       "class": "Minstrel",
-      "dkp": 1500,
+      "dkp": 1600,
       "status": "open",
       "loot": [
         {
@@ -4759,6 +4829,10 @@
         {
           "date": "2025-12-11",
           "amount": 100
+        },
+        {
+          "date": "2025-12-14",
+          "amount": 100
         }
       ],
       "Twinks": [
@@ -4771,7 +4845,7 @@
     "Cordloin": {
       "name": "Cordloin",
       "class": "Burglar",
-      "dkp": 300,
+      "dkp": 400,
       "status": "open",
       "loot": [
         {
@@ -4863,7 +4937,7 @@
           "slot": " ",
           "cost": 20,
           "date": "2025-12-04T21:16:33.300093"
-        },        
+        },
         {
           "class": "Burglar",
           "icon": "https://lotro-wiki.com/images/4/43/1090526841-1090519044-1091947416.png",
@@ -4928,6 +5002,10 @@
         },
         {
           "date": "2025-12-11",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-14",
           "amount": 100
         }
       ]
