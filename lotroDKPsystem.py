@@ -15,6 +15,17 @@ COL_WIDTH_LOOT = [90, 110, 210]     # Date | Player | Item (Price)
 WIN_PAD = 28 # 14px left + 14px right, for example
 #SCROLLBAR_WIDTH = 20 
 
+# --- Raid tactic switch ---
+# 2 = two raids/week (Thu+Sun) -> wie bisher
+# 1 = one raid/week (Sun only) -> neue Logik
+RAID_TACT = 1
+
+# --- Christmas break (Sundays between these dates are NOT counted) ---
+# "zwischen 14. Dezember (letzter Raid) und 11. Januar (letzter Raid)"
+# => wir schließen strikt aus: (Dec 14, Jan 11), d.h. Dec 14 & Jan 11 zählen, dazwischen nicht.
+CHRISTMAS_BREAK_DEC14 = (12, 14)
+CHRISTMAS_BREAK_JAN11 = (1, 11)
+
 
 def get_scrollbar_width():
     app = QApplication.instance()
@@ -194,6 +205,8 @@ class DKPManager(QWidget):
         hist_btn_row.addWidget(self.dkp_hist_btn)
         hist_btn_row.addWidget(self.loot_hist_btn)
         vbox.addLayout(hist_btn_row)
+        self.dkp_log_btn = QPushButton("Show DKP Award Log")
+        hist_btn_row.addWidget(self.dkp_log_btn)
 
         # Connect buttons
         self.add_btn.clicked.connect(self.show_add_player)
@@ -202,6 +215,7 @@ class DKPManager(QWidget):
         self.remove_btn.clicked.connect(self.show_remove_player)
         self.dkp_hist_btn.clicked.connect(self.show_dkp_history)
         self.loot_hist_btn.clicked.connect(self.show_loot_history)
+        self.dkp_log_btn.clicked.connect(self.show_dkp_award_log)
         #self.open_btn.clicked.connect(self.open_dkp_file)
         #self.save_btn.clicked.connect(self.save_dkp_file)
         
@@ -267,12 +281,18 @@ class DKPManager(QWidget):
         selected_class = self.filter_combo.currentText() if hasattr(self, 'filter_combo') else "--all--"
         players = sorted(self.players.items(), key=lambda t: (-t[1].get("dkp", 0), t[0]))
 
-        # --------- NEW: dynamic window + calendar Thu/Sun raids ---------
+        # --------- Activity window + raid calendar (depends on RAID_TACT) ---------
         today = date.today()
 
-        # --- determine last raid day (last Thu or Sun up to today) ---
+        def is_raid_day(d: date) -> bool:
+            if RAID_TACT == 2:
+                return d.weekday() in (3, 6)  # Thu=3, Sun=6
+            # RAID_TACT == 1
+            return d.weekday() == 6          # Sun only
+
+        # --- determine last raid day (last eligible raid day up to today) ---
         last_raid_day = today
-        while last_raid_day.weekday() not in (3, 6):  # Thu=3, Sun=6
+        while not is_raid_day(last_raid_day):
             last_raid_day -= timedelta(days=1)
 
         # find earliest award date (if any)
@@ -296,12 +316,25 @@ class DKPManager(QWidget):
             eight_weeks_ago = last_raid_day - timedelta(weeks=8)
             window_start = max(eight_weeks_ago, earliest)
 
-            # build all calendar Thursdays/Sundays between window_start and last_raid_day
+            # --- pick the relevant Dec14->Jan11 window that overlaps our timeframe ---
+            pause_start = pause_end = None
+            for y in (last_raid_day.year - 1, last_raid_day.year):
+                ps = date(y, CHRISTMAS_BREAK_DEC14[0], CHRISTMAS_BREAK_DEC14[1])
+                pe = date(y + 1, CHRISTMAS_BREAK_JAN11[0], CHRISTMAS_BREAK_JAN11[1])
+                if pe >= window_start and ps <= last_raid_day:
+                    pause_start, pause_end = ps, pe
+                    break
+
+            # build raid dates between window_start and last_raid_day
             raid_dates = []
             cur = window_start
             while cur <= last_raid_day:
-                if cur.weekday() in (3, 6):  # Thu=3, Sun=6
-                    raid_dates.append(cur)
+                if is_raid_day(cur):
+                    # christmas break: exclude SUNDAYS strictly between Dec14 and Jan11
+                    if pause_start and cur.weekday() == 6 and (pause_start < cur < pause_end):
+                        pass
+                    else:
+                        raid_dates.append(cur)
                 cur += timedelta(days=1)
 
         raid_dates_set = set(raid_dates)
@@ -444,13 +477,14 @@ class DKPManager(QWidget):
                             break  # stop after mapping this award to one raid
 
                 joined_count = len(joined_dates)
-                # --- NEW: solo mains use half the raid base ---
                 has_twinks = bool(p.get("Twinks"))
-                if has_twinks:
-                    denom_raids = float(total_raids)
+
+                if RAID_TACT == 2:
+                    # wie bisher: solo mains "halbe raid base"
+                    denom_raids = float(total_raids) if has_twinks else max(float(total_raids) / 2.0, 1.0)
                 else:
-                    # half the raids; avoid division by 0
-                    denom_raids = max(float(total_raids) / 2.0, 1.0)
+                    # RAID_TACT == 1: alle gleich behandeln (weil nur ein Raid/Woche)
+                    denom_raids = max(float(total_raids), 1.0)
 
                 ratio = joined_count / denom_raids
                 if ratio > 1.0:
@@ -896,6 +930,60 @@ class DKPManager(QWidget):
         close_btn.clicked.connect(dlg.accept)
         layout.addWidget(close_btn)     
         dlg.setFixedWidth(sum(COL_WIDTH_LOOT) + WIN_PAD + SCROLLBAR_WIDTH)
+        dlg.exec_()
+
+    def show_dkp_award_log(self):
+        dlg = QDialog(self)
+        dlg.setWindowTitle("DKP Award Log")
+        layout = QVBoxLayout(dlg)
+
+        table = QTableWidget(0, 3, dlg)
+        table.setHorizontalHeaderLabels(["Player", "Date", "DKP"])
+        table.verticalHeader().setVisible(False)
+        table.setEditTriggers(table.NoEditTriggers)
+        table.setSelectionMode(table.NoSelection)
+
+        # Column widths (feel free to tweak)
+        col_widths = [160, 110, 80]
+        for i, w in enumerate(col_widths):
+            table.setColumnWidth(i, w)
+
+        SCROLLBAR_WIDTH = get_scrollbar_width()
+        table.setFixedWidth(sum(col_widths) + SCROLLBAR_WIDTH)
+        table.setMinimumHeight(350)
+        table.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+        table.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+
+        # Collect all award rows
+        rows = []
+        for pname, p in self.players.items():
+            for aw in p.get("awards", []):
+                dstr = (aw.get("date") or "")[:10]
+                amt = aw.get("amount", 0)
+                rows.append((dstr, pname, amt))
+
+        # Sort newest first by date string (YYYY-MM-DD works lexicographically)
+        rows.sort(key=lambda x: x[0], reverse=True)
+
+        # Fill table
+        for dstr, pname, amt in rows:
+            r = table.rowCount()
+            table.insertRow(r)
+            table.setItem(r, 0, QTableWidgetItem(pname))
+            table.setItem(r, 1, QTableWidgetItem(dstr))
+            table.setItem(r, 2, QTableWidgetItem(str(amt)))
+
+            table.item(r, 0).setTextAlignment(Qt.AlignCenter)
+            table.item(r, 1).setTextAlignment(Qt.AlignCenter)
+            table.item(r, 2).setTextAlignment(Qt.AlignCenter)
+
+        layout.addWidget(table)
+
+        close_btn = QPushButton("Close")
+        close_btn.clicked.connect(dlg.accept)
+        layout.addWidget(close_btn)
+
+        dlg.setFixedWidth(sum(col_widths) + WIN_PAD + SCROLLBAR_WIDTH)
         dlg.exec_()
 
 if __name__ == "__main__":
