@@ -704,7 +704,7 @@
     },
     "Corcaroli(G)": {
       "class": "Minstrel",
-      "dkp": 780,
+      "dkp": 810,
       "status": "open",
       "loot": [
         {
@@ -956,6 +956,16 @@
           "slot": " ",
           "cost": 50,
           "date": "2026-02-01T20:17:29.501220"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 70,
+          "date": "2026-02-15T22:12:45.283386"
         }
       ],
       "Twinks": [
@@ -1037,12 +1047,16 @@
         {
           "date": "2026-02-01",
           "amount": 100
+        },
+        {
+          "date": "2026-02-15",
+          "amount": 100
         }
       ]
     },
     "Deladora": {
       "class": "Hunter",
-      "dkp": 800,
+      "dkp": 900,
       "status": "done",
       "loot": [
         {
@@ -1309,12 +1323,16 @@
         {
           "date": "2026-02-01",
           "amount": 100
+        },
+        {
+          "date": "2026-02-15",
+          "amount": 100
         }
       ]
     },
     "Feren": {
       "class": "Guardian",
-      "dkp": 510,
+      "dkp": 610,
       "status": "done",
       "loot": [
         {
@@ -1492,6 +1510,10 @@
         },
         {
           "date": "2026-02-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-15",
           "amount": 100
         }
       ]
@@ -1750,7 +1772,7 @@
     },
     "Harra": {
       "class": "Captain",
-      "dkp": 580,
+      "dkp": 280,
       "status": "done",
       "loot": [
         {
@@ -1892,6 +1914,26 @@
           "slot": "Helm",
           "cost": 200,
           "date": "2026-02-01T21:19:50.000320"
+        },
+        {
+          "class": "Champion",
+          "icon": "https://lotro-wiki.com/images/b/be/1090527666-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Dragon-scale Gloves",
+          "set": "Dragon-scale Armour",
+          "slot": "Gloves",
+          "cost": 250,
+          "date": "2026-02-15T21:35:26.212987"
+        },
+        {
+          "class": "Champion",
+          "icon": "https://lotro-wiki.com/images/1/15/1090525163-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Dragon-scale Helm",
+          "set": "Dragon-scale Armour",
+          "slot": "Helm",
+          "cost": 150,
+          "date": "2026-02-15T22:08:19.536457"
         }
       ],
       "beryl_shards": 4,
@@ -1964,6 +2006,10 @@
         },
         {
           "date": "2026-02-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-15",
           "amount": 100
         }
       ]
@@ -2352,7 +2398,7 @@
     },
     "Fake": {
       "class": "Minstrel",
-      "dkp": 690,
+      "dkp": 790,
       "status": "done",
       "loot": [
         {
@@ -2674,6 +2720,10 @@
         },
         {
           "date": "2026-02-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-15",
           "amount": 100
         }
       ]
@@ -3073,10 +3123,10 @@
         }
       ]
     },
-    "Torray(S)": {
+    "Torray": {
       "class": "Guardian",
-      "dkp": 470,
-      "status": "open",
+      "dkp": 420,
+      "status": "done",
       "loot": [
         {
           "class": "Guardian",
@@ -3217,6 +3267,26 @@
           "slot": "Helm",
           "cost": 500,
           "date": "2026-01-25T21:09:10.234762"
+        },
+        {
+          "class": "Guardian",
+          "icon": "https://lotro-wiki.com/images/3/33/1090526126-1090519044-1091947416.png",
+          "level": 50,
+          "name": "High-protector's Shoulders",
+          "set": "High-protector's Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2026-02-15T21:17:52.404639"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 50,
+          "date": "2026-02-15T22:13:02.392983"
         }
       ],
       "beryl_shards": 1,
@@ -3267,6 +3337,10 @@
         },
         {
           "date": "2026-02-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-15",
           "amount": 100
         }
       ]
@@ -3499,7 +3573,7 @@
     },
     "Lindn": {
       "class": "Hunter",
-      "dkp": 1050,
+      "dkp": 1140,
       "status": "done",
       "loot": [
         {
@@ -3681,6 +3755,16 @@
           "slot": "Shoulders",
           "cost": 150,
           "date": "2026-02-01T20:14:44.381072"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 10,
+          "date": "2026-02-15T22:09:53.297920"
         }
       ],
       "beryl_shards": 3,
@@ -3758,12 +3842,16 @@
         {
           "date": "2026-02-01",
           "amount": 100
+        },
+        {
+          "date": "2026-02-15",
+          "amount": 100
         }
       ]
     },
     "Jorlin": {
       "class": "Captain",
-      "dkp": 300,
+      "dkp": 400,
       "status": "done",
       "loot": [
         {
@@ -3943,6 +4031,10 @@
         },
         {
           "date": "2026-01-25",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-15",
           "amount": 100
         }
       ]
@@ -5117,7 +5209,7 @@
     "Pedesco(B,G)": {
       "name": "Pedesco",
       "class": "Minstrel",
-      "dkp": 2000,
+      "dkp": 1650,
       "status": "open",
       "loot": [
         {
@@ -5169,6 +5261,36 @@
           "slot": "Helm",
           "cost": 100,
           "date": "2025-12-04T21:16:07.463366"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "https://lotro-wiki.com/images/5/53/1090527325-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Silver-voice Shoulders",
+          "set": "Silver-voice Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2026-02-15T21:18:18.707155"
+        },
+        {
+          "class": "Burglar",
+          "icon": "https://lotro-wiki.com/images/2/27/1090526543-1090519044-1091947416.png",
+          "level": 50,
+          "name": "Shadow-stalker Boots",
+          "set": "Shadow-stalker Armour",
+          "slot": "Boots",
+          "cost": 300,
+          "date": "2026-02-15T22:07:00.525840"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 50,
+          "date": "2026-02-15T22:11:42.047647"
         }
       ],
       "beryl_shards": 1,
@@ -5244,6 +5366,10 @@
         {
           "date": "2026-02-01",
           "amount": 100
+        },
+        {
+          "date": "2026-02-15",
+          "amount": 100
         }
       ],
       "Twinks": [
@@ -5253,10 +5379,10 @@
         }
       ]
     },
-    "Cordloin": {
+    "Cordloin(G)": {
       "name": "Cordloin",
       "class": "Burglar",
-      "dkp": 400,
+      "dkp": 500,
       "status": "open",
       "loot": [
         {
@@ -5454,13 +5580,17 @@
         {
           "date": "2026-02-01",
           "amount": 100
+        },
+        {
+          "date": "2026-02-15",
+          "amount": 100
         }
       ]
     },
     "Tordesilas": {
       "name": "Tordesilas*",
       "class": "Captain",
-      "dkp": 230,
+      "dkp": 330,
       "status": "open",
       "loot": [
         {
@@ -5506,13 +5636,17 @@
         {
           "date": "2026-01-25",
           "amount": 100
+        },
+        {
+          "date": "2026-02-15",
+          "amount": 100
         }
       ]
     },
     "Taradan": {
       "name": "Taradan",
       "class": "Captain",
-      "dkp": 400,
+      "dkp": 500,
       "status": "open",
       "awards": [
         {
@@ -5537,6 +5671,10 @@
         },
         {
           "date": "2025-12-11",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-15",
           "amount": 100
         }
       ],
