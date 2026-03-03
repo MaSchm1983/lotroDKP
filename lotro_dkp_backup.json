@@ -203,7 +203,7 @@
           "set": "Shadow-stalker Armour",
           "slot": "Boots",
           "cost": 400,
-          "date": "2026-03-03T10:17:10.633656"
+          "date": "2026-03-01T10:17:10.633656"
         }
       ],
       "Twinks": [
@@ -567,7 +567,7 @@
           "set": " ",
           "slot": " ",
           "cost": 60,
-          "date": "2026-03-03T10:17:34.978092"
+          "date": "2026-03-01T10:17:34.978092"
         }
       ],
       "Twinks": [
@@ -1027,7 +1027,7 @@
           "set": " ",
           "slot": " ",
           "cost": 50,
-          "date": "2026-03-03T10:20:23.707401"
+          "date": "2026-03-01T10:20:23.707401"
         }
       ],
       "Twinks": [
@@ -2759,7 +2759,7 @@
           "set": "War-captain's Armour",
           "slot": "Gloves",
           "cost": 290,
-          "date": "2026-03-03T10:20:08.167462"
+          "date": "2026-03-01T10:20:08.167462"
         }
       ],
       "beryl_shards": 3,
@@ -3713,7 +3713,7 @@
     },
     "Lindn": {
       "class": "Hunter",
-      "dkp": 950,
+      "dkp": 750,
       "status": "done",
       "loot": [
         {
@@ -3914,7 +3914,17 @@
           "set": "Shadow-stalker Armour",
           "slot": "Helm",
           "cost": 390,
-          "date": "2026-03-03T10:19:30.873605"
+          "date": "2026-03-01T10:19:30.873605"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/Dolamath.png",
+          "level": 50,
+          "name": "Dolamath",
+          "set": " ",
+          "slot": " ",
+          "cost": 200,
+          "date": "2026-03-01T13:48:01.123110"
         }
       ],
       "beryl_shards": 3,
@@ -5516,7 +5526,7 @@
           "set": "Armour of the Aurochs",
           "slot": "Gloves",
           "cost": 500,
-          "date": "2026-03-03T10:19:48.530412"
+          "date": "2026-03-01T10:19:48.530412"
         }
       ],
       "beryl_shards": 1,
@@ -5757,7 +5767,7 @@
           "set": "Dragon-scale Armour",
           "slot": "Helm",
           "cost": 100,
-          "date": "2026-03-03T10:17:23.187118"
+          "date": "2026-03-01T10:17:23.187118"
         }
       ],
       "awards": [
@@ -5991,7 +6001,7 @@
           "set": " ",
           "slot": " ",
           "cost": 60,
-          "date": "2026-03-03T10:17:48.601806"
+          "date": "2026-03-01T10:17:48.601806"
         }
       ]
     },
