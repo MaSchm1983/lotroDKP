@@ -382,6 +382,15 @@
         "slot": " ",
         "name": "Gilnor",
         "icon": "images/Gilnor.png"
+    },
+    {
+        "class": "Misc",
+        "set": " ",
+        "level": 50,
+        "slot": " ",
+        "name": "Dolamath",
+        "icon": "images/Dolamath.png"
     }
+
 
 ]
