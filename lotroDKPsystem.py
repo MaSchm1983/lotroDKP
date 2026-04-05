@@ -2,23 +2,20 @@ import sys, json, os, requests
 from datetime import date, timedelta
 from PyQt5.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QHBoxLayout, QTableWidget, QTableWidgetItem,
-    QPushButton, QDialog, QLineEdit, QLabel, QComboBox, QMessageBox, QSpinBox, QFileDialog, QListWidget, QListWidgetItem, QCheckBox
+    QPushButton, QDialog, QLineEdit, QLabel, QComboBox, QMessageBox, QSpinBox, QFileDialog, QListWidget, QListWidgetItem, QCheckBox, QDateEdit
 )
 from PyQt5.QtGui import QIcon, QPixmap, QColor, QBrush
-from PyQt5.QtCore import Qt, QSize, QByteArray, QBuffer
+from PyQt5.QtCore import Qt, QSize, QByteArray, QBuffer, QDate
 
 # --- Utility: download and cache icons ---
 ICON_CACHE = {}
+LOAD_REMOTE_ICONS = False
 COL_WIDTH = [40, 50, 120, 60, 300, 80]
 COL_WIDTH_DKP = [110, 120, 120]     # Player | Awarded | Spent (adjust as you like)
 COL_WIDTH_LOOT = [90, 110, 210]     # Date | Player | Item (Price)
 WIN_PAD = 28 # 14px left + 14px right, for example
 #SCROLLBAR_WIDTH = 20 
 
-# --- Raid tactic switch ---
-# 2 = two raids/week (Thu+Sun) -> wie bisher
-# 1 = one raid/week (Sun only) -> neue Logik
-RAID_TACT = 1
 
 # --- Christmas break (Sundays between these dates are NOT counted) ---
 # "zwischen 14. Dezember (letzter Raid) und 11. Januar (letzter Raid)"
@@ -49,8 +46,10 @@ def get_icon(path_or_url):
         return ICON_CACHE[path_or_url]
     
     if path_or_url.startswith("http"):
+        if not LOAD_REMOTE_ICONS:
+            return QIcon()
         try:
-            resp = requests.get(path_or_url, timeout=8)
+            resp = requests.get(path_or_url, timeout=3)
             if not resp.ok or not resp.content:
                 return QIcon()
             pix = QPixmap()
@@ -76,9 +75,6 @@ def color_for_status(status: str):
     if s == "open":
         # lime-green-ish with transparency
         return QColor(50, 205, 50, 60)
-    if s == "twink":
-        # Windows-ish blue with transparency
-        return QColor(0, 100, 225, 60)
     return None
 
 def activity_color_for_ratio(r: float) -> QColor:
@@ -86,9 +82,9 @@ def activity_color_for_ratio(r: float) -> QColor:
     r in [0,1]. Gibt eine kräftige RGBA-Farbe für die Ampel zurück.
     Grün: >= 0.67, Gelb: >= 0.34, sonst Rot.
     """
-    if r >= 2/3:
+    if r >= 2/4:
         return QColor(50, 205, 50, 70)     # grün transparent
-    if r >= 1/3:
+    if r >= 1/4:
         return QColor(255, 191, 0, 70)     # gelb/orange transparent
     return QColor(220, 20, 60, 70)         # rot transparent
 
@@ -193,11 +189,7 @@ class DKPManager(QWidget):
         self.table.cellClicked.connect(self.on_table_cell_clicked)
         vbox.addWidget(self.table)
         
-        self.activity_note_label = QLabel("")
-        self.activity_note_label.setStyleSheet("font-size: 9px; color: gray;")
-        self.activity_note_label.setVisible(False)
-        vbox.addWidget(self.activity_note_label)
-        
+
         # History buttons row
         hist_btn_row = QHBoxLayout()
         self.dkp_hist_btn = QPushButton("Show DKP History")
@@ -281,13 +273,9 @@ class DKPManager(QWidget):
         selected_class = self.filter_combo.currentText() if hasattr(self, 'filter_combo') else "--all--"
         players = sorted(self.players.items(), key=lambda t: (-t[1].get("dkp", 0), t[0]))
 
-        # --------- Activity window + raid calendar (depends on RAID_TACT) ---------
         today = date.today()
 
         def is_raid_day(d: date) -> bool:
-            if RAID_TACT == 2:
-                return d.weekday() in (3, 6)  # Thu=3, Sun=6
-            # RAID_TACT == 1
             return d.weekday() == 6          # Sun only
 
         # --- determine last raid day (last eligible raid day up to today) ---
@@ -314,6 +302,7 @@ class DKPManager(QWidget):
         else:
             # dynamic start: at most 8 weeks back, but not before earliest award
             eight_weeks_ago = last_raid_day - timedelta(weeks=8)
+            print(last_raid_day, eight_weeks_ago)
             window_start = max(eight_weeks_ago, earliest)
 
             # --- pick the relevant Dec14->Jan11 window that overlaps our timeframe ---
@@ -337,6 +326,45 @@ class DKPManager(QWidget):
                         raid_dates.append(cur)
                 cur += timedelta(days=1)
 
+        raid_dates = sorted(raid_dates)
+        raid_dates_set = set(raid_dates)
+
+        def map_award_to_raid_from_award(aw: dict):
+            # 1) Preferred: explicit raid_date
+            rd_str = (aw.get("raid_date") or "")[:10]
+            if rd_str:
+                try:
+                    rd = date.fromisoformat(rd_str)
+                    # only accept if it's in our window's raid_dates
+                    if rd in raid_dates_set:
+                        return rd
+                except ValueError:
+                    pass
+
+            # 2) Fallback for legacy entries: infer from award "date"
+            dstr = (aw.get("date") or "")[:10]
+            if not dstr:
+                return None
+            try:
+                d_aw = date.fromisoformat(dstr)
+            except ValueError:
+                return None
+
+            for rd in reversed(raid_dates):
+                if rd <= d_aw and (d_aw - rd).days <= 4:  # can keep 2 if you want; 4 is safer
+                    return rd
+            return None
+
+        # --- NEW: determine which raid dates actually happened (at least one award exists) ---
+        raids_with_any_attendance = set()
+        for _pname, _pdata in self.players.items():
+            for aw in _pdata.get("awards", []):
+                rd = map_award_to_raid_from_award(aw)
+                if rd:
+                    raids_with_any_attendance.add(rd)
+
+        # Filter out "non-raids" (e.g., canceled weekend with zero entries)
+        raid_dates = [rd for rd in raid_dates if rd in raids_with_any_attendance]
         raid_dates_set = set(raid_dates)
         total_raids = len(raid_dates)
 
@@ -347,7 +375,6 @@ class DKPManager(QWidget):
 
         self.table.setRowCount(len(players))
 
-        solo_mains_present = False
         for row, (name, p) in enumerate(players):
             # --- Column 0: rank number ---
             num_item = QTableWidgetItem(str(row + 1))
@@ -363,9 +390,10 @@ class DKPManager(QWidget):
             self.table.setItem(row, 1, citem)
 
             # --- Column 2: name + tooltip for twinks ---
-            has_twinks = bool(p.get("Twinks"))
-            display_name = name + ("*" if not has_twinks else "")
-            pname_item = QTableWidgetItem(display_name)
+            # has_twinks = bool(p.get("Twinks"))
+            # display_name = name + ("*" if not has_twinks else "")
+            # pname_item = QTableWidgetItem(display_name)
+            pname_item = QTableWidgetItem(name)
 
             # store the real name in UserRole so logic can still find the player
             pname_item.setData(Qt.UserRole, name)
@@ -391,9 +419,6 @@ class DKPManager(QWidget):
                 tooltip_html = "<b>Twinks:</b><br>" + "<br>".join(tt_lines)
                 pname_item.setToolTip(tooltip_html)
 
-            if not has_twinks:
-                solo_mains_present = True
-
             self.table.setItem(row, 2, pname_item)
 
             # --- Column 3: DKP ---
@@ -414,10 +439,13 @@ class DKPManager(QWidget):
                 li.setAttribute(Qt.WA_TranslucentBackground)    # be explicit: no own background
                 li.setStyleSheet("background: transparent;")     # (some styles still need this)
                 icon_url = l.get("icon", "")
-                if icon_url:
-                    li.setPixmap(get_icon(icon_url).pixmap(24, 24))
+                pix = get_icon(icon_url).pixmap(24, 24) if icon_url else None
+                if pix and not pix.isNull():
+                    li.setPixmap(pix)
                 else:
-                    li.setText("?")
+                    short_name = (l.get("name") or l.get("item") or "?")[:10]
+                    li.setText(short_name)
+                    li.setStyleSheet("background: transparent; font-size: 8px;")
                 date_str = l.get("date", "")[:10]
                 tip = f"{l.get('name','') or l.get('item','')}\n{l.get('cost','')} DKP\n{date_str}"
                 li.setToolTip(tip)
@@ -461,30 +489,15 @@ class DKPManager(QWidget):
 
                 # for faster search, raid_dates is sorted ascending already
                 for aw in p.get("awards", []):
-                    dstr = aw.get("date", "")
-                    if not dstr:
-                        continue
-                    try:
-                        d_aw = date.fromisoformat(dstr[:10])
-                    except ValueError:
-                        continue
-
-                    # find the latest raid_date <= award date, with max 2 days distance
-                    # this covers "award on Monday for Sunday raid", or "Friday for Thursday raid"
-                    for rd in reversed(raid_dates):
-                        if rd <= d_aw and (d_aw - rd).days <= 2:
-                            joined_dates.add(rd)
-                            break  # stop after mapping this award to one raid
+                    rd = map_award_to_raid_from_award(aw)
+                    if rd:
+                        joined_dates.add(rd)
 
                 joined_count = len(joined_dates)
-                has_twinks = bool(p.get("Twinks"))
 
-                if RAID_TACT == 2:
-                    # wie bisher: solo mains "halbe raid base"
-                    denom_raids = float(total_raids) if has_twinks else max(float(total_raids) / 2.0, 1.0)
-                else:
-                    # RAID_TACT == 1: alle gleich behandeln (weil nur ein Raid/Woche)
-                    denom_raids = max(float(total_raids), 1.0)
+                denom_raids = max(float(total_raids), 1.0)
+                ratio = joined_count / denom_raids
+                ratio = min(ratio, 1.0)
 
                 ratio = joined_count / denom_raids
                 if ratio > 1.0:
@@ -498,28 +511,18 @@ class DKPManager(QWidget):
                 # show BOTH count and percent so you *see* the difference
                 if total_raids == 0:
                     active_item.setText("0%")
-                    active_item.setToolTip("No raids (Do/So) in the tracked period yet.")
+                    active_item.setToolTip("No raids (So) in the tracked period yet.")
                 else:
                     #active_item.setText(f"{joined_count}/{total_raids} ({pct}%)")
                     active_item.setText(f"{pct}%")
                     active_item.setToolTip(
                         f"Aktivität:{joined_count} / {total_raids} {pct}%\n"
                         f"Raids besucht: {joined_count} / {total_raids}\n"
-                        f"(Do+So, dynamisches Fenster bis max. 8 Wochen)"
+                        f"(Sonntags raids, dynamisches Fenster bis max. 8 Wochen)"
                     )
                 active_item.setTextAlignment(Qt.AlignCenter)
                 active_item.setForeground(QBrush(QColor(20, 20, 20)))
                 
-        # Update footnote visibility/text
-        if hasattr(self, "activity_note_label"):
-            if solo_mains_present:
-                self.activity_note_label.setText(
-                    "* activity calculated with only one possible raid attendance per week and thus referencing to half of the max raids"
-                )
-                self.activity_note_label.setVisible(True)
-            else:
-                self.activity_note_label.setVisible(False)          
-
         self.table.setAlternatingRowColors(False)  # avoid fighting the tint
         self.table.resizeRowsToContents()
 
@@ -661,10 +664,66 @@ class DKPManager(QWidget):
         dkp_label = QLabel("Add DKP:")
         v.addWidget(dkp_label)
         dkp_input = QSpinBox()
-        dkp_input.setMinimum(1)
+        dkp_input.setMinimum(0)
         dkp_input.setMaximum(9999)
         dkp_input.setValue(100)
         v.addWidget(dkp_input)
+
+                # --- Raid date selection (Sunday) ---
+        raid_label = QLabel("Raid date (Sunday):")
+        v.addWidget(raid_label)
+
+        raid_date_combo = QComboBox()
+        v.addWidget(raid_date_combo)
+
+        # optional: custom date chooser
+        custom_date = QDateEdit()
+        custom_date.setCalendarPopup(True)
+        custom_date.setDisplayFormat("yyyy-MM-dd")
+        custom_date.setVisible(False)
+        v.addWidget(custom_date)
+
+        def last_sunday(d: date) -> date:
+            # Sunday is weekday 6
+            return d - timedelta(days=(d.weekday() - 6) % 7)
+
+        def is_sunday_in_christmas_pause(d: date) -> bool:
+            # Exclude Sundays strictly between Dec 14 and Jan 11 (as your comment says)
+            # Determine which season the date belongs to
+            y = d.year
+            # if January, the pause start is previous year Dec 14
+            if d.month == 1:
+                ps = date(y - 1, CHRISTMAS_BREAK_DEC14[0], CHRISTMAS_BREAK_DEC14[1])
+                pe = date(y, CHRISTMAS_BREAK_JAN11[0], CHRISTMAS_BREAK_JAN11[1])
+            else:
+                ps = date(y, CHRISTMAS_BREAK_DEC14[0], CHRISTMAS_BREAK_DEC14[1])
+                pe = date(y + 1, CHRISTMAS_BREAK_JAN11[0], CHRISTMAS_BREAK_JAN11[1])
+            return (ps < d < pe)
+
+        # fill dropdown with last ~12 Sundays (excluding the christmas pause Sundays)
+        today = date.today()
+        ls = last_sunday(today)
+        sundays = []
+        cur = ls
+        for _ in range(14):  # show a bit more than 8
+            if not is_sunday_in_christmas_pause(cur):
+                sundays.append(cur)
+            cur -= timedelta(weeks=1)
+
+        for d in sundays:
+            raid_date_combo.addItem(d.isoformat())
+
+        raid_date_combo.addItem("Custom...")
+        raid_date_combo.setCurrentIndex(0)
+
+        def on_raid_date_change():
+            is_custom = (raid_date_combo.currentText() == "Custom...")
+            custom_date.setVisible(is_custom)
+            if is_custom:
+                custom_date.setDate(QDate.fromString(ls.isoformat(), "yyyy-MM-dd"))
+
+        raid_date_combo.currentIndexChanged.connect(on_raid_date_change)
+        on_raid_date_change()
         
         # action
         btn = QPushButton("Award")
@@ -674,17 +733,21 @@ class DKPManager(QWidget):
         if dlg.exec_():
             pts = dkp_input.value()
             sel = playerlist.selectedItems()
-            # heutiges Datum im Format yyyy-mm-dd
-            from datetime import date
             today_str = date.today().isoformat()  # -> 'YYYY-MM-DD'
             for item in sel:
                 pname = item.text()
                 self.players[pname]["dkp"] = self.players[pname].get("dkp",0) + pts
                 # awards-Liste sicherstellen (falls Altbestand)
                 awards = self.players[pname].setdefault("awards", [])
-                # Eintrag hinzufügen
+                # determine chosen raid_date
+                if raid_date_combo.currentText() == "Custom...":
+                    raid_date_str = custom_date.date().toString("yyyy-MM-dd")
+                else:
+                    raid_date_str = raid_date_combo.currentText()
+
                 awards.append({
-                    "date": today_str,
+                    "date": today_str,              # when you clicked Award
+                    "raid_date": raid_date_str,     # which raid it belongs to
                     "amount": int(pts)
                 })
             self.refresh_table()
@@ -806,14 +869,6 @@ class DKPManager(QWidget):
         total_loot_rows = 0
         add_loot_rows(pname, pdata.get("class", ""), pdata.get("loot", []))
         total_loot_rows += len(pdata.get("loot", []))
-        for twink in pdata.get("Twinks", []):
-            tname = twink.get("name")
-            tclass = twink.get("class", "")
-            tloot = []
-            if tname in self.players:
-                tloot = self.players[tname].get("loot", [])
-            add_loot_rows(tname, tclass, tloot)
-            total_loot_rows += len(tloot)
 
         layout.addWidget(QLabel(f"<b>Loot History (last {total_loot_rows} items):</b>"))
         layout.addWidget(loot_table)
