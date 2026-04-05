@@ -1,11 +1,11 @@
 [
-   {
+    {
         "class": "Burglar",
         "set": "Shadow-stalker Armour",
         "level": 50,
         "slot": "Helm",
         "name": "Shadow-stalker Helm",
-        "icon": "https://lotro-wiki.com/images/0/08/1090526120-1090519044-1091947416.png"
+        "icon": "images/Burglar/BurglarHelm.png"
     },
     {
         "class": "Burglar",
@@ -13,7 +13,7 @@
         "level": 50,
         "slot": "Shoulders",
         "name": "Shadow-stalker Shoulders",
-        "icon": "https://lotro-wiki.com/images/4/43/1090526841-1090519044-1091947416.png"
+        "icon": "images/Burglar/BurglarShoulders.png"
     },
     {
         "class": "Burglar",
@@ -21,7 +21,7 @@
         "level": 50,
         "slot": "Gloves",
         "name": "Shadow-stalker Gloves",
-        "icon": "https://lotro-wiki.com/images/f/f9/1090526588-1090519044-1091947416.png"
+        "icon": "images/Burglar/BurglarGloves.png"
     },
     {
         "class": "Burglar",
@@ -29,7 +29,7 @@
         "level": 50,
         "slot": "Breastplate",
         "name": "Shadow-stalker Jacket",
-        "icon": "https://lotro-wiki.com/images/d/d8/1090526622-1090519044-1091947416.png"
+        "icon": "images/Burglar/BurglarChest.png"
     },
     {
         "class": "Burglar",
@@ -37,7 +37,7 @@
         "level": 50,
         "slot": "Leggins",
         "name": "Shadow-stalker Leggins",
-        "icon": "https://lotro-wiki.com/images/a/a2/1090526655-1090519044-1091947416.png"
+        "icon": "images/Burglar/BurglarLegs.png"
     },
     {
         "class": "Burglar",
@@ -45,7 +45,7 @@
         "level": 50,
         "slot": "Boots",
         "name": "Shadow-stalker Boots",
-        "icon": "https://lotro-wiki.com/images/2/27/1090526543-1090519044-1091947416.png"
+        "icon": "images/Burglar/BurglarBoots.png"
     },
     {
         "class": "Captain",
@@ -53,7 +53,7 @@
         "level": 50,
         "slot": "Helm",
         "name": "War-captain's Helm",
-        "icon": "https://lotro-wiki.com/images/6/69/1090524578-1090519044-1091947416.png"
+        "icon": "images/Captain/CaptainHelm.png"
     },
     {
         "class": "Captain",
@@ -61,7 +61,7 @@
         "level": 50,
         "slot": "Shoulders",
         "name": "War-captain's Shoulders",
-        "icon": "https://lotro-wiki.com/images/8/8d/1090525016-1090519044-1091947416.png"
+        "icon": "images/Captain/CaptainShoulders.png"
     },
     {
         "class": "Captain",
@@ -69,7 +69,7 @@
         "level": 50,
         "slot": "Gloves",
         "name": "War-captain's Gloves",
-        "icon": "https://lotro-wiki.com/images/b/bd/1090525063-1090519044-1091947416.png"
+        "icon": "images/Captain/CaptainGloves.png"
     },
     {
         "class": "Captain",
@@ -77,7 +77,7 @@
         "level": 50,
         "slot": "Breastplate",
         "name": "War-captain's Breastplate",
-        "icon": "https://lotro-wiki.com/images/5/5c/1090524828-1090519044-1091947416.png"
+        "icon": "images/Captain/CaptainChest.png"
     },
     {
         "class": "Captain",
@@ -85,7 +85,7 @@
         "level": 50,
         "slot": "Leggins",
         "name": "War-captain's Leggins",
-        "icon": "https://lotro-wiki.com/images/6/63/1090528171-1090519044-1091947416.png"
+        "icon": "images/Captain/CaptainLegs.png"
     },
     {
         "class": "Captain",
@@ -93,15 +93,15 @@
         "level": 50,
         "slot": "Boots",
         "name": "War-captain's Boots",
-        "icon": "https://lotro-wiki.com/images/b/b9/1090524812-1090519044-1091947416.png"
-    },    
+        "icon": "images/Captain/CaptainBoots.png"
+    },
     {
         "class": "Champion",
         "set": "Dragon-scale Armour",
         "level": 50,
         "slot": "Helm",
         "name": "Dragon-scale Helm",
-        "icon": "https://lotro-wiki.com/images/1/15/1090525163-1090519044-1091947416.png"
+        "icon": "images/Champion/ChampionHelm.png"
     },
     {
         "class": "Champion",
@@ -109,7 +109,7 @@
         "level": 50,
         "slot": "Shoulders",
         "name": "Dragon-scale Shoulders",
-        "icon": "https://lotro-wiki.com/images/f/fa/1090533860-1090519044-1091947416.png"
+        "icon": "images/Champion/ChampionShoulders.png"
     },
     {
         "class": "Champion",
@@ -117,7 +117,7 @@
         "level": 50,
         "slot": "Gloves",
         "name": "Dragon-scale Gloves",
-        "icon": "https://lotro-wiki.com/images/b/be/1090527666-1090519044-1091947416.png"
+        "icon": "images/Champion/ChampionGloves.png"
     },
     {
         "class": "Champion",
@@ -125,7 +125,7 @@
         "level": 50,
         "slot": "Breastplate",
         "name": "Dragon-scale Breastplate",
-        "icon": "https://lotro-wiki.com/images/c/c7/1090526278-1090519044-1091947416.png"
+        "icon": "images/Champion/ChampionChest.png"
     },
     {
         "class": "Champion",
@@ -133,7 +133,7 @@
         "level": 50,
         "slot": "Leggins",
         "name": "Dragon-scale Leggins",
-        "icon": "https://lotro-wiki.com/images/4/46/1090528431-1090519044-1091947416.png"
+        "icon": "images/Champion/ChampionLegs.png"
     },
     {
         "class": "Champion",
@@ -141,7 +141,7 @@
         "level": 50,
         "slot": "Boots",
         "name": "Dragon-scale Boots",
-        "icon": "https://lotro-wiki.com/images/6/65/1090527777-1090519044-1091947416.png"
+        "icon": "images/Champion/ChampionBoots.png"
     },
     {
         "class": "Guardian",
@@ -149,7 +149,7 @@
         "level": 50,
         "slot": "Helm",
         "name": "High-protector's Helm",
-        "icon": "https://lotro-wiki.com/images/0/08/1090526120-1090519044-1091947416.png"
+        "icon": "images/Guardian/GuardianHelm.png"
     },
     {
         "class": "Guardian",
@@ -157,7 +157,7 @@
         "level": 50,
         "slot": "Shoulders",
         "name": "High-protector's Shoulders",
-        "icon": "https://lotro-wiki.com/images/3/33/1090526126-1090519044-1091947416.png"
+        "icon": "images/Guardian/GuardianShoulders.png"
     },
     {
         "class": "Guardian",
@@ -165,7 +165,7 @@
         "level": 50,
         "slot": "Gloves",
         "name": "High-protector's Gloves",
-        "icon": "https://lotro-wiki.com/images/6/65/1090526117-1090519044-1091947416.png"
+        "icon": "images/Guardian/GuardianGloves.png"
     },
     {
         "class": "Guardian",
@@ -173,7 +173,7 @@
         "level": 50,
         "slot": "Breastplate",
         "name": "High-protector's Breastplate",
-        "icon": "https://lotro-wiki.com/images/3/39/1090525742-1090519044-1091947416.png"
+        "icon": "images/Guardian/GuardianChest.png"
     },
     {
         "class": "Guardian",
@@ -181,7 +181,7 @@
         "level": 50,
         "slot": "Leggins",
         "name": "High-protector's Leggins",
-        "icon": "https://lotro-wiki.com/images/6/65/1090526123-1090519044-1091947416.png"
+        "icon": "images/Guardian/GuardianLegs.png"
     },
     {
         "class": "Guardian",
@@ -189,15 +189,15 @@
         "level": 50,
         "slot": "Boots",
         "name": "High-protector's Boots",
-        "icon": "https://lotro-wiki.com/images/9/9e/1090526108-1090519044-1091947416.png"
-    },   
+        "icon": "images/Guardian/GuardianBoots.png"
+    },
     {
         "class": "Hunter",
         "set": "Armour of the Aurochs",
         "level": 50,
         "slot": "Helm",
         "name": "Helm of the Aurochs",
-        "icon": "https://lotro-wiki.com/images/6/69/1090524578-1090519044-1091947416.png"
+        "icon": "images/Hunter/HunterHelm.png"
     },
     {
         "class": "Hunter",
@@ -205,7 +205,7 @@
         "level": 50,
         "slot": "Shoulders",
         "name": "Shoulders of the Aurochs",
-        "icon": "https://lotro-wiki.com/images/3/30/1090523513-1090519044-1091947416.png"
+        "icon": "images/Hunter/HunterShoulders.png"
     },
     {
         "class": "Hunter",
@@ -213,7 +213,7 @@
         "level": 50,
         "slot": "Gloves",
         "name": "Gloves of the Aurochs",
-        "icon": "https://lotro-wiki.com/images/c/c0/1090526244-1090519044-1091947416.png"
+        "icon": "images/Hunter/HunterGloves.png"
     },
     {
         "class": "Hunter",
@@ -221,7 +221,7 @@
         "level": 50,
         "slot": "Breastplate",
         "name": "Breastplate of the Aurochs",
-        "icon": "https://lotro-wiki.com/images/c/c7/1090526278-1090519044-1091947416.png"
+        "icon": "images/Hunter/HunterChest.png"
     },
     {
         "class": "Hunter",
@@ -229,7 +229,7 @@
         "level": 50,
         "slot": "Leggins",
         "name": "Leggins of the Aurochs",
-        "icon": "https://lotro-wiki.com/images/1/19/1090526315-1090519044-1091947416.png"
+        "icon": "images/Hunter/HunterLegs.png"
     },
     {
         "class": "Hunter",
@@ -237,7 +237,7 @@
         "level": 50,
         "slot": "Boots",
         "name": "Boots of the Aurochs",
-        "icon": "https://lotro-wiki.com/images/f/f2/1090520000-1090519044-1091947416.png"
+        "icon": "images/Hunter/HunterBoots.png"
     },
     {
         "class": "Loremaster",
@@ -245,7 +245,7 @@
         "level": 50,
         "slot": "Helm",
         "name": "Beast-master Hat",
-        "icon": "https://lotro-wiki.com/images/6/69/1090524578-1090519044-1091947416.png"
+        "icon": "images/Lore-master/Lore-masterHelm.png"
     },
     {
         "class": "Loremaster",
@@ -253,7 +253,7 @@
         "level": 50,
         "slot": "Shoulders",
         "name": "Beast-master Shoulders",
-        "icon": "https://lotro-wiki.com/images/7/7e/1090523360-1090519044-1091947416.png"
+        "icon": "images/Lore-master/Lore-masterShoulders.png"
     },
     {
         "class": "Loremaster",
@@ -261,7 +261,7 @@
         "level": 50,
         "slot": "Gloves",
         "name": "Beast-master Gloves",
-        "icon": "https://lotro-wiki.com/images/8/8f/1090520031-1090519044-1091947416.png"
+        "icon": "images/Lore-master/Lore-masterGloves.png"
     },
     {
         "class": "Loremaster",
@@ -269,7 +269,7 @@
         "level": 50,
         "slot": "Breastplate",
         "name": "Beast-master Robe",
-        "icon": "https://lotro-wiki.com/images/b/b2/1090527513-1090519044-1091947416.png"
+        "icon": "images/Lore-master/Lore-masterChest.png"
     },
     {
         "class": "Loremaster",
@@ -277,7 +277,7 @@
         "level": 50,
         "slot": "Leggins",
         "name": "Beast-master Leggings",
-        "icon": "https://lotro-wiki.com/images/8/88/1090523823-1090519044-1091947416.png"
+        "icon": "images/Lore-master/Lore-masterLegs.png"
     },
     {
         "class": "Loremaster",
@@ -285,7 +285,7 @@
         "level": 50,
         "slot": "Boots",
         "name": "Beast-master Shoes",
-        "icon": "https://lotro-wiki.com/images/3/33/1090524300-1090519044-1091947416.png"
+        "icon": "images/Lore-master/Lore-masterShoes.png"
     },
     {
         "class": "Minstrel",
@@ -293,7 +293,7 @@
         "level": 50,
         "slot": "Helm",
         "name": "Silver-voice Helm",
-        "icon": "https://lotro-wiki.com/images/0/08/1090526120-1090519044-1091947416.png"
+        "icon": "images/Minstrel/MinstrelHelm.png"
     },
     {
         "class": "Minstrel",
@@ -301,7 +301,7 @@
         "level": 50,
         "slot": "Shoulders",
         "name": "Silver-voice Shoulders",
-        "icon": "https://lotro-wiki.com/images/5/53/1090527325-1090519044-1091947416.png"
+        "icon": "images/Minstrel/MinstrelShoulders.png"
     },
     {
         "class": "Minstrel",
@@ -309,7 +309,7 @@
         "level": 50,
         "slot": "Gloves",
         "name": "Silver-voice Gloves",
-        "icon": "https://lotro-wiki.com/images/a/a1/1090527094-1090519044-1091947416.png"
+        "icon": "images/Minstrel/MinstrelGloves.png"
     },
     {
         "class": "Minstrel",
@@ -317,7 +317,7 @@
         "level": 50,
         "slot": "Breastplate",
         "name": "Silver-voice Robe",
-        "icon": "https://lotro-wiki.com/images/d/d3/1090527199-1090519044-1091947416.png"
+        "icon": "images/Minstrel/MinstrelChest.png"
     },
     {
         "class": "Minstrel",
@@ -325,7 +325,7 @@
         "level": 50,
         "slot": "Leggins",
         "name": "Silver-voice Leggings",
-        "icon": "https://lotro-wiki.com/images/7/7f/1090527164-1090519044-1091947416.png"
+        "icon": "images/Minstrel/MinstrelLegs.png"
     },
     {
         "class": "Minstrel",
@@ -333,7 +333,7 @@
         "level": 50,
         "slot": "Boots",
         "name": "Silver-voice Shoes",
-        "icon": "https://lotro-wiki.com/images/d/db/1090527292-1090519044-1091947416.png"
+        "icon": "images/Minstrel/MinstrelShoes.png"
     },
     {
         "class": "Misc",
@@ -391,6 +391,4 @@
         "name": "Dolamath",
         "icon": "images/Dolamath.png"
     }
-
-
 ]
