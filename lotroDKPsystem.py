@@ -70,8 +70,10 @@ def get_icon(path_or_url):
         except Exception:
             return QIcon()
     else:
-        if os.path.exists(path_or_url):
-            icon = QIcon(path_or_url)
+        # Lokalen Pfad durch resource_path auflösen
+        resolved = resource_path(path_or_url)
+        if os.path.exists(resolved):
+            icon = QIcon(resolved)
             ICON_CACHE[path_or_url] = icon
             return icon
         return QIcon()
