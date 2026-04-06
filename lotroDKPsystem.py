@@ -33,10 +33,19 @@ def get_scrollbar_width():
     return app.style().pixelMetric(QApplication.style().PM_ScrollBarExtent)
 
 def resource_path(relative_path):
-    # For PyInstaller compatibility (works in dev and packaged)
+    """Für eingebettete Dateien (images, items.json)."""
     if hasattr(sys, '_MEIPASS'):
         return os.path.join(sys._MEIPASS, relative_path)
     return os.path.join(os.path.abspath("."), relative_path)
+
+def user_data_path(relative_path):
+    """Für Dateien die neben der .exe liegen (lotro_dkp_backup.json)."""
+    if hasattr(sys, 'frozen'):
+        # Ordner der .exe selbst
+        exe_dir = os.path.dirname(sys.executable)
+    else:
+        exe_dir = os.path.abspath(".")
+    return os.path.join(exe_dir, relative_path)
 
 
 def get_icon(path_or_url):
@@ -118,7 +127,7 @@ class DKPManager(QWidget):
         self.items_file_path = resource_path("content/items.json")
         self.init_ui()
         self.load_items()
-        self.load_dkp(resource_path("lotro_dkp_backup.json"))
+        self.load_dkp(user_data_path("lotro_dkp_backup.json"))
 
     def init_ui(self):
         vbox = QVBoxLayout(self)
@@ -222,7 +231,7 @@ class DKPManager(QWidget):
             self.items_db = []
 
     def load_dkp(self, path=None):
-        fn = path or self.dkp_file_path or resource_path("lotro_dkp_backup.json")
+        fn = path or self.dkp_file_path or user_data_path("lotro_dkp_backup.json")
         if not os.path.exists(fn):
             self.players = {}
             self.dkp_history = []
@@ -247,11 +256,11 @@ class DKPManager(QWidget):
     def do_refresh(self):
         self.players = {}
         self.dkp_history = []
-        self.dkp_file_path = resource_path("lotro_dkp_backup.json")
+        self.dkp_file_path = user_data_path("lotro_dkp_backup.json")
         self.load_dkp(self.dkp_file_path)
 
     def save_dkp_file(self):
-        path = self.dkp_file_path or resource_path("lotro_dkp_backup.json")
+        path = self.dkp_file_path or user_data_path("lotro_dkp_backup.json")
         try:
             data = {
                 "players": self.players,

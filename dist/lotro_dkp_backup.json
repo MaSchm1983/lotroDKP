@@ -1,0 +1,6450 @@
+{
+  "players": {
+    "Anax": {
+      "class": "Loremaster",
+      "dkp": 870,
+      "status": "done",
+      "loot": [
+        {
+          "class": "Loremaster",
+          "set": "Beast-master Armour",
+          "level": 50,
+          "slot": "Shoulders",
+          "name": "Beast-master Shoulders",
+          "icon": "images/Lore-master/Lore-masterShoulders.png",
+          "cost": 210,
+          "date": "2025-07-10T20:09:21.856Z"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterGloves.png",
+          "level": 50,
+          "name": "Beast-master Gloves",
+          "set": "Beast-master Armour",
+          "slot": "Gloves",
+          "cost": 100,
+          "date": "2025-07-27T21:29:52.308487"
+        },
+        {
+          "class": "Guardian",
+          "icon": "images/Guardian/GuardianBoots.png",
+          "level": 50,
+          "name": "High-protector's Boots",
+          "set": "High-protector's Armour",
+          "slot": "Boots",
+          "cost": 110,
+          "date": "2025-07-31T21:46:34.634386"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-08-14T21:34:14.971285"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-08-18T14:05:50.764735"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterHelm.png",
+          "level": 50,
+          "name": "Beast-master Hat",
+          "set": "Beast-master Armour",
+          "slot": "Helm",
+          "cost": 100,
+          "date": "2025-08-31T21:59:11.693142"
+        },
+        {
+          "class": "Burglar",
+          "icon": "images/Burglar/BurglarHelm.png",
+          "level": 50,
+          "name": "Shadow-stalker Helm",
+          "set": "Shadow-stalker Armour",
+          "slot": "Helm",
+          "cost": 320,
+          "date": "2025-09-11T20:39:26.422806"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterBoots.png",
+          "level": 50,
+          "name": "Boots of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Boots",
+          "cost": 290,
+          "date": "2025-09-11T21:28:19.644911"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterHelm.png",
+          "level": 50,
+          "name": "Helm of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Helm",
+          "cost": 350,
+          "date": "2025-09-21T20:11:13.604672"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterShoes.png",
+          "level": 50,
+          "name": "Beast-master Shoes",
+          "set": "Beast-master Armour",
+          "slot": "Boots",
+          "cost": 100,
+          "date": "2025-09-28T23:02:15.117637"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 220,
+          "date": "2025-10-12T22:01:53.128072"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 250,
+          "date": "2025-10-12T22:02:05.457098"
+        },
+        {
+          "class": "Guardian",
+          "icon": "images/Guardian/GuardianShoulders.png",
+          "level": 50,
+          "name": "High-protector's Shoulders",
+          "set": "High-protector's Armour",
+          "slot": "Shoulders",
+          "cost": 240,
+          "date": "2025-10-23T20:50:08.596367"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 220,
+          "date": "2025-10-23T20:50:34.099036"
+        },
+        {
+          "class": "Burglar",
+          "icon": "images/Burglar/BurglarBoots.png",
+          "level": 50,
+          "name": "Shadow-stalker Boots",
+          "set": "Shadow-stalker Armour",
+          "slot": "Boots",
+          "cost": 380,
+          "date": "2025-10-23T21:18:53.744505"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterGloves.png",
+          "level": 50,
+          "name": "Gloves of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Gloves",
+          "cost": 380,
+          "date": "2025-10-26T20:18:16.288915"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 210,
+          "date": "2025-11-02T19:53:44.464138"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterBoots.png",
+          "level": 50,
+          "name": "Boots of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Boots",
+          "cost": 550,
+          "date": "2025-11-16T20:44:35.918170"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 100,
+          "date": "2025-11-16T20:46:28.260522"
+        },
+        {
+          "class": "Burglar",
+          "icon": "images/Burglar/BurglarBoots.png",
+          "level": 50,
+          "name": "Shadow-stalker Boots",
+          "set": "Shadow-stalker Armour",
+          "slot": "Boots",
+          "cost": 400,
+          "date": "2026-03-03T10:17:10.633656"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelHelm.png",
+          "level": 50,
+          "name": "Silver-voice Helm",
+          "set": "Silver-voice Armour",
+          "slot": "Helm",
+          "cost": 300,
+          "date": "2026-04-06T00:56:38.048152"
+        }
+      ],
+      "Twinks": [
+        {
+          "name": "Adi",
+          "class": "Guardian"
+        },
+        {
+          "name": "Indigo",
+          "class": "Hunter"
+        },
+        {
+          "name": "Jace",
+          "class": "Burglar"
+        }
+      ],
+      "beryl_shards": 3,
+      "awards": [
+        {
+          "date": "2025-10-26",
+          "amount": 100
+        },
+        {
+          "date": "2025-10-31",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-02",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-06",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-09",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-13",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-16",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-20",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-23",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-27",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-30",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-04",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-07",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-11",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-14",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-11",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-18",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-25",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-29",
+          "raid_date": "2026-03-29",
+          "amount": 100
+        },
+        {
+          "date": "2026-04-06",
+          "raid_date": "2026-04-05",
+          "amount": 100
+        }
+      ]
+    },
+    "Amphy": {
+      "class": "Burglar",
+      "dkp": 1050,
+      "status": "done",
+      "loot": [
+        {
+          "class": "Burglar",
+          "set": "Shadow-stalker Armour",
+          "level": 50,
+          "slot": "Helm",
+          "name": "Shadow-stalker Helm",
+          "icon": "images/Burglar/BurglarHelm.png",
+          "cost": 210,
+          "date": "2025-07-10T20:12:03.942Z"
+        },
+        {
+          "class": "Burglar",
+          "icon": "images/Burglar/BurglarBoots.png",
+          "level": 50,
+          "name": "Shadow-stalker Boots",
+          "set": "Shadow-stalker Armour",
+          "slot": "Boots",
+          "cost": 210,
+          "date": "2025-07-20T20:58:43.769183"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionHelm.png",
+          "level": 50,
+          "name": "Dragon-scale Helm",
+          "set": "Dragon-scale Armour",
+          "slot": "Helm",
+          "cost": 100,
+          "date": "2025-08-03T21:20:42.877552"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelHelm.png",
+          "level": 50,
+          "name": "Silver-voice Helm",
+          "set": "Silver-voice Armour",
+          "slot": "Helm",
+          "cost": 100,
+          "date": "2025-08-21T23:00:55.149820"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterShoulders.png",
+          "level": 50,
+          "name": "Beast-master Shoulders",
+          "set": "Beast-master Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2025-08-28T21:38:20.547994"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-08-28T21:39:59.382281"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 80,
+          "date": "2025-09-25T21:22:58.157812"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelShoulders.png",
+          "level": 50,
+          "name": "Silver-voice Shoulders",
+          "set": "Silver-voice Armour",
+          "slot": "Shoulders",
+          "cost": 400,
+          "date": "2025-09-28T19:57:20.586582"
+        },
+        {
+          "class": "Burglar",
+          "icon": "images/Burglar/BurglarGloves.png",
+          "level": 50,
+          "name": "Shadow-stalker Gloves",
+          "set": "Shadow-stalker Armour",
+          "slot": "Gloves",
+          "cost": 100,
+          "date": "2025-09-28T20:25:26.595438"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/single_use_recipe.png",
+          "level": 50,
+          "name": "Single Use Recipe",
+          "set": " ",
+          "slot": " ",
+          "cost": 250,
+          "date": "2025-09-28T20:27:21.089703"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 150,
+          "date": "2025-09-28T20:46:38.220248"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-09-28T20:46:51.179410"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 100,
+          "date": "2025-10-02T21:32:31.562168"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 120,
+          "date": "2025-10-05T20:33:36.730388"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 70,
+          "date": "2025-10-12T22:03:40.299129"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 60,
+          "date": "2025-10-12T22:03:50.305093"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterShoes.png",
+          "level": 50,
+          "name": "Beast-master Shoes",
+          "set": "Beast-master Armour",
+          "slot": "Boots",
+          "cost": 400,
+          "date": "2025-10-12T22:04:52.810835"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 70,
+          "date": "2025-10-16T21:59:25.873361"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 150,
+          "date": "2025-11-23T19:53:59.714442"
+        },
+        {
+          "class": "Burglar",
+          "icon": "images/Burglar/BurglarShoulders.png",
+          "level": 50,
+          "name": "Shadow-stalker Shoulders",
+          "set": "Shadow-stalker Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2026-01-18T18:16:56.676939"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/single_use_recipe.png",
+          "level": 50,
+          "name": "Single Use Recipe",
+          "set": " ",
+          "slot": " ",
+          "cost": 50,
+          "date": "2026-01-18T18:17:10.264889"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 40,
+          "date": "2026-02-01T20:17:20.579984"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 30,
+          "date": "2026-02-01T20:56:23.228830"
+        },
+        {
+          "class": "Burglar",
+          "icon": "images/Burglar/BurglarBoots.png",
+          "level": 50,
+          "name": "Shadow-stalker Boots",
+          "set": "Shadow-stalker Armour",
+          "slot": "Boots",
+          "cost": 100,
+          "date": "2026-02-22T21:04:00.698178"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 50,
+          "date": "2026-02-22T21:08:39.657297"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 60,
+          "date": "2026-03-03T10:17:34.978092"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 60,
+          "date": "2026-03-08T22:56:45.779417"
+        }
+      ],
+      "Twinks": [
+        {
+          "name": "Idaara",
+          "class": "Captain"
+        },
+        {
+          "name": "Gormundur",
+          "class": "Champion"
+        },
+        {
+          "name": "Lyra",
+          "class": "Minstrel"
+        },
+        {
+          "name": "Estalda",
+          "class": "Loremaster"
+        }
+      ],
+      "beryl_shards": 2,
+      "awards": [
+        {
+          "date": "2025-11-02",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-09",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-16",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-23",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-30",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-14",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-18",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-25",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-22",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-08",
+          "raid_date": "2026-03-08",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-29",
+          "raid_date": "2026-03-29",
+          "amount": 100
+        },
+        {
+          "date": "2026-04-06",
+          "raid_date": "2026-04-05",
+          "amount": 100
+        }
+      ]
+    },
+    "Hollyy(G,B)": {
+      "class": "Captain",
+      "dkp": 700,
+      "status": "open",
+      "loot": [
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-11-16T20:42:13.429978"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelHelm.png",
+          "level": 50,
+          "name": "Silver-voice Helm",
+          "set": "Silver-voice Armour",
+          "slot": "Helm",
+          "cost": 300,
+          "date": "2025-11-20T00:10:28.236132"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelShoulders.png",
+          "level": 50,
+          "name": "Silver-voice Shoulders",
+          "set": "Silver-voice Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2025-11-27T20:31:45.365323"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainShoulders.png",
+          "level": 50,
+          "name": "War-captain's Shoulders",
+          "set": "War-captain's Armour",
+          "slot": "Shoulders",
+          "cost": 250,
+          "date": "2026-01-18T20:46:16.652910"
+        },
+        {
+          "class": "Burglar",
+          "icon": "images/Burglar/BurglarHelm.png",
+          "level": 50,
+          "name": "Shadow-stalker Helm",
+          "set": "Shadow-stalker Armour",
+          "slot": "Helm",
+          "cost": 350,
+          "date": "2026-02-01T20:16:36.061642"
+        }
+      ],
+      "Twinks": [
+        {
+          "name": "Bruce",
+          "class": "Loremaster"
+        },
+        {
+          "name": "Bettee",
+          "class": "Minstrel"
+        }
+      ],
+      "beryl_shards": 1,
+      "awards": [
+        {
+          "date": "2025-10-26",
+          "amount": 100
+        },
+        {
+          "date": "2025-10-31",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-06",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-09",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-13",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-16",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-20",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-27",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-30",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-07",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-11",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-18",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-25",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-29",
+          "raid_date": "2026-03-29",
+          "amount": 100
+        }
+      ]
+    },
+    "Corcaroli(G)": {
+      "class": "Minstrel",
+      "dkp": 690,
+      "status": "open",
+      "loot": [
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelHelm.png",
+          "level": 50,
+          "name": "Silver-voice Helm",
+          "set": "Silver-voice Armour",
+          "slot": "Helm",
+          "cost": 0,
+          "date": "2025-07-26T13:55:02.839265"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-07-27T22:44:45.973340"
+        },
+        {
+          "class": "Guardian",
+          "icon": "images/Guardian/GuardianBoots.png",
+          "level": 50,
+          "name": "High-protector's Boots",
+          "set": "High-protector's Armour",
+          "slot": "Boots",
+          "cost": 100,
+          "date": "2025-08-07T21:50:14.394475"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterHelm.png",
+          "level": 50,
+          "name": "Helm of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Helm",
+          "cost": 110,
+          "date": "2025-08-12T12:45:47.357031"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterShoulders.png",
+          "level": 50,
+          "name": "Beast-master Shoulders",
+          "set": "Beast-master Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2025-08-21T23:01:42.769894"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelShoes.png",
+          "level": 50,
+          "name": "Silver-voice Shoes",
+          "set": "Silver-voice Armour",
+          "slot": "Boots",
+          "cost": 400,
+          "date": "2025-09-04T22:05:48.234405"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelShoulders.png",
+          "level": 50,
+          "name": "Silver-voice Shoulders",
+          "set": "Silver-voice Armour",
+          "slot": "Shoulders",
+          "cost": 400,
+          "date": "2025-09-14T20:11:59.738587"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 100,
+          "date": "2025-09-25T20:41:16.796643"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 200,
+          "date": "2025-10-09T22:08:03.008221"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-10-26T19:55:33.031047"
+        },
+        {
+          "class": "Guardian",
+          "icon": "images/Guardian/GuardianGloves.png",
+          "level": 50,
+          "name": "High-protector's Gloves",
+          "set": "High-protector's Armour",
+          "slot": "Gloves",
+          "cost": 200,
+          "date": "2025-10-26T20:16:24.877916"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 100,
+          "date": "2025-10-26T20:20:26.960824"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 80,
+          "date": "2025-11-02T20:13:51.926946"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 80,
+          "date": "2025-11-13T22:28:39.781217"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 80,
+          "date": "2025-11-16T20:42:30.373825"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 100,
+          "date": "2025-11-20T00:10:43.382848"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 80,
+          "date": "2025-11-23T20:17:26.616168"
+        },
+        {
+          "class": "Guardian",
+          "icon": "images/Guardian/GuardianHelm.png",
+          "level": 50,
+          "name": "High-protector's Helm",
+          "set": "High-protector's Armour",
+          "slot": "Helm",
+          "cost": 300,
+          "date": "2025-11-30T20:29:00.779471"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 50,
+          "date": "2025-11-30T20:42:36.775707"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 60,
+          "date": "2025-12-04T21:40:09.014666"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 10,
+          "date": "2025-12-07T19:59:10.853603"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 50,
+          "date": "2025-12-11T22:49:36.358066"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionHelm.png",
+          "level": 50,
+          "name": "Dragon-scale Helm",
+          "set": "Dragon-scale Armour",
+          "slot": "Helm",
+          "cost": 120,
+          "date": "2026-01-18T20:52:56.105797"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 50,
+          "date": "2026-01-25T20:14:21.706684"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 50,
+          "date": "2026-02-01T20:17:29.501220"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 70,
+          "date": "2026-02-15T22:12:45.283386"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 50,
+          "date": "2026-03-03T10:20:23.707401"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 50,
+          "date": "2026-03-08T22:57:16.023710"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 50,
+          "date": "2026-03-29T21:20:43.972383"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 50,
+          "date": "2026-03-29T21:22:22.362375"
+        },
+        {
+          "class": "Burglar",
+          "icon": "images/Burglar/BurglarHelm.png",
+          "level": 50,
+          "name": "Shadow-stalker Helm",
+          "set": "Shadow-stalker Armour",
+          "slot": "Helm",
+          "cost": 200,
+          "date": "2026-04-06T00:55:18.620091"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionGloves.png",
+          "level": 50,
+          "name": "Dragon-scale Gloves",
+          "set": "Dragon-scale Armour",
+          "slot": "Gloves",
+          "cost": 200,
+          "date": "2026-04-06T00:57:07.645434"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 20,
+          "date": "2026-04-06T00:57:34.561690"
+        }
+      ],
+      "Twinks": [
+        {
+          "name": "Hartmuth",
+          "class": "Captain"
+        },
+        {
+          "name": "Amlemir",
+          "class": "Hunter"
+        },
+        {
+          "name": "Yasmin",
+          "class": "Guardian"
+        },
+        {
+          "name": "Insiniel",
+          "class": "Loremaster"
+        }
+      ],
+      "beryl_shards": 2,
+      "awards": [
+        {
+          "date": "2025-10-26",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-02",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-13",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-16",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-20",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-23",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-27",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-30",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-04",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-07",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-11",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-14",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-11",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-18",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-25",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-15",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-22",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-08",
+          "raid_date": "2026-03-08",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-29",
+          "raid_date": "2026-03-29",
+          "amount": 100
+        },
+        {
+          "date": "2026-04-06",
+          "raid_date": "2026-04-05",
+          "amount": 100
+        }
+      ]
+    },
+    "Deladora": {
+      "class": "Hunter",
+      "dkp": 900,
+      "status": "done",
+      "loot": [
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterShoulders.png",
+          "level": 50,
+          "name": "Shoulders of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2025-07-12T19:40:33.404562"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-07-21T16:17:59.955978"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterBoots.png",
+          "level": 50,
+          "name": "Boots of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Boots",
+          "cost": 210,
+          "date": "2025-07-24T21:53:56.459177"
+        },
+        {
+          "class": "Burglar",
+          "icon": "images/Burglar/BurglarShoulders.png",
+          "level": 50,
+          "name": "Shadow-stalker Shoulders",
+          "set": "Shadow-stalker Armour",
+          "slot": "Shoulders",
+          "cost": 120,
+          "date": "2025-07-27T21:30:24.611050"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-08-07T21:55:07.743514"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterGloves.png",
+          "level": 50,
+          "name": "Gloves of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Gloves",
+          "cost": 390,
+          "date": "2025-08-24T21:34:43.323266"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 140,
+          "date": "2025-09-18T20:47:21.259738"
+        },
+        {
+          "class": "Guardian",
+          "icon": "images/Guardian/GuardianShoulders.png",
+          "level": 50,
+          "name": "High-protector's Shoulders",
+          "set": "High-protector's Armour",
+          "slot": "Shoulders",
+          "cost": 190,
+          "date": "2025-09-25T20:49:50.988242"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 90,
+          "date": "2025-09-25T21:02:58.652389"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 120,
+          "date": "2025-10-05T20:05:14.888976"
+        },
+        {
+          "class": "Guardian",
+          "icon": "images/Guardian/GuardianBoots.png",
+          "level": 50,
+          "name": "High-protector's Boots",
+          "set": "High-protector's Armour",
+          "slot": "Boots",
+          "cost": 320,
+          "date": "2025-10-05T22:03:57.998126"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 100,
+          "date": "2025-10-16T21:08:02.259539"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelGloves.png",
+          "level": 50,
+          "name": "Silver-voice Gloves",
+          "set": "Silver-voice Armour",
+          "slot": "Gloves",
+          "cost": 370,
+          "date": "2025-10-16T21:57:41.952754"
+        },
+        {
+          "class": "Guardian",
+          "icon": "images/Guardian/GuardianHelm.png",
+          "level": 50,
+          "name": "High-protector's Helm",
+          "set": "High-protector's Armour",
+          "slot": "Helm",
+          "cost": 280,
+          "date": "2025-10-16T22:23:12.538586"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/single_use_recipe.png",
+          "level": 50,
+          "name": "Single Use Recipe",
+          "set": " ",
+          "slot": " ",
+          "cost": 80,
+          "date": "2025-11-06T20:35:33.154179"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterHelm.png",
+          "level": 50,
+          "name": "Beast-master Hat",
+          "set": "Beast-master Armour",
+          "slot": "Helm",
+          "cost": 320,
+          "date": "2025-11-16T20:43:47.206509"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/Gilnor.png",
+          "level": 50,
+          "name": "Gilnor",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-11-16T00:20:15.105793"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 210,
+          "date": "2025-11-23T20:34:47.932689"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 80,
+          "date": "2025-11-27T20:34:12.925626"
+        },
+        {
+          "class": "Burglar",
+          "icon": "images/Burglar/BurglarBoots.png",
+          "level": 50,
+          "name": "Shadow-stalker Boots",
+          "set": "Shadow-stalker Armour",
+          "slot": "Boots",
+          "cost": 280,
+          "date": "2025-12-04T21:39:46.728175"
+        },
+        {
+          "class": "Burglar",
+          "icon": "images/Burglar/BurglarHelm.png",
+          "level": 50,
+          "name": "Shadow-stalker Helm",
+          "set": "Shadow-stalker Armour",
+          "slot": "Helm",
+          "cost": 300,
+          "date": "2026-03-29T21:20:21.684804"
+        }
+      ],
+      "Twinks": [
+        {
+          "name": "Namaleth",
+          "class": "Burglar"
+        },
+        {
+          "name": "Jahwen",
+          "class": "Guardian"
+        },
+        {
+          "name": "Martha",
+          "class": "Minstrel"
+        },
+        {
+          "name": "Nariala",
+          "class": "Loremaster"
+        }
+      ],
+      "beryl_shards": 3,
+      "awards": [
+        {
+          "date": "2025-10-26",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-02",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-06",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-16",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-23",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-27",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-30",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-04",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-07",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-18",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-25",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-15",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-22",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-08",
+          "raid_date": "2026-03-08",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-29",
+          "raid_date": "2026-03-29",
+          "amount": 100
+        }
+      ]
+    },
+    "Feren": {
+      "class": "Guardian",
+      "dkp": 810,
+      "status": "done",
+      "loot": [
+        {
+          "class": "Guardian",
+          "set": "High-protector's Armour",
+          "level": 50,
+          "slot": "Helm",
+          "name": "High-protector's Helm",
+          "icon": "images/Guardian/GuardianHelm.png",
+          "cost": 100,
+          "date": "2025-07-10T16:54:52.078Z"
+        },
+        {
+          "class": "Guardian",
+          "set": "High-protector's Armour",
+          "level": 50,
+          "slot": "Gloves",
+          "name": "High-protector's Gloves",
+          "icon": "images/Guardian/GuardianGloves.png",
+          "cost": 100,
+          "date": "2025-07-10T16:55:11.805Z"
+        },
+        {
+          "class": "Guardian",
+          "icon": "images/Guardian/GuardianBoots.png",
+          "level": 50,
+          "name": "High-protector's Boots",
+          "set": "High-protector's Armour",
+          "slot": "Boots",
+          "cost": 100,
+          "date": "2025-07-13T22:20:20.159728"
+        },
+        {
+          "class": "Guardian",
+          "icon": "images/Guardian/GuardianShoulders.png",
+          "level": 50,
+          "name": "High-protector's Shoulders",
+          "set": "High-protector's Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2025-07-31T21:59:46.783369"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-08-07T21:54:24.564876"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-09-11T23:25:41.354617"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 450,
+          "date": "2025-09-21T20:11:40.470858"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 150,
+          "date": "2025-09-28T20:01:16.463235"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 140,
+          "date": "2025-10-05T20:56:03.697889"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 110,
+          "date": "2025-10-26T20:20:36.383724"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/single_use_recipe.png",
+          "level": 50,
+          "name": "Single Use Recipe",
+          "set": " ",
+          "slot": " ",
+          "cost": 150,
+          "date": "2025-10-26T20:34:25.143362"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionGloves.png",
+          "level": 50,
+          "name": "Dragon-scale Gloves",
+          "set": "Dragon-scale Armour",
+          "slot": "Gloves",
+          "cost": 390,
+          "date": "2025-11-20T00:10:08.390450"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionHelm.png",
+          "level": 50,
+          "name": "Dragon-scale Helm",
+          "set": "Dragon-scale Armour",
+          "slot": "Helm",
+          "cost": 400,
+          "date": "2026-01-18T18:18:40.870913"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionGloves.png",
+          "level": 50,
+          "name": "Dragon-scale Gloves",
+          "set": "Dragon-scale Armour",
+          "slot": "Gloves",
+          "cost": 200,
+          "date": "2026-02-22T20:41:31.372516"
+        }
+      ],
+      "beryl_shards": 3,
+      "awards": [
+        {
+          "date": "2025-10-26",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-02",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-09",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-16",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-20",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-30",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-07",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-11",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-18",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-25",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-15",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-22",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-08",
+          "raid_date": "2026-03-08",
+          "amount": 100
+        },
+        {
+          "date": "2026-04-06",
+          "raid_date": "2026-04-05",
+          "amount": 100
+        }
+      ]
+    },
+    "Galah": {
+      "class": "Loremaster",
+      "dkp": 820,
+      "status": "done",
+      "loot": [
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterShoulders.png",
+          "level": 50,
+          "name": "Beast-master Shoulders",
+          "set": "Beast-master Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2025-07-20T21:53:08.508041"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-07-21T16:17:36.316945"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterGloves.png",
+          "level": 50,
+          "name": "Beast-master Gloves",
+          "set": "Beast-master Armour",
+          "slot": "Gloves",
+          "cost": 100,
+          "date": "2025-08-07T21:18:16.801165"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-08-21T23:03:05.263395"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterHelm.png",
+          "level": 50,
+          "name": "Beast-master Hat",
+          "set": "Beast-master Armour",
+          "slot": "Helm",
+          "cost": 100,
+          "date": "2025-08-31T21:59:43.175344"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterShoes.png",
+          "level": 50,
+          "name": "Beast-master Shoes",
+          "set": "Beast-master Armour",
+          "slot": "Boots",
+          "cost": 1300,
+          "date": "2025-09-18T21:40:07.204390"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterHelm.png",
+          "level": 50,
+          "name": "Helm of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Helm",
+          "cost": 580,
+          "date": "2025-11-27T20:32:45.523444"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterGloves.png",
+          "level": 50,
+          "name": "Gloves of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Gloves",
+          "cost": 600,
+          "date": "2025-11-30T20:12:46.204211"
+        }
+      ],
+      "beryl_shards": 2,
+      "Twinks": [
+        {
+          "name": "Leviane",
+          "class": "Hunter"
+        }
+      ],
+      "awards": [
+        {
+          "date": "2025-10-26",
+          "amount": 100
+        },
+        {
+          "date": "2025-10-31",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-02",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-06",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-09",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-16",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-20",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-23",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-27",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-30",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-04",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-11",
+          "amount": 100
+        }
+      ]
+    },
+    "Garofin": {
+      "class": "Burglar",
+      "dkp": 500,
+      "status": "open",
+      "loot": [
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterShoulders.png",
+          "level": 50,
+          "name": "Beast-master Shoulders",
+          "set": "Beast-master Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2025-07-24T21:30:20.100353"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-07-24T21:55:19.541987"
+        }
+      ],
+      "beryl_shards": 1,
+      "Twinks": [
+        {
+          "name": "Daddyowo",
+          "class": "Loremaster"
+        },
+        {
+          "name": "Jobcenter",
+          "class": "Hunter"
+        }
+      ],
+      "awards": []
+    },
+    "Greenlander(G,S)": {
+      "class": "Minstrel",
+      "dkp": 100,
+      "status": "open",
+      "loot": [
+        {
+          "class": "Minstrel",
+          "set": "Silver-voice Armour",
+          "level": 50,
+          "slot": "Helm",
+          "name": "Silver-voice Helm",
+          "icon": "images/Minstrel/MinstrelHelm.png",
+          "cost": 100,
+          "date": "2025-07-10T16:56:39.687Z"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterHelm.png",
+          "level": 50,
+          "name": "Helm of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Helm",
+          "cost": 220,
+          "date": "2025-08-31T20:34:05.357881"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-08-31T20:59:26.735165"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-09-07T20:51:04.451141"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelShoes.png",
+          "level": 50,
+          "name": "Silver-voice Shoes",
+          "set": "Silver-voice Armour",
+          "slot": "Boots",
+          "cost": 340,
+          "date": "2025-09-14T21:03:06.620820"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 140,
+          "date": "2025-09-14T21:18:03.921183"
+        }
+      ],
+      "beryl_shards": 3,
+      "awards": []
+    },
+    "Harra": {
+      "class": "Captain",
+      "dkp": 430,
+      "status": "done",
+      "loot": [
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-07-22T01:11:21.255152"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainGloves.png",
+          "level": 50,
+          "name": "War-captain's Gloves",
+          "set": "War-captain's Armour",
+          "slot": "Gloves",
+          "cost": 600,
+          "date": "2025-08-03T20:45:07.058490"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainBoots.png",
+          "level": 50,
+          "name": "War-captain's Boots",
+          "set": "War-captain's Armour",
+          "slot": "Boots",
+          "cost": 600,
+          "date": "2025-08-28T21:37:46.971609"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainHelm.png",
+          "level": 50,
+          "name": "War-captain's Helm",
+          "set": "War-captain's Armour",
+          "slot": "Helm",
+          "cost": 100,
+          "date": "2025-08-31T20:58:17.301773"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 130,
+          "date": "2025-09-18T21:16:30.856837"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 150,
+          "date": "2025-09-18T22:05:31.449981"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 100,
+          "date": "2025-10-09T22:08:13.930644"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/single_use_recipe.png",
+          "level": 50,
+          "name": "Single Use Recipe",
+          "set": " ",
+          "slot": " ",
+          "cost": 300,
+          "date": "2025-10-23T20:51:02.812563"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 100,
+          "date": "2025-10-23T21:00:29.070698"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 80,
+          "date": "2025-11-06T21:01:42.822884"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainShoulders.png",
+          "level": 50,
+          "name": "War-captain's Shoulders",
+          "set": "War-captain's Armour",
+          "slot": "Shoulders",
+          "cost": 840,
+          "date": "2025-11-13T22:27:14.031416"
+        },
+        {
+          "class": "Guardian",
+          "icon": "images/Guardian/GuardianBoots.png",
+          "level": 50,
+          "name": "High-protector's Boots",
+          "set": "High-protector's Armour",
+          "slot": "Boots",
+          "cost": 250,
+          "date": "2025-12-04T21:39:08.691259"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 70,
+          "date": "2026-01-25T20:45:51.705354"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionHelm.png",
+          "level": 50,
+          "name": "Dragon-scale Helm",
+          "set": "Dragon-scale Armour",
+          "slot": "Helm",
+          "cost": 200,
+          "date": "2026-02-01T21:19:50.000320"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionGloves.png",
+          "level": 50,
+          "name": "Dragon-scale Gloves",
+          "set": "Dragon-scale Armour",
+          "slot": "Gloves",
+          "cost": 250,
+          "date": "2026-02-15T21:35:26.212987"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionHelm.png",
+          "level": 50,
+          "name": "Dragon-scale Helm",
+          "set": "Dragon-scale Armour",
+          "slot": "Helm",
+          "cost": 150,
+          "date": "2026-02-15T22:08:19.536457"
+        },
+        {
+          "class": "Guardian",
+          "icon": "images/Guardian/GuardianHelm.png",
+          "level": 50,
+          "name": "High-protector's Helm",
+          "set": "High-protector's Armour",
+          "slot": "Helm",
+          "cost": 150,
+          "date": "2026-02-22T21:06:32.049786"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainHelm.png",
+          "level": 50,
+          "name": "War-captain's Helm",
+          "set": "War-captain's Armour",
+          "slot": "Helm",
+          "cost": 100,
+          "date": "2026-04-06T00:56:05.710046"
+        }
+      ],
+      "beryl_shards": 4,
+      "Twinks": [
+        {
+          "name": "Thirgon",
+          "class": "Champion"
+        },
+        {
+          "name": "Ballern",
+          "class": "Guardian"
+        }
+      ],
+      "awards": [
+        {
+          "date": "2025-10-26",
+          "amount": 100
+        },
+        {
+          "date": "2025-10-31",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-02",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-06",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-09",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-13",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-16",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-20",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-27",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-30",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-04",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-07",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-11",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-18",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-25",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-15",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-22",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-29",
+          "raid_date": "2026-03-29",
+          "amount": 100
+        },
+        {
+          "date": "2026-04-06",
+          "raid_date": "2026-04-05",
+          "amount": 100
+        }
+      ]
+    },
+    "Ingreghil": {
+      "class": "Champion",
+      "dkp": 1010,
+      "status": "done",
+      "loot": [
+        {
+          "class": "Champion",
+          "set": "Dragon-scale Armour",
+          "level": 50,
+          "slot": "Helm",
+          "name": "Dragon-scale Helm",
+          "icon": "images/Champion/ChampionHelm.png",
+          "cost": 100,
+          "date": "2025-07-10T16:55:58.347Z"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-08-12T12:46:00.636490"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionBoots.png",
+          "level": 50,
+          "name": "Dragon-scale Boots",
+          "set": "Dragon-scale Armour",
+          "slot": "Boots",
+          "cost": 100,
+          "date": "2025-08-18T14:06:27.942862"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionShoulders.png",
+          "level": 50,
+          "name": "Dragon-scale Shoulders",
+          "set": "Dragon-scale Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2025-08-24T21:35:13.277577"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/luchareg.png",
+          "level": 50,
+          "name": "Luchareg",
+          "set": " ",
+          "slot": " ",
+          "cost": 100,
+          "date": "2025-09-14T21:17:24.753359"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 100,
+          "date": "2025-09-21T22:03:21.064451"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 200,
+          "date": "2026-01-18T20:47:10.407154"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 150,
+          "date": "2026-01-18T20:53:06.911347"
+        }
+      ],
+      "beryl_shards": 3,
+      "awards": [
+        {
+          "date": "2025-10-26",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-02",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-09",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-23",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-18",
+          "amount": 100
+        }
+      ]
+    },
+    "Mendir": {
+      "class": "Champion",
+      "dkp": 100,
+      "status": "done",
+      "loot": [
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-10-02T21:28:51.205097"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionGloves.png",
+          "level": 50,
+          "name": "Dragon-scale Gloves",
+          "set": "Dragon-scale Armour",
+          "slot": "Gloves",
+          "cost": 100,
+          "date": "2025-10-12T22:04:26.785207"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionBoots.png",
+          "level": 50,
+          "name": "Dragon-scale Boots",
+          "set": "Dragon-scale Armour",
+          "slot": "Boots",
+          "cost": 0,
+          "date": "2025-07-31T13:33:52.718788"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionShoulders.png",
+          "level": 50,
+          "name": "Dragon-scale Shoulders",
+          "set": "Dragon-scale Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2025-11-02T19:52:12.314264"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterGloves.png",
+          "level": 50,
+          "name": "Beast-master Gloves",
+          "set": "Beast-master Armour",
+          "slot": "Gloves",
+          "cost": 300,
+          "date": "2025-11-02T20:12:56.025490"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionHelm.png",
+          "level": 50,
+          "name": "Dragon-scale Helm",
+          "set": "Dragon-scale Armour",
+          "slot": "Helm",
+          "cost": 100,
+          "date": "2025-11-02T20:31:53.961148"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterHelm.png",
+          "level": 50,
+          "name": "Beast-master Hat",
+          "set": "Beast-master Armour",
+          "slot": "Helm",
+          "cost": 900,
+          "date": "2025-11-13T22:28:21.419697"
+        }
+      ],
+      "beryl_shards": 1,
+      "Twinks": [
+        {
+          "name": "Mendlm",
+          "class": "Loremaster"
+        }
+      ],
+      "awards": [
+        {
+          "date": "2025-10-26",
+          "amount": 100
+        },
+        {
+          "date": "2025-10-31",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-02",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-09",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-13",
+          "amount": 100
+        }
+      ]
+    },
+    "Mineika(H)": {
+      "class": "Captain",
+      "dkp": 200,
+      "status": "open",
+      "loot": [
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainShoulders.png",
+          "level": 50,
+          "name": "War-captain's Shoulders",
+          "set": "War-captain's Armour",
+          "slot": "Shoulders",
+          "cost": 510,
+          "date": "2025-08-07T21:18:39.218955"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-09-04T20:52:49.240131"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-09-14T21:07:00.600467"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterGloves.png",
+          "level": 50,
+          "name": "Beast-master Gloves",
+          "set": "Beast-master Armour",
+          "slot": "Gloves",
+          "cost": 160,
+          "date": "2025-09-25T21:02:00.011208"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelShoulders.png",
+          "level": 50,
+          "name": "Silver-voice Shoulders",
+          "set": "Silver-voice Armour",
+          "slot": "Shoulders",
+          "cost": 460,
+          "date": "2025-10-05T20:04:50.702653"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterGloves.png",
+          "level": 50,
+          "name": "Beast-master Gloves",
+          "set": "Beast-master Armour",
+          "slot": "Gloves",
+          "cost": 500,
+          "date": "2025-10-05T20:32:44.572506"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterHelm.png",
+          "level": 50,
+          "name": "Beast-master Hat",
+          "set": "Beast-master Armour",
+          "slot": "Helm",
+          "cost": 370,
+          "date": "2025-10-09T22:07:27.273208"
+        },
+        {
+          "class": "Guardian",
+          "icon": "images/Guardian/GuardianBoots.png",
+          "level": 50,
+          "name": "High-protector's Boots",
+          "set": "High-protector's Armour",
+          "slot": "Boots",
+          "cost": 200,
+          "date": "2025-10-19T20:50:20.013646"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionShoulders.png",
+          "level": 50,
+          "name": "Dragon-scale Shoulders",
+          "set": "Dragon-scale Armour",
+          "slot": "Shoulders",
+          "cost": 600,
+          "date": "2025-11-16T20:41:38.548902"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainGloves.png",
+          "level": 50,
+          "name": "War-captain's Gloves",
+          "set": "War-captain's Armour",
+          "slot": "Gloves",
+          "cost": 200,
+          "date": "2025-12-07T20:24:12.260469"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 100,
+          "date": "2026-01-18T18:18:55.186745"
+        }
+      ],
+      "beryl_shards": 2,
+      "Twinks": [
+        {
+          "name": "Sabrina",
+          "class": "Champion"
+        },
+        {
+          "name": "Vespera",
+          "class": "Burglar"
+        },
+        {
+          "name": "Dua",
+          "class": "Loremaster"
+        }
+      ],
+      "awards": [
+        {
+          "date": "2025-10-26",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-06",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-09",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-13",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-16",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-30",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-07",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-11",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-18",
+          "amount": 100
+        }
+      ]
+    },
+    "Fake": {
+      "class": "Minstrel",
+      "dkp": 910,
+      "status": "done",
+      "loot": [
+        {
+          "class": "Minstrel",
+          "set": "Silver-voice Armour",
+          "level": 50,
+          "slot": "Helm",
+          "name": "Silver-voice Helm",
+          "icon": "images/Minstrel/MinstrelHelm.png",
+          "cost": 100,
+          "date": "2025-07-10T20:10:37.906Z"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelShoulders.png",
+          "level": 50,
+          "name": "Silver-voice Shoulders",
+          "set": "Silver-voice Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2025-07-13T22:17:52.944059"
+        },
+        {
+          "class": "Guardian",
+          "icon": "images/Guardian/GuardianBoots.png",
+          "level": 50,
+          "name": "High-protector's Boots",
+          "set": "High-protector's Armour",
+          "slot": "Boots",
+          "cost": 200,
+          "date": "2025-07-27T21:29:09.993318"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-07-31T21:47:24.346983"
+        },
+        {
+          "class": "Guardian",
+          "icon": "images/Guardian/GuardianShoulders.png",
+          "level": 50,
+          "name": "High-protector's Shoulders",
+          "set": "High-protector's Armour",
+          "slot": "Shoulders",
+          "cost": 130,
+          "date": "2025-08-12T12:45:25.120534"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelGloves.png",
+          "level": 50,
+          "name": "Silver-voice Gloves",
+          "set": "Silver-voice Armour",
+          "slot": "Gloves",
+          "cost": 610,
+          "date": "2025-09-07T21:10:03.177769"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 130,
+          "date": "2025-09-14T21:17:44.617297"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterShoulders.png",
+          "level": 50,
+          "name": "Beast-master Shoulders",
+          "set": "Beast-master Armour",
+          "slot": "Shoulders",
+          "cost": 130,
+          "date": "2025-09-18T20:45:28.477494"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 80,
+          "date": "2025-09-25T20:40:52.579227"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/single_use_recipe.png",
+          "level": 50,
+          "name": "Single Use Recipe",
+          "set": " ",
+          "slot": " ",
+          "cost": 270,
+          "date": "2025-09-25T20:41:39.195809"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 110,
+          "date": "2025-09-28T20:27:45.948464"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-07-03T18:19:07.548717"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 210,
+          "date": "2025-10-05T20:56:24.437749"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 90,
+          "date": "2025-10-09T22:06:46.483168"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 220,
+          "date": "2025-10-16T21:08:50.123667"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 80,
+          "date": "2025-10-19T20:25:37.493063"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 60,
+          "date": "2025-10-23T21:31:39.082949"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 280,
+          "date": "2025-11-02T20:32:53.735553"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 180,
+          "date": "2025-11-20T00:09:33.411909"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterHelm.png",
+          "level": 50,
+          "name": "Helm of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Helm",
+          "cost": 410,
+          "date": "2025-11-30T19:46:50.441942"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/Gilnor.png",
+          "level": 50,
+          "name": "Gilnor",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-12-04T21:16:20.570315"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainShoulders.png",
+          "level": 50,
+          "name": "War-captain's Shoulders",
+          "set": "War-captain's Armour",
+          "slot": "Shoulders",
+          "cost": 520,
+          "date": "2025-12-07T19:56:54.830552"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainBoots.png",
+          "level": 50,
+          "name": "War-captain's Boots",
+          "set": "War-captain's Armour",
+          "slot": "Boots",
+          "cost": 390,
+          "date": "2025-12-07T20:43:03.362886"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 10,
+          "date": "2025-12-14T22:30:57.849734"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainGloves.png",
+          "level": 50,
+          "name": "War-captain's Gloves",
+          "set": "War-captain's Armour",
+          "slot": "Gloves",
+          "cost": 290,
+          "date": "2026-03-03T10:20:08.167462"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 50,
+          "date": "2026-03-08T22:56:58.205626"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 40,
+          "date": "2026-04-06T00:57:46.644371"
+        }
+      ],
+      "beryl_shards": 3,
+      "Twinks": [
+        {
+          "name": "Oida",
+          "class": "Guardian"
+        },
+        {
+          "name": "Eondir",
+          "class": "Captain"
+        },
+        {
+          "name": "Mytai",
+          "class": "Hunter"
+        }
+      ],
+      "awards": [
+        {
+          "date": "2025-11-02",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-06",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-09",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-13",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-16",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-20",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-23",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-27",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-30",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-04",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-07",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-11",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-14",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-11",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-18",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-25",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-15",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-22",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-08",
+          "raid_date": "2026-03-08",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-29",
+          "raid_date": "2026-03-29",
+          "amount": 100
+        },
+        {
+          "date": "2026-04-06",
+          "raid_date": "2026-04-05",
+          "amount": 100
+        }
+      ]
+    },
+    "Tero(B,G)": {
+      "class": "Minstrel",
+      "dkp": 510,
+      "status": "open",
+      "loot": [
+        {
+          "class": "Champion",
+          "set": "Dragon-scale Armour",
+          "level": 50,
+          "slot": "Helm",
+          "name": "Dragon-scale Helm",
+          "icon": "images/Champion/ChampionHelm.png",
+          "cost": 100,
+          "date": "2025-07-10T16:56:13.650Z"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelHelm.png",
+          "level": 50,
+          "name": "Silver-voice Helm",
+          "set": "Silver-voice Armour",
+          "slot": "Helm",
+          "cost": 390,
+          "date": "2025-10-23T20:59:51.208500"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 50,
+          "date": "2025-10-30T22:54:38.359485"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-11-06T21:21:34.058168"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 100,
+          "date": "2025-11-13T22:29:25.391325"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelShoulders.png",
+          "level": 50,
+          "name": "Silver-voice Shoulders",
+          "set": "Silver-voice Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2025-11-16T20:43:24.480898"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 90,
+          "date": "2025-11-27T21:29:41.217467"
+        },
+        {
+          "class": "Guardian",
+          "icon": "images/Guardian/GuardianGloves.png",
+          "level": 50,
+          "name": "High-protector's Gloves",
+          "set": "High-protector's Armour",
+          "slot": "Gloves",
+          "cost": 170,
+          "date": "2025-12-11T22:48:29.073788"
+        },
+        {
+          "class": "Guardian",
+          "icon": "images/Guardian/GuardianHelm.png",
+          "level": 50,
+          "name": "High-protector's Helm",
+          "set": "High-protector's Armour",
+          "slot": "Helm",
+          "cost": 270,
+          "date": "2025-12-11T22:48:51.657265"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 70,
+          "date": "2025-12-11T22:49:08.034241"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelShoulders.png",
+          "level": 50,
+          "name": "Silver-voice Shoulders",
+          "set": "Silver-voice Armour",
+          "slot": "Shoulders",
+          "cost": 200,
+          "date": "2025-12-14T22:30:42.607587"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 20,
+          "date": "2026-01-18T18:17:44.937502"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainGloves.png",
+          "level": 50,
+          "name": "War-captain's Gloves",
+          "set": "War-captain's Armour",
+          "slot": "Gloves",
+          "cost": 150,
+          "date": "2026-01-25T20:44:55.114088"
+        },
+        {
+          "class": "Guardian",
+          "icon": "images/Guardian/GuardianHelm.png",
+          "level": 50,
+          "name": "High-protector's Helm",
+          "set": "High-protector's Armour",
+          "slot": "Helm",
+          "cost": 100,
+          "date": "2026-03-29T21:22:09.574796"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/single_use_recipe.png",
+          "level": 50,
+          "name": "Single Use Recipe",
+          "set": " ",
+          "slot": " ",
+          "cost": 80,
+          "date": "2026-03-29T21:22:48.053569"
+        }
+      ],
+      "Twinks": [
+        {
+          "name": "Teromur",
+          "class": "Champion"
+        }
+      ],
+      "awards": [
+        {
+          "date": "2025-10-26",
+          "amount": 100
+        },
+        {
+          "date": "2025-10-31",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-06",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-09",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-13",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-16",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-20",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-23",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-27",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-30",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-04",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-11",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-14",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-18",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-25",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-29",
+          "raid_date": "2026-03-29",
+          "amount": 100
+        },
+        {
+          "date": "2026-04-06",
+          "raid_date": "2026-04-05",
+          "amount": 100
+        }
+      ]
+    },
+    "Terz(G)": {
+      "class": "Minstrel",
+      "dkp": 300,
+      "status": "open",
+      "loot": [
+        {
+          "class": "Minstrel",
+          "set": "Silver-voice Armour",
+          "level": 50,
+          "slot": "Helm",
+          "name": "Silver-voice Helm",
+          "icon": "images/Minstrel/MinstrelHelm.png",
+          "cost": 100,
+          "date": "2025-07-10T20:14:12.217Z"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-08-12T12:46:33.669406"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelShoulders.png",
+          "level": 50,
+          "name": "Silver-voice Shoulders",
+          "set": "Silver-voice Armour",
+          "slot": "Shoulders",
+          "cost": 510,
+          "date": "2025-09-04T20:59:36.500446"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterGloves.png",
+          "level": 50,
+          "name": "Beast-master Gloves",
+          "set": "Beast-master Armour",
+          "slot": "Gloves",
+          "cost": 120,
+          "date": "2025-09-21T20:38:41.929838"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-07-03T18:17:33.466052"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterShoulders.png",
+          "level": 50,
+          "name": "Beast-master Shoulders",
+          "set": "Beast-master Armour",
+          "slot": "Shoulders",
+          "cost": 400,
+          "date": "2025-10-12T22:02:29.418357"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelShoes.png",
+          "level": 50,
+          "name": "Silver-voice Shoes",
+          "set": "Silver-voice Armour",
+          "slot": "Boots",
+          "cost": 210,
+          "date": "2025-10-12T22:05:58.842899"
+        },
+        {
+          "class": "Burglar",
+          "icon": "images/Burglar/BurglarHelm.png",
+          "level": 50,
+          "name": "Shadow-stalker Helm",
+          "set": "Shadow-stalker Armour",
+          "slot": "Helm",
+          "cost": 380,
+          "date": "2025-10-31T20:12:26.465033"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterGloves.png",
+          "level": 50,
+          "name": "Beast-master Gloves",
+          "set": "Beast-master Armour",
+          "slot": "Gloves",
+          "cost": 340,
+          "date": "2025-11-06T21:00:16.615394"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterShoulders.png",
+          "level": 50,
+          "name": "Shoulders of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Shoulders",
+          "cost": 260,
+          "date": "2025-11-13T22:27:35.003943"
+        }
+      ],
+      "beryl_shards": 2,
+      "Twinks": [
+        {
+          "name": "Cavitation",
+          "class": "Loremaster"
+        }
+      ],
+      "awards": [
+        {
+          "date": "2025-10-31",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-06",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-13",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-16",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-20",
+          "amount": 100
+        }
+      ]
+    },
+    "Torray": {
+      "class": "Guardian",
+      "dkp": 720,
+      "status": "done",
+      "loot": [
+        {
+          "class": "Guardian",
+          "set": "High-protector's Armour",
+          "level": 50,
+          "slot": "Helm",
+          "name": "High-protector's Helm",
+          "icon": "images/Guardian/GuardianHelm.png",
+          "cost": 100,
+          "date": "2025-07-10T20:11:18.492Z"
+        },
+        {
+          "class": "Guardian",
+          "icon": "images/Guardian/GuardianBoots.png",
+          "level": 50,
+          "name": "High-protector's Boots",
+          "set": "High-protector's Armour",
+          "slot": "Boots",
+          "cost": 100,
+          "date": "2025-07-20T20:59:15.750803"
+        },
+        {
+          "class": "Guardian",
+          "icon": "images/Guardian/GuardianGloves.png",
+          "level": 50,
+          "name": "High-protector's Gloves",
+          "set": "High-protector's Armour",
+          "slot": "Gloves",
+          "cost": 100,
+          "date": "2025-07-20T21:27:40.825281"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-08-07T21:54:43.885802"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-08-07T21:56:32.729140"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 80,
+          "date": "2025-10-19T20:07:37.761492"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 60,
+          "date": "2025-10-26T20:36:03.382144"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 80,
+          "date": "2025-11-30T19:49:39.704105"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainShoulders.png",
+          "level": 50,
+          "name": "War-captain's Shoulders",
+          "set": "War-captain's Armour",
+          "slot": "Shoulders",
+          "cost": 300,
+          "date": "2025-12-07T19:57:08.783544"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 80,
+          "date": "2025-12-07T20:24:30.726401"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 80,
+          "date": "2025-12-07T20:44:04.391925"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainGloves.png",
+          "level": 50,
+          "name": "War-captain's Gloves",
+          "set": "War-captain's Armour",
+          "slot": "Gloves",
+          "cost": 300,
+          "date": "2026-01-18T18:18:24.573532"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 50,
+          "date": "2026-01-18T20:46:03.087571"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainHelm.png",
+          "level": 50,
+          "name": "War-captain's Helm",
+          "set": "War-captain's Armour",
+          "slot": "Helm",
+          "cost": 500,
+          "date": "2026-01-25T21:09:10.234762"
+        },
+        {
+          "class": "Guardian",
+          "icon": "images/Guardian/GuardianShoulders.png",
+          "level": 50,
+          "name": "High-protector's Shoulders",
+          "set": "High-protector's Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2026-02-15T21:17:52.404639"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 50,
+          "date": "2026-02-15T22:13:02.392983"
+        }
+      ],
+      "beryl_shards": 1,
+      "awards": [
+        {
+          "date": "2025-10-26",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-02",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-09",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-16",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-23",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-30",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-07",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-14",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-11",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-18",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-25",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-15",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-22",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-08",
+          "raid_date": "2026-03-08",
+          "amount": 100
+        }
+      ],
+      "Twinks": [
+        {
+          "name": "Carantor",
+          "class": "Captain"
+        }
+      ]
+    },
+    "Zaphira(G)": {
+      "class": "Captain",
+      "dkp": 200,
+      "status": "open",
+      "loot": [
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-07-27T22:44:56.281083"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-08-03T21:55:25.230930"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainHelm.png",
+          "level": 50,
+          "name": "War-captain's Helm",
+          "set": "War-captain's Armour",
+          "slot": "Helm",
+          "cost": 210,
+          "date": "2025-08-12T12:46:19.558396"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterHelm.png",
+          "level": 50,
+          "name": "Helm of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Helm",
+          "cost": 450,
+          "date": "2025-10-02T21:31:07.654001"
+        },
+        {
+          "class": "Guardian",
+          "icon": "images/Guardian/GuardianBoots.png",
+          "level": 50,
+          "name": "High-protector's Boots",
+          "set": "High-protector's Armour",
+          "slot": "Boots",
+          "cost": 130,
+          "date": "2025-10-05T20:53:48.323327"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelShoes.png",
+          "level": 50,
+          "name": "Silver-voice Shoes",
+          "set": "Silver-voice Armour",
+          "slot": "Boots",
+          "cost": 330,
+          "date": "2025-10-09T22:07:48.467429"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainShoulders.png",
+          "level": 50,
+          "name": "War-captain's Shoulders",
+          "set": "War-captain's Armour",
+          "slot": "Shoulders",
+          "cost": 630,
+          "date": "2025-10-19T20:06:14.392197"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterHelm.png",
+          "level": 50,
+          "name": "Helm of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Helm",
+          "cost": 330,
+          "date": "2025-10-26T19:54:47.930340"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionBoots.png",
+          "level": 50,
+          "name": "Dragon-scale Boots",
+          "set": "Dragon-scale Armour",
+          "slot": "Boots",
+          "cost": 420,
+          "date": "2025-11-02T20:32:30.178189"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterBoots.png",
+          "level": 50,
+          "name": "Boots of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Boots",
+          "cost": 600,
+          "date": "2025-11-23T20:33:27.565195"
+        }
+      ],
+      "beryl_shards": 2,
+      "Twinks": [
+        {
+          "name": "Rhena",
+          "class": "Minstrel"
+        },
+        {
+          "name": "Zaphire",
+          "class": "Burglar"
+        },
+        {
+          "name": "Zaphina",
+          "class": "Hunter"
+        }
+      ],
+      "awards": [
+        {
+          "date": "2025-10-26",
+          "amount": 100
+        },
+        {
+          "date": "2025-10-31",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-02",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-06",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-09",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-16",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-23",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-30",
+          "amount": 100
+        }
+      ]
+    },
+    "Ionraen(H,S)": {
+      "class": "Captain",
+      "dkp": 1280,
+      "status": "open",
+      "loot": [
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-10-31T13:29:47.607191"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-10-31T13:30:03.151420"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainBoots.png",
+          "level": 50,
+          "name": "War-captain's Boots",
+          "set": "War-captain's Armour",
+          "slot": "Boots",
+          "cost": 100,
+          "date": "2025-11-13T22:27:53.171913"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainGloves.png",
+          "level": 50,
+          "name": "War-captain's Gloves",
+          "set": "War-captain's Armour",
+          "slot": "Gloves",
+          "cost": 320,
+          "date": "2025-11-27T21:07:20.717260"
+        }
+      ],
+      "beryl_shards": 2,
+      "awards": [
+        {
+          "date": "2025-10-31",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-09",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-13",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-27",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-14",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-25",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-22",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-08",
+          "raid_date": "2026-03-08",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-29",
+          "raid_date": "2026-03-29",
+          "amount": 100
+        },
+        {
+          "date": "2026-04-06",
+          "raid_date": "2026-04-05",
+          "amount": 100
+        }
+      ]
+    },
+    "Lindn": {
+      "class": "Hunter",
+      "dkp": 1050,
+      "status": "done",
+      "loot": [
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-07-21T16:17:11.130319"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterHelm.png",
+          "level": 50,
+          "name": "Helm of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Helm",
+          "cost": 100,
+          "date": "2025-07-27T21:34:17.435123"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-08-03T22:49:44.709667"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterGloves.png",
+          "level": 50,
+          "name": "Gloves of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Gloves",
+          "cost": 100,
+          "date": "2025-08-12T12:45:03.833884"
+        },
+        {
+          "class": "Burglar",
+          "icon": "images/Burglar/BurglarBoots.png",
+          "level": 50,
+          "name": "Shadow-stalker Boots",
+          "set": "Shadow-stalker Armour",
+          "slot": "Boots",
+          "cost": 130,
+          "date": "2025-08-21T23:01:58.837213"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterBoots.png",
+          "level": 50,
+          "name": "Boots of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Boots",
+          "cost": 100,
+          "date": "2025-09-04T22:19:45.731037"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterShoulders.png",
+          "level": 50,
+          "name": "Shoulders of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2025-09-11T20:40:00.049274"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 140,
+          "date": "2025-09-21T20:39:55.878257"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/single_use_recipe.png",
+          "level": 50,
+          "name": "Single Use Recipe",
+          "set": " ",
+          "slot": " ",
+          "cost": 150,
+          "date": "2025-09-21T22:11:22.434633"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterShoes.png",
+          "level": 50,
+          "name": "Beast-master Shoes",
+          "set": "Beast-master Armour",
+          "slot": "Boots",
+          "cost": 320,
+          "date": "2025-10-26T20:32:23.406355"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionGloves.png",
+          "level": 50,
+          "name": "Dragon-scale Gloves",
+          "set": "Dragon-scale Armour",
+          "slot": "Gloves",
+          "cost": 280,
+          "date": "2025-10-31T13:24:26.969652"
+        },
+        {
+          "class": "Burglar",
+          "icon": "images/Burglar/BurglarHelm.png",
+          "level": 50,
+          "name": "Shadow-stalker Helm",
+          "set": "Shadow-stalker Armour",
+          "slot": "Helm",
+          "cost": 370,
+          "date": "2025-11-06T20:32:56.838944"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 80,
+          "date": "2025-11-13T22:28:55.860154"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 90,
+          "date": "2025-11-13T22:29:12.951700"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 90,
+          "date": "2025-11-23T20:37:30.713144"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionShoulders.png",
+          "level": 50,
+          "name": "Dragon-scale Shoulders",
+          "set": "Dragon-scale Armour",
+          "slot": "Shoulders",
+          "cost": 600,
+          "date": "2025-12-04T20:41:54.837507"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionShoulders.png",
+          "level": 50,
+          "name": "Dragon-scale Shoulders",
+          "set": "Dragon-scale Armour",
+          "slot": "Shoulders",
+          "cost": 550,
+          "date": "2026-01-18T20:46:33.276129"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterShoulders.png",
+          "level": 50,
+          "name": "Beast-master Shoulders",
+          "set": "Beast-master Armour",
+          "slot": "Shoulders",
+          "cost": 150,
+          "date": "2026-02-01T20:14:44.381072"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 10,
+          "date": "2026-02-15T22:09:53.297920"
+        },
+        {
+          "class": "Burglar",
+          "icon": "images/Burglar/BurglarHelm.png",
+          "level": 50,
+          "name": "Shadow-stalker Helm",
+          "set": "Shadow-stalker Armour",
+          "slot": "Helm",
+          "cost": 390,
+          "date": "2026-03-03T10:19:30.873605"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/Dolamath.png",
+          "level": 50,
+          "name": "Dolamath",
+          "set": " ",
+          "slot": " ",
+          "cost": 200,
+          "date": "2026-03-03T13:48:01.123110"
+        }
+      ],
+      "beryl_shards": 3,
+      "Twinks": [
+        {
+          "name": "Mirja",
+          "class": "Burglar"
+        },
+        {
+          "name": "Arcadia",
+          "class": "Champion"
+        }
+      ],
+      "awards": [
+        {
+          "date": "2025-10-26",
+          "amount": 100
+        },
+        {
+          "date": "2025-10-31",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-02",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-06",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-09",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-13",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-16",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-23",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-30",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-04",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-07",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-11",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-14",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-11",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-18",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-25",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-15",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-22",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-08",
+          "raid_date": "2026-03-08",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-29",
+          "raid_date": "2026-03-29",
+          "amount": 100
+        },
+        {
+          "date": "2026-04-06",
+          "raid_date": "2026-04-05",
+          "amount": 100
+        }
+      ]
+    },
+    "Jorlin": {
+      "class": "Captain",
+      "dkp": 280,
+      "status": "done",
+      "loot": [
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainGloves.png",
+          "level": 50,
+          "name": "War-captain's Gloves",
+          "set": "War-captain's Armour",
+          "slot": "Gloves",
+          "cost": 480,
+          "date": "2025-09-14T20:40:51.583129"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-10-09T22:04:46.941556"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-10-09T22:07:07.260225"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainShoulders.png",
+          "level": 50,
+          "name": "War-captain's Shoulders",
+          "set": "War-captain's Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2025-10-16T21:08:28.771305"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 60,
+          "date": "2025-10-16T22:00:05.130311"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 110,
+          "date": "2025-10-19T20:06:25.471831"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainHelm.png",
+          "level": 50,
+          "name": "War-captain's Helm",
+          "set": "War-captain's Armour",
+          "slot": "Helm",
+          "cost": 100,
+          "date": "2025-11-02T20:32:06.218640"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 80,
+          "date": "2025-11-02T20:33:36.026366"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 70,
+          "date": "2025-11-06T20:35:17.519779"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterShoulders.png",
+          "level": 50,
+          "name": "Shoulders of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Shoulders",
+          "cost": 280,
+          "date": "2025-11-09T22:09:06.573208"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainBoots.png",
+          "level": 50,
+          "name": "War-captain's Boots",
+          "set": "War-captain's Armour",
+          "slot": "Boots",
+          "cost": 600,
+          "date": "2025-11-30T20:30:13.050265"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 150,
+          "date": "2025-11-30T20:36:36.418745"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterHelm.png",
+          "level": 50,
+          "name": "Helm of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Helm",
+          "cost": 170,
+          "date": "2026-01-18T18:18:08.327568"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterShoulders.png",
+          "level": 50,
+          "name": "Shoulders of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Shoulders",
+          "cost": 320,
+          "date": "2026-03-08T22:55:21.738404"
+        }
+      ],
+      "beryl_shards": 2,
+      "Twinks": [
+        {
+          "name": "Aryathil",
+          "class": "Hunter"
+        }
+      ],
+      "awards": [
+        {
+          "date": "2025-10-26",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-02",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-06",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-09",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-16",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-30",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-04",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-11",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-18",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-25",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-15",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-08",
+          "raid_date": "2026-03-08",
+          "amount": 100
+        }
+      ]
+    },
+    "Rocco": {
+      "name": "Rocco",
+      "class": "Minstrel",
+      "dkp": 830,
+      "status": "done",
+      "loot": [
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelHelm.png",
+          "level": 50,
+          "name": "Silver-voice Helm",
+          "set": "Silver-voice Armour",
+          "slot": "Helm",
+          "cost": 100,
+          "date": "2025-07-12T20:09:15.710300"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-08-21T23:03:47.346266"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelShoes.png",
+          "level": 50,
+          "name": "Silver-voice Shoes",
+          "set": "Silver-voice Armour",
+          "slot": "Boots",
+          "cost": 390,
+          "date": "2025-09-07T16:28:40.399697"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-09-25T21:21:27.385983"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelGloves.png",
+          "level": 50,
+          "name": "Silver-voice Gloves",
+          "set": "Silver-voice Armour",
+          "slot": "Gloves",
+          "cost": 510,
+          "date": "2025-10-02T21:30:04.961619"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelShoulders.png",
+          "level": 50,
+          "name": "Silver-voice Shoulders",
+          "set": "Silver-voice Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2025-10-09T22:06:20.115884"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 360,
+          "date": "2025-10-23T21:23:01.758833"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-11-20T00:11:42.812446"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 10,
+          "date": "2025-12-11T22:49:23.430744"
+        }
+      ],
+      "beryl_shards": 3,
+      "Twinks": [
+        {
+          "name": "Fadur",
+          "class": "Captain"
+        },
+        {
+          "name": "Usidir",
+          "class": "Hunter"
+        }
+      ],
+      "awards": [
+        {
+          "date": "2025-10-31",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-06",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-20",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-27",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-30",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-07",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-11",
+          "amount": 100
+        }
+      ]
+    },
+    "Domaros": {
+      "name": "Domaros",
+      "class": "Hunter",
+      "dkp": 500,
+      "status": "done",
+      "loot": [
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterBoots.png",
+          "level": 50,
+          "name": "Boots of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Boots",
+          "cost": 100,
+          "date": "2025-09-25T21:34:28.148127"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-09-28T20:01:36.660062"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-10-02T22:30:21.972163"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterGloves.png",
+          "level": 50,
+          "name": "Gloves of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Gloves",
+          "cost": 250,
+          "date": "2025-10-19T20:24:36.263537"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterShoes.png",
+          "level": 50,
+          "name": "Beast-master Shoes",
+          "set": "Beast-master Armour",
+          "slot": "Boots",
+          "cost": 350,
+          "date": "2025-10-19T20:50:00.033069"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterShoulders.png",
+          "level": 50,
+          "name": "Beast-master Shoulders",
+          "set": "Beast-master Armour",
+          "slot": "Shoulders",
+          "cost": 250,
+          "date": "2025-11-23T19:52:22.205791"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainShoulders.png",
+          "level": 50,
+          "name": "War-captain's Shoulders",
+          "set": "War-captain's Armour",
+          "slot": "Shoulders",
+          "cost": 450,
+          "date": "2025-11-30T19:48:08.612256"
+        }
+      ],
+      "Twinks": [
+        {
+          "name": "Alantariel",
+          "class": "Minstrel"
+        }
+      ],
+      "beryl_shards": 1,
+      "awards": [
+        {
+          "date": "2025-10-26",
+          "amount": 100
+        },
+        {
+          "date": "2025-10-31",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-02",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-06",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-09",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-13",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-16",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-23",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-30",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-07",
+          "amount": 100
+        }
+      ]
+    },
+    "Fachkraft": {
+      "name": "Fachkraft",
+      "class": "Hunter",
+      "dkp": 100,
+      "status": "open",
+      "loot": [
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterHelm.png",
+          "level": 50,
+          "name": "Helm of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Helm",
+          "cost": 100,
+          "date": "2025-07-31T21:47:09.798337"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 380,
+          "date": "2025-10-16T22:24:26.954403"
+        }
+      ],
+      "Twinks": [
+        {
+          "name": "Gabelstapler",
+          "class": "Burglar"
+        }
+      ],
+      "beryl_shards": 1,
+      "awards": []
+    },
+    "Rosita": {
+      "name": "Rosita",
+      "class": "Captain",
+      "dkp": 1300,
+      "status": "done",
+      "loot": [
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-07-31T21:48:39.123303"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainHelm.png",
+          "level": 50,
+          "name": "War-captain's Helm",
+          "set": "War-captain's Armour",
+          "slot": "Helm",
+          "cost": 300,
+          "date": "2025-08-07T21:51:38.921711"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-08-18T14:06:59.121115"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainShoulders.png",
+          "level": 50,
+          "name": "War-captain's Shoulders",
+          "set": "War-captain's Armour",
+          "slot": "Shoulders",
+          "cost": 510,
+          "date": "2025-09-11T20:39:45.563601"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-09-18T21:03:27.613308"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionHelm.png",
+          "level": 50,
+          "name": "Dragon-scale Helm",
+          "set": "Dragon-scale Armour",
+          "slot": "Helm",
+          "cost": 210,
+          "date": "2025-09-21T22:02:52.978607"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionShoulders.png",
+          "level": 50,
+          "name": "Dragon-scale Shoulders",
+          "set": "Dragon-scale Armour",
+          "slot": "Shoulders",
+          "cost": 250,
+          "date": "2025-09-21T22:06:19.904815"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 70,
+          "date": "2025-10-16T22:25:20.319051"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 200,
+          "date": "2025-10-19T20:49:11.642798"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 70,
+          "date": "2025-11-02T19:54:50.883811"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainBoots.png",
+          "level": 50,
+          "name": "War-captain's Boots",
+          "set": "War-captain's Armour",
+          "slot": "Boots",
+          "cost": 100,
+          "date": "2025-11-06T21:20:30.664270"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 90,
+          "date": "2025-11-09T22:10:44.326063"
+        },
+        {
+          "class": "Guardian",
+          "icon": "images/Guardian/GuardianBoots.png",
+          "level": 50,
+          "name": "High-protector's Boots",
+          "set": "High-protector's Armour",
+          "slot": "Boots",
+          "cost": 350,
+          "date": "2025-11-09T22:11:24.749909"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 70,
+          "date": "2025-11-16T20:44:21.903684"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 80,
+          "date": "2025-11-23T19:54:32.264160"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainGloves.png",
+          "level": 50,
+          "name": "War-captain's Gloves",
+          "set": "War-captain's Armour",
+          "slot": "Gloves",
+          "cost": 510,
+          "date": "2025-11-23T20:17:05.781988"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 10,
+          "date": "2025-11-27T21:28:04.496933"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 10,
+          "date": "2025-12-04T20:42:49.984924"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionGloves.png",
+          "level": 50,
+          "name": "Dragon-scale Gloves",
+          "set": "Dragon-scale Armour",
+          "slot": "Gloves",
+          "cost": 210,
+          "date": "2025-12-07T20:23:39.912954"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 70,
+          "date": "2025-12-11T22:49:47.099957"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/single_use_recipe.png",
+          "level": 50,
+          "name": "Single Use Recipe",
+          "set": " ",
+          "slot": " ",
+          "cost": 390,
+          "date": "2026-02-01T21:21:43.648285"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 60,
+          "date": "2026-02-01T21:22:00.290531"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 40,
+          "date": "2026-03-29T21:22:36.063471"
+        }
+      ],
+      "beryl_shards": 2,
+      "Twinks": [
+        {
+          "name": "Storic",
+          "class": "Minstrel"
+        },
+        {
+          "name": "Elodir",
+          "class": "Champion"
+        }
+      ],
+      "awards": [
+        {
+          "date": "2025-10-26",
+          "amount": 100
+        },
+        {
+          "date": "2025-10-31",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-02",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-06",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-09",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-13",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-16",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-20",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-23",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-27",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-30",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-04",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-07",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-11",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-14",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-11",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-18",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-25",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-22",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-29",
+          "raid_date": "2026-03-29",
+          "amount": 100
+        }
+      ]
+    },
+    "Slania(S)": {
+      "name": "Slania",
+      "class": "Champion",
+      "dkp": 1800,
+      "status": "open",
+      "loot": [
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionGloves.png",
+          "level": 50,
+          "name": "Dragon-scale Gloves",
+          "set": "Dragon-scale Armour",
+          "slot": "Gloves",
+          "cost": 100,
+          "date": "2025-07-31T20:56:55.232625"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionBoots.png",
+          "level": 50,
+          "name": "Dragon-scale Boots",
+          "set": "Dragon-scale Armour",
+          "slot": "Boots",
+          "cost": 100,
+          "date": "2025-08-14T21:32:56.571592"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionHelm.png",
+          "level": 50,
+          "name": "Dragon-scale Helm",
+          "set": "Dragon-scale Armour",
+          "slot": "Helm",
+          "cost": 100,
+          "date": "2025-08-28T21:36:54.702533"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-08-28T21:37:12.127604"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-09-25T20:46:19.937931"
+        }
+      ],
+      "beryl_shards": 2,
+      "awards": [
+        {
+          "date": "2025-10-31",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-20",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-27",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-07",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-11",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-18",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-22",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-08",
+          "raid_date": "2026-03-08",
+          "amount": 100
+        },
+        {
+          "date": "2026-04-06",
+          "raid_date": "2026-04-05",
+          "amount": 100
+        }
+      ]
+    },
+    "Boscgard": {
+      "name": "Boscgard",
+      "class": "Guardian",
+      "dkp": 250,
+      "status": "done",
+      "loot": [
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-08-24T21:39:58.203963"
+        },
+        {
+          "class": "Burglar",
+          "icon": "images/Burglar/BurglarHelm.png",
+          "level": 50,
+          "name": "Shadow-stalker Helm",
+          "set": "Shadow-stalker Armour",
+          "slot": "Helm",
+          "cost": 200,
+          "date": "2025-09-14T20:12:26.465033"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-09-14T20:13:17.079055"
+        },
+        {
+          "class": "Guardian",
+          "icon": "images/Guardian/GuardianHelm.png",
+          "level": 50,
+          "name": "High-protector's Helm",
+          "set": "High-protector's Armour",
+          "slot": "Helm",
+          "cost": 100,
+          "date": "2025-09-25T21:21:45.609681"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterShoulders.png",
+          "level": 50,
+          "name": "Beast-master Shoulders",
+          "set": "Beast-master Armour",
+          "slot": "Shoulders",
+          "cost": 180,
+          "date": "2025-09-28T19:58:07.490459"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterShoulders.png",
+          "level": 50,
+          "name": "Shoulders of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Shoulders",
+          "cost": 290,
+          "date": "2025-10-16T21:07:20.031904"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterGloves.png",
+          "level": 50,
+          "name": "Gloves of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Gloves",
+          "cost": 280,
+          "date": "2025-10-19T20:25:08.915273"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/single_use_recipe.png",
+          "level": 50,
+          "name": "Single Use Recipe",
+          "set": " ",
+          "slot": " ",
+          "cost": 200,
+          "date": "2025-10-19T20:49:24.703867"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionBoots.png",
+          "level": 50,
+          "name": "Dragon-scale Boots",
+          "set": "Dragon-scale Armour",
+          "slot": "Boots",
+          "cost": 500,
+          "date": "2025-10-31T13:25:23.374899"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 140,
+          "date": "2025-11-06T20:43:19.141258"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterHelm.png",
+          "level": 50,
+          "name": "Beast-master Hat",
+          "set": "Beast-master Armour",
+          "slot": "Helm",
+          "cost": 420,
+          "date": "2025-11-27T21:06:56.866772"
+        },
+        {
+          "class": "Burglar",
+          "icon": "images/Burglar/BurglarHelm.png",
+          "level": 50,
+          "name": "Shadow-stalker Helm",
+          "set": "Shadow-stalker Armour",
+          "slot": "Helm",
+          "cost": 550,
+          "date": "2025-11-27T21:26:34.564062"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 110,
+          "date": "2025-12-07T20:43:42.123856"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterHelm.png",
+          "level": 50,
+          "name": "Helm of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Helm",
+          "cost": 280,
+          "date": "2026-01-18T18:17:33.160490"
+        }
+      ],
+      "beryl_shards": 2,
+      "Twinks": [
+        {
+          "name": "Maxipad",
+          "class": "Captain"
+        },
+        {
+          "name": "Hypetrain",
+          "class": "Champion"
+        },
+        {
+          "name": "Chubbie",
+          "class": "Burglar"
+        },
+        {
+          "name": "Bowbender",
+          "class": "Hunter"
+        }
+      ],
+      "awards": [
+        {
+          "date": "2025-10-26",
+          "amount": 100
+        },
+        {
+          "date": "2025-10-31",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-02",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-06",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-09",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-13",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-16",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-23",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-27",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-30",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-07",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-11",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-18",
+          "amount": 100
+        }
+      ]
+    },
+    "Fellarin": {
+      "name": "Fellarin",
+      "class": "Minstrel",
+      "dkp": 200,
+      "status": "open",
+      "loot": [],
+      "beryl_shards": 2,
+      "awards": []
+    },
+    "Maf": {
+      "name": "Maf",
+      "class": "Captain",
+      "dkp": 1220,
+      "status": "done",
+      "loot": [
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-09-21T20:10:21.490669"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-10-09T22:04:28.668050"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainHelm.png",
+          "level": 50,
+          "name": "War-captain's Helm",
+          "set": "War-captain's Armour",
+          "slot": "Helm",
+          "cost": 0,
+          "date": "2025-07-20T18:17:25.592382"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainShoulders.png",
+          "level": 50,
+          "name": "War-captain's Shoulders",
+          "set": "War-captain's Armour",
+          "slot": "Shoulders",
+          "cost": 0,
+          "date": "2025-07-20T18:17:41.140192"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainBoots.png",
+          "level": 50,
+          "name": "War-captain's Boots",
+          "set": "War-captain's Armour",
+          "slot": "Boots",
+          "cost": 1270,
+          "date": "2025-10-31T13:24:54.143304"
+        },
+        {
+          "class": "Loremaster",
+          "icon": "images/Lore-master/Lore-masterGloves.png",
+          "level": 50,
+          "name": "Beast-master Gloves",
+          "set": "Beast-master Armour",
+          "slot": "Gloves",
+          "cost": 310,
+          "date": "2025-12-14T22:31:26.801633"
+        }
+      ],
+      "beryl_shards": 2,
+      "Twinks": [
+        {
+          "name": "Tubbie",
+          "class": "Burglar"
+        }
+      ],
+      "awards": [
+        {
+          "date": "2025-10-26",
+          "amount": 100
+        },
+        {
+          "date": "2025-10-31",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-02",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-06",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-09",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-13",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-16",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-23",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-27",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-30",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-07",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-11",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-14",
+          "amount": 100
+        }
+      ]
+    },
+    "Ristan(S,G,B)": {
+      "name": "Ristan",
+      "class": "Minstrel",
+      "dkp": 700,
+      "status": "open",
+      "loot": [
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelHelm.png",
+          "level": 50,
+          "name": "Silver-voice Helm",
+          "set": "Silver-voice Armour",
+          "slot": "Helm",
+          "cost": 100,
+          "date": "2025-09-04T23:13:29.399112"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-09-04T23:14:59.806686"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-09-11T20:40:13.667958"
+        }
+      ],
+      "beryl_shards": 1,
+      "awards": [
+        {
+          "date": "2025-11-13",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-22",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-08",
+          "raid_date": "2026-03-08",
+          "amount": 100
+        }
+      ]
+    },
+    "Pedesco(B,G)": {
+      "name": "Pedesco",
+      "class": "Minstrel",
+      "dkp": 800,
+      "status": "open",
+      "loot": [
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-09-18T21:44:02.450108"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelShoulders.png",
+          "level": 50,
+          "name": "Silver-voice Shoulders",
+          "set": "Silver-voice Armour",
+          "slot": "Shoulders",
+          "cost": 150,
+          "date": "2025-09-25T20:48:06.247756"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-10-05T20:06:29.644342"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 250,
+          "date": "2025-11-09T22:11:51.948586"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelHelm.png",
+          "level": 50,
+          "name": "Silver-voice Helm",
+          "set": "Silver-voice Armour",
+          "slot": "Helm",
+          "cost": 100,
+          "date": "2025-12-04T21:16:07.463366"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelShoulders.png",
+          "level": 50,
+          "name": "Silver-voice Shoulders",
+          "set": "Silver-voice Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2026-02-15T21:18:18.707155"
+        },
+        {
+          "class": "Burglar",
+          "icon": "images/Burglar/BurglarBoots.png",
+          "level": 50,
+          "name": "Shadow-stalker Boots",
+          "set": "Shadow-stalker Armour",
+          "slot": "Boots",
+          "cost": 300,
+          "date": "2026-02-15T22:07:00.525840"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 50,
+          "date": "2026-02-15T22:11:42.047647"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterHelm.png",
+          "level": 50,
+          "name": "Helm of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Helm",
+          "cost": 500,
+          "date": "2026-02-22T20:01:58.981564"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 100,
+          "date": "2026-02-22T20:02:28.177028"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 50,
+          "date": "2026-02-22T21:08:30.790782"
+        },
+        {
+          "class": "Hunter",
+          "icon": "images/Hunter/HunterGloves.png",
+          "level": 50,
+          "name": "Gloves of the Aurochs",
+          "set": "Armour of the Aurochs",
+          "slot": "Gloves",
+          "cost": 500,
+          "date": "2026-03-03T10:19:48.530412"
+        }
+      ],
+      "beryl_shards": 1,
+      "awards": [
+        {
+          "date": "2025-10-26",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-02",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-06",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-09",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-13",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-16",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-20",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-23",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-27",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-30",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-04",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-07",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-11",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-14",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-11",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-18",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-25",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-15",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-22",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-08",
+          "raid_date": "2026-03-08",
+          "amount": 100
+        }
+      ],
+      "Twinks": [
+        {
+          "name": "Witren",
+          "class": "Hunter"
+        }
+      ]
+    },
+    "Cordloin(H,G)": {
+      "name": "Cordloin",
+      "class": "Burglar",
+      "dkp": 500,
+      "status": "open",
+      "loot": [
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 180,
+          "date": "2025-10-26T20:35:39.366363"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2025-11-09T22:10:06.900237"
+        },
+        {
+          "class": "Burglar",
+          "icon": "images/Burglar/BurglarBoots.png",
+          "level": 50,
+          "name": "Shadow-stalker Boots",
+          "set": "Shadow-stalker Armour",
+          "slot": "Boots",
+          "cost": 100,
+          "date": "2025-11-20T00:11:01.039616"
+        },
+        {
+          "class": "Guardian",
+          "icon": "images/Guardian/GuardianHelm.png",
+          "level": 50,
+          "name": "High-protector's Helm",
+          "set": "High-protector's Armour",
+          "slot": "Helm",
+          "cost": 300,
+          "date": "2025-11-20T00:11:13.847222"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 90,
+          "date": "2025-11-20T00:11:29.194534"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 100,
+          "date": "2025-11-27T20:34:27.305917"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 100,
+          "date": "2025-11-30T20:32:21.389031"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 60,
+          "date": "2025-12-04T20:43:33.651619"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 20,
+          "date": "2025-12-04T21:16:33.300093"
+        },
+        {
+          "class": "Burglar",
+          "icon": "images/Burglar/BurglarShoulders.png",
+          "level": 50,
+          "name": "Shadow-stalker Shoulders",
+          "set": "Shadow-stalker Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2025-12-11T22:47:47.315222"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 50,
+          "date": "2025-12-11T22:48:00.985524"
+        },
+        {
+          "class": "Burglar",
+          "icon": "images/Burglar/BurglarShoulders.png",
+          "level": 50,
+          "name": "Shadow-stalker Shoulders",
+          "set": "Shadow-stalker Armour",
+          "slot": "Shoulders",
+          "cost": 200,
+          "date": "2026-01-25T20:28:04.339246"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelShoulders.png",
+          "level": 50,
+          "name": "Silver-voice Shoulders",
+          "set": "Silver-voice Armour",
+          "slot": "Shoulders",
+          "cost": 200,
+          "date": "2026-02-01T20:15:25.303213"
+        },
+        {
+          "class": "Champion",
+          "icon": "images/Champion/ChampionHelm.png",
+          "level": 50,
+          "name": "Dragon-scale Helm",
+          "set": "Dragon-scale Armour",
+          "slot": "Helm",
+          "cost": 100,
+          "date": "2026-03-03T10:17:23.187118"
+        },
+        {
+          "class": "Minstrel",
+          "icon": "images/Minstrel/MinstrelHelm.png",
+          "level": 50,
+          "name": "Silver-voice Helm",
+          "set": "Silver-voice Armour",
+          "slot": "Helm",
+          "cost": 300,
+          "date": "2026-03-08T22:56:07.990393"
+        }
+      ],
+      "awards": [
+        {
+          "date": "2025-10-26",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-02",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-09",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-16",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-20",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-23",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-27",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-30",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-04",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-07",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-11",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-14",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-11",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-18",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-25",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-15",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-22",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-08",
+          "raid_date": "2026-03-08",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-29",
+          "raid_date": "2026-03-29",
+          "amount": 100
+        }
+      ],
+      "Twinks": [
+        {
+          "name": "Sanica",
+          "class": "Champion"
+        }
+      ]
+    },
+    "Tordesilas(H,S)": {
+      "name": "Tordesilas",
+      "class": "Captain",
+      "dkp": 330,
+      "status": "open",
+      "loot": [
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainGloves.png",
+          "level": 50,
+          "name": "War-captain's Gloves",
+          "set": "War-captain's Armour",
+          "slot": "Gloves",
+          "cost": 150,
+          "date": "2026-01-18T20:46:53.859754"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 20,
+          "date": "2026-01-25T21:08:33.924278"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/zaudru_qitem.png",
+          "level": 50,
+          "name": "Zaudrus Crimson Mandible",
+          "set": " ",
+          "slot": " ",
+          "cost": 0,
+          "date": "2026-01-25T21:16:17.660251"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainShoulders.png",
+          "level": 50,
+          "name": "War-captain's Shoulders",
+          "set": "War-captain's Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2026-02-22T20:01:03.595527"
+        }
+      ],
+      "awards": [
+        {
+          "date": "2026-01-11",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-18",
+          "amount": 100
+        },
+        {
+          "date": "2026-01-25",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-15",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-22",
+          "amount": 100
+        }
+      ]
+    },
+    "Tardan(H,B)": {
+      "name": "Tardan",
+      "class": "Captain",
+      "dkp": 460,
+      "status": "open",
+      "awards": [
+        {
+          "date": "2025-11-06",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-13",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-20",
+          "amount": 100
+        },
+        {
+          "date": "2025-11-27",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-04",
+          "amount": 100
+        },
+        {
+          "date": "2025-12-11",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-15",
+          "amount": 100
+        },
+        {
+          "date": "2026-02-22",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-01",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-08",
+          "raid_date": "2026-03-08",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-29",
+          "raid_date": "2026-03-29",
+          "amount": 100
+        }
+      ],
+      "loot": [
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 100,
+          "date": "2025-11-13T22:29:38.877318"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainShoulders.png",
+          "level": 50,
+          "name": "War-captain's Shoulders",
+          "set": "War-captain's Armour",
+          "slot": "Shoulders",
+          "cost": 100,
+          "date": "2025-11-20T00:09:46.966772"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 80,
+          "date": "2026-02-22T21:08:10.266671"
+        },
+        {
+          "class": "Misc",
+          "icon": "images/berylshard.png",
+          "level": 50,
+          "name": "Beryl Shard",
+          "set": " ",
+          "slot": " ",
+          "cost": 60,
+          "date": "2026-03-03T10:17:48.601806"
+        },
+        {
+          "class": "Captain",
+          "icon": "images/Captain/CaptainGloves.png",
+          "level": 50,
+          "name": "War-captain's Gloves",
+          "set": "War-captain's Armour",
+          "slot": "Gloves",
+          "cost": 300,
+          "date": "2026-03-29T21:21:25.145610"
+        }
+      ]
+    },
+    "Lathilamb": {
+      "name": "Lathilamb",
+      "class": "Champion",
+      "dkp": 100,
+      "status": "open",
+      "awards": [
+        {
+          "date": "2025-11-23",
+          "amount": 100
+        }
+      ],
+      "loot": []
+    },
+    "Lewin(H,S,G,B)": {
+      "name": "Lewin",
+      "class": "Champion",
+      "dkp": 100,
+      "status": "open",
+      "awards": [
+        {
+          "date": "2026-01-18",
+          "amount": 100
+        }
+      ],
+      "loot": []
+    },
+    "Glorborn(H,S,G,B)": {
+      "name": "Glorborn",
+      "class": "Hunter",
+      "dkp": 100,
+      "status": "open",
+      "awards": [
+        {
+          "date": "2026-02-22",
+          "amount": 100
+        }
+      ],
+      "loot": []
+    },
+    "Gxhunter": {
+      "name": "Gxhunter",
+      "class": "Hunter",
+      "dkp": 100,
+      "status": "open",
+      "awards": [
+        {
+          "date": "2026-02-22",
+          "amount": 100
+        },
+        {
+          "date": "2026-03-08",
+          "raid_date": "2026-03-08",
+          "amount": 100
+        }
+      ],
+      "loot": [
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 100,
+          "date": "2026-03-08T22:56:29.834872"
+        }
+      ]
+    },
+    "Salty(H,S,G,B)": {
+      "name": "Salty",
+      "class": "Burglar",
+      "dkp": 180,
+      "status": "open",
+      "awards": [
+        {
+          "date": "2026-03-29",
+          "raid_date": "2026-03-29",
+          "amount": 100
+        },
+        {
+          "date": "2026-04-06",
+          "raid_date": "2026-04-05",
+          "amount": 100
+        }
+      ],
+      "loot": [
+        {
+          "class": "Misc",
+          "icon": "images/storvagun_qitem.png",
+          "level": 50,
+          "name": "Storvâgûn's Emblem of Loyalty",
+          "set": " ",
+          "slot": " ",
+          "cost": 20,
+          "date": "2026-04-06T00:55:38.493100"
+        }
+      ]
+    },
+    "Melua(H,S,G,B)": {
+      "name": "Melua",
+      "class": "Champion",
+      "dkp": 200,
+      "status": "open",
+      "awards": [
+        {
+          "date": "2026-03-29",
+          "raid_date": "2026-03-29",
+          "amount": 100
+        },
+        {
+          "date": "2026-04-06",
+          "raid_date": "2026-04-05",
+          "amount": 100
+        }
+      ],
+      "loot": []
+    },
+    "Braldur(H,S,G,B)": {
+      "name": "Braldur",
+      "class": "Minstrel",
+      "dkp": 200,
+      "status": "open",
+      "awards": [
+        {
+          "date": "2026-03-29",
+          "raid_date": "2026-03-29",
+          "amount": 100
+        },
+        {
+          "date": "2026-04-06",
+          "raid_date": "2026-04-05",
+          "amount": 100
+        }
+      ],
+      "loot": []
+    }
+  },
+  "DKP_HISTORY": []
+}
